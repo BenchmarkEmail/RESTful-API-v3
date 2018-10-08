@@ -1,19 +1,11 @@
 # Use Case:
 
-Given an email and the contacts attributes, \
-Then I want to add the contact to a list.
+Given an email address and attributes,
+Then I want to add the contact to an list(s).
 
-Variations of problem:
+---
 
-
-
-1.  I want to get a list id # for an existing list(s). Solution: continue with this document.
-1.  I want to create a new list and get its list id #. Solution: see [link](https://docs.google.com/document/d/15GOHDrPVoQrIyaLcLSj0zB2frJkUj1U6IqpIpwovhik/edit?usp=sharing) 
-
-
-## Solution:  
-
-
+## Solution:
 
 1.  Pull my lists and get its respective list id # from by bme account.
     1.  **GET /Contact/ **(scenario to search amongst your pre-existing lists) [link:](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b)
@@ -22,10 +14,7 @@ Variations of problem:
 1.  Identify which list I want to add to so I can add contact(s) to that specific list, 
 1.  Add your contact using the listID and your contacts information
 
-
-## Directions and Steps 
-
-
+## Directions and Steps
 
 1.  Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
 1.  To add a contact, you need to know the list name and its ID#. This is done by one of two ways: 
@@ -42,3 +31,8 @@ Variations of problem:
             1.  the response status is 200 OK and 
             1.  response body does not have a status of -1 or an 'error' property   	[screenshot](https://www.dropbox.com/s/yyw0dv5l90ymaqx/2018-09-06_11-36-07.png?dl=0) 
             1.  Confirm your success screenshot
+
+## Variations of problem:
+
+1. I want to get a list id # for an existing list(s). Solution: continue with this document.
+1. I want to create a new list and get its list id #. Solution: see [link](https://docs.google.com/document/d/15GOHDrPVoQrIyaLcLSj0zB2frJkUj1U6IqpIpwovhik/edit?usp=sharing) 

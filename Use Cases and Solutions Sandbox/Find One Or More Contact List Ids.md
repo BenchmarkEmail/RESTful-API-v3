@@ -3,10 +3,9 @@
 Given an benchmarkemail account. \
 Then How do I see all its lists and the details of those lists?
 
+---
 
-## Solution:  
-
-
+## Solution
 
 1.  Obtain your [API token](https://ui.benchmarkemail.com/Integrate#API) from your benchmark email account.
 1.  Place the API token in your API client of choice, such as [postman](https://www.getpostman.com/apps) or your code 

@@ -1,25 +1,20 @@
-
-# Use Case:
+# Use Case
 
 Given a new List Name, \
 Then I want create a new list and get its list Id #
 
+---
+
 Variation of problem. I want to get the list Id # of pre-existing lists [link](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing)
 
-
-## Solution:  
-
-
+## Solution:
 
 1.  Make a POST request with the information for your new list
     1.  **POST /Contact **
         1.  where the minimal data needed is {"Data":{"Name":"{{Name}}","Description":"{{Description}}"}} 	
 1.  Take the ID returned for future use in API calls      
 
-
 ## Directions and Steps 
-
-
 
 1.  Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
 1.  Use a POST call with minimal information to create the list** **

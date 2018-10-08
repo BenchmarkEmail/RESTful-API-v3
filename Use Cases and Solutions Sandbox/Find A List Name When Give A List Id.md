@@ -1,22 +1,19 @@
-# Use Case:
+# Use Case
 
  Given a list id, \
  When I want the list details like name, creation date, active contact count, the fields being used for the contacts. \
  Then what endpoint do I use?
 
+---
 
-## Solution:  
-
+## Solution
 
 
 1.  Make a request using your list Id
     1.  **GET /Contact/{{ListID}}**
 1.  Response body will have all information about the list or segment    
 
-
 ## Directions and Steps 
-
-
 
 1.  Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
 1.  Prerequisite: you already have a list id but nothing else.

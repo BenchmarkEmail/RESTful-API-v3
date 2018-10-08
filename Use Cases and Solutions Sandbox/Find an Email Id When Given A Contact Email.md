@@ -1,9 +1,11 @@
-# Use Case:
+# Use Case
 
 Given a list id, and an email address. \
 Then how do I find an email id for other API calls, but only have my email name
 
-## Solution:  
+---
+
+## Solution
 
 1. Get the email ID to be used for the report request
     1.  `GET /Emails`  [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3) 

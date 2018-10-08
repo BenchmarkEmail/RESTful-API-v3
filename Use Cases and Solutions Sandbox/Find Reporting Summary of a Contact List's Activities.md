@@ -1,14 +1,13 @@
-# Use Case:
+# Use Case
 
 Given a list id,
 Then I want to see the aggregate summary of metrics for that list, ie:   \
 Active Contact Counts, Bounced Contact Count, Hard Bounce Contact Count, Not Optin Contact Count, Optin Contact Count, \
 Soft Contact Count, Unsubscribe Contact Count
 
+---
 
-## Solution:  
-
-
+## Solution
 
 1.  Prerequisite, Get a list id 
     1.  3 ways to get the list id #: 
@@ -18,10 +17,7 @@ Soft Contact Count, Unsubscribe Contact Count
 1.  Make a request using your list Id 
     1.  **GET /Contact/{{ListID}}/ContactSummary**  [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
 
-
 ## Directions and Steps 
-
-
 
 1.  Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
 1.  Prerequisite: Have the list id # to search through.
