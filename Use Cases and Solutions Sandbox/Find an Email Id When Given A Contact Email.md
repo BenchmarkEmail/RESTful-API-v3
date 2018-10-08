@@ -1,3 +1,7 @@
+- [Use Case](#use-case)
+        - [Solution](#solution)
+        - [Directions and Steps](#directions-and-steps)
+  
 # Use Case
 
 Given a list id, and an email address. \

@@ -1,9 +1,11 @@
+- [Use Case](#use-case)
+    - [Solution](#solution)
+    - [Directions and Steps](#directions-and-steps)
+
 # Use Case
 
 Given a benchmark email account. \
 Then I want to see the recipients on a list who are unsubscribed. 
-
----
 
 ## Solution
 

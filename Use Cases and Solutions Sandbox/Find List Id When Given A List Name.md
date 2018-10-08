@@ -1,9 +1,11 @@
+- [Use Case](#use-case)
+    - [Solution](#solution)
+    - [Variations of Problem](#variations-of-problem)
+
 # Use Case
 
 Given a list name, \
 Then how to find its list Id?
-
----
 
 ## Solution
 

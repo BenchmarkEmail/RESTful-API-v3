@@ -1,6 +1,7 @@
 - [Use Case:](#use-case)
     - [Solution](#solution)
     - [Variation(s) of problem.](#variations-of-problem)
+
 # Use Case:
 
 Given a benchmarkemail account. \

@@ -1,3 +1,8 @@
+- [Use Case:](#use-case)
+    - [Solution:](#solution)
+    - [Directions and Steps](#directions-and-steps)
+    - [Variations of problem:](#variations-of-problem)
+  
 # Use Case:
 
 Given an email address and attributes,
@@ -10,9 +15,9 @@ Then I want to add the contact to an list(s).
 1.  Pull my lists and get its respective list id # from by bme account.
     1.  **GET /Contact/ **(scenario to search amongst your pre-existing lists) [link:](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b)
         1.  where SearchFilter is the partial or full name of the list
-        1.  where PageSize is the number of items to be returned for each [image:](https://www.dropbox.com/s/h2sw440mz9gfgha/2018-09-06_11-03-40.png?dl=0 )        	
-1.  Identify which list I want to add to so I can add contact(s) to that specific list, 
-1.  Add your contact using the listID and your contacts information
+        2.  where PageSize is the number of items to be returned for each [image:](https://www.dropbox.com/s/h2sw440mz9gfgha/2018-09-06_11-03-40.png?dl=0 )        	
+2.  Identify which list I want to add to so I can add contact(s) to that specific list, 
+3.  Add your contact using the listID and your contacts information
 
 ## Directions and Steps
 
