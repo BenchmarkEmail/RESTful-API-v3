@@ -2,7 +2,8 @@
 
 Given a list id,
 Then I want to see the aggregate summary of metrics for that list, ie:   \
-Active Contact Counts, Bounced Contact Count, Hard Bounce Contact Count, Not Optin Contact Count, Optin Contact Count, Soft Contact Count, Unsubscribe Contact Count
+Active Contact Counts, Bounced Contact Count, Hard Bounce Contact Count, Not Optin Contact Count, Optin Contact Count, \
+Soft Contact Count, Unsubscribe Contact Count
 
 
 ## Solution:  

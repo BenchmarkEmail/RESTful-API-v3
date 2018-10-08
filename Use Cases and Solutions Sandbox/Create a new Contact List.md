@@ -1,7 +1,7 @@
 
 # Use Case:
 
-Given a new List Name,
+Given a new List Name, \
 Then I want create a new list and get its list Id #
 
 Variation of problem. I want to get the list Id # of pre-existing lists [link](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing)

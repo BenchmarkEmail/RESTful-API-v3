@@ -1,6 +1,6 @@
 # Use Case:
 
-Given an benchmark email account,
+Given an benchmark email account, \
 Then I want to see the recipients on a list who are unsubscribed. 
 
 

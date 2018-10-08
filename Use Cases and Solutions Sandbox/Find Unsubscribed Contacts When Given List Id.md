@@ -1,6 +1,6 @@
-# Use Case:
+# Use Case
 
-Given a benchmark email account.
+Given a benchmark email account. \
 Then I want to see the recipients on a list who are unsubscribed. 
 
 

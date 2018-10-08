@@ -1,6 +1,6 @@
 # Use Case:
 
-Given an benchmarkemail account.
+Given an benchmarkemail account. \
 Then How do I see all its lists and the details of those lists?
 
 

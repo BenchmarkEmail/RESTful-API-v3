@@ -1,6 +1,6 @@
 # Use Case:
 
-Given an email and the contacts attributes,
+Given an email and the contacts attributes, \
 Then I want to add the contact to a list.
 
 Variations of problem:

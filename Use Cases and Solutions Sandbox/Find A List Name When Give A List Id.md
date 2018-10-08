@@ -1,7 +1,7 @@
 # Use Case:
 
- Given a list id,
- When I want the list details like name, creation date, active contact count, the fields being used for the contacts.
+ Given a list id, \
+ When I want the list details like name, creation date, active contact count, the fields being used for the contacts. \
  Then what endpoint do I use?
 
 
