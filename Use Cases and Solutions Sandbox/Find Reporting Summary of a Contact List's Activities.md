@@ -19,7 +19,7 @@ Soft Contact Count, Unsubscribe Contact Count
         1.  [General solution](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing), 
         1.  [Search a for a list's details by its name](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing)
 1.  Make a request using your list Id 
-    1.  **GET /Contact/{{ListID}}/ContactSummary**  [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
+    1.  `GET /Contact/{{ListID}}/ContactSummary`  [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
 
 ## Directions and Steps 
 
@@ -29,8 +29,8 @@ Soft Contact Count, Unsubscribe Contact Count
         1.  [Documentation link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b), 
         1.  [General solution](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing), 
         1.  [Search a for a list's details by its name](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing)
-1.  Use a GET call ** **
-    1.  **GET /Contact/{{ListID}}/ContactSummary ** [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
+1.  Use a GET call ` `
+    1.  `GET /Contact/{{ListID}}/ContactSummary ` [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
 1.  Confirm the response provides 
     1.  Response status of 200 OK 
     1.  Confirm response body 
