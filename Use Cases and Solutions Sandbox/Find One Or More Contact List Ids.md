@@ -1,6 +1,7 @@
 # Use Case:
 
-Requirement: I want see all my lists and the details of those individual lists 
+Given an benchmarkemail account.
+Then How do I see all its lists and the details of those lists?
 
 
 ## Solution:  

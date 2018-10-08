@@ -1,6 +1,7 @@
 # Use Case:
 
-I want to see the recipients on a list who are unsubscribed. 
+Given a benchmark email account.
+Then I want to see the recipients on a list who are unsubscribed. 
 
 
 ## Solution:  

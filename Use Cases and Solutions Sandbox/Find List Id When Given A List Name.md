@@ -1,6 +1,7 @@
 # Use Case:
 
-I have my list name and want to find its list Id # for making other API requests.
+Given a list name,
+Then how to find its list Id?
 
 
 ## Solution:  

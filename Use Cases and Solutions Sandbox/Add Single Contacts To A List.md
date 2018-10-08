@@ -1,7 +1,7 @@
 # Use Case:
 
-Given and contact's email address and attributes,
-Then I want to add the contact to an list(s).
+Given an email and the contacts attributes,
+Then I want to add the contact to a list.
 
 Variations of problem:
 

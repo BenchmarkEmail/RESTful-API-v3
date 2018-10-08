@@ -1,7 +1,7 @@
 # Use Case:
 
-Given a list id, 
-Then I want to find an email id # for other API calls, but only have my email name
+Given a list id, and an email address.
+Then how do I find an email id for other API calls, but only have my email name
 
 ## Solution:  
 
