@@ -1,6 +1,7 @@
 # Use Case:
 
-I want to add contact(s) to my benchmarkemail account list(s).
+Given and contact's email address and attributes,
+Then I want to add the contact to an list(s).
 
 Variations of problem:
 
