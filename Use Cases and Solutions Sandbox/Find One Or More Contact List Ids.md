@@ -1,9 +1,10 @@
+- [Use Case:](#use-case)
+    - [Solution](#solution)
+    - [Variation(s) of problem.](#variations-of-problem)
 # Use Case:
 
 Given a benchmarkemail account. \
 Then How do I see all its lists and the details of those lists?
-
-__
 
 ## Solution
 
