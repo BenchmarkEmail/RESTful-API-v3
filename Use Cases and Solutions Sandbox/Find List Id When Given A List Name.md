@@ -17,7 +17,7 @@ I have my list name and want to find its list Id # for making other API requests
         1.  In Subdirectory: General 
         1.  Find _GET 'Get a list of contacts' _[link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b)
         1.  Extra tip: Add a "SearchFilter" query string parameter to search the title of the list name using a value of a whole or partial list list name	 \
-ex. https://clientapi.benchmarkemail.com/Contact/**?SearchFilter={{SearchFilter}}**
+ex. `https://clientapi.benchmarkemail.com/Contact/?SearchFilter={{SearchFilter}}`
 1.  Send Request
 1.  If  Response HTTP Headers status to be '200 OK'
     1.  Check response body for 'Response.Status' to be a value of 1 [image](https://www.dropbox.com/s/1sktz2e2yfg60dl/2018-09-13_13-22-21.png?dl=0)
