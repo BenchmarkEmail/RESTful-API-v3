@@ -1,4 +1,4 @@
-# Problem:
+# Use Case:
 
 I have my list name and want to find its list Id # for making other API requests.
 
