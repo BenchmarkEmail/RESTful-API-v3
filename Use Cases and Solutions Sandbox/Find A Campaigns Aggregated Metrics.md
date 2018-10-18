@@ -1,6 +1,6 @@
 - [Use case:](#use-case)
     - [Prerequisites](#prerequisites)
-    - [Solution _using the Benchmark API v3.0 RESTful endpoints_ on web or github](#solution-_using-the-benchmark-api-v30-restful-endpoints_-on-web-or-github)
+    - [Solution](#solution)
         - [Response Notes](#response-notes)
 
 # Use case:
@@ -14,12 +14,13 @@ You have a contact list id and want to get a summary of common metrics for my em
 
 1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
 1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
-2. A benchmark email account. APIs are included with a free account [link](https://ui.benchmarkemail.com/Login)
+1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3) 
+1. A benchmark email account. APIs are included with a free account [link](https://ui.benchmarkemail.com/Login)
    * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
 
-## Solution _using the Benchmark API v3.0 RESTful endpoints_ on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3)
+## Solution
 
----
+<sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
 1. Make a request for the email ID to be used for the report request [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3)
 
