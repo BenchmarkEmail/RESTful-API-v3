@@ -1,31 +1,45 @@
 - [Use case:](#use-case)
-    - [Solution:](#solution)
-    - [Directions and Steps](#directions-and-steps)
+    - [Prerequisites](#prerequisites)
+    - [Solution _using the Benchmark API v3.0 RESTful endpoints_ on web or github](#solution-_using-the-benchmark-api-v30-restful-endpoints_-on-web-or-github)
+        - [Response Notes](#response-notes)
 
 # Use case:
 
-Given a contact list id,
-Then I want to get my summary of common metrics for my email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc/
+You have a contact list id and want to get a summary of common metrics for my email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc.
 
-## Solution 
 
-1. Prerequisite: Get the email ID to be used for the report request
-    1. `GET /Emails ` [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3) 
-        1. /Emails/?Filter={{Filter}}
-1. Make a request using the email id, above, to get the summary data such as Opens, Clicks, Bounces, Unsubscribes 
-    1. `GET /Emails/{{ID}}/Report  `[link](https://developer.benchmarkemail.com/#8819bcb9-afc9-9e7c-b31a-44aab47ed758)
+## Prerequisites
 
-## Directions and Steps 
+---
 
-1. Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
-1. Use a GET call ` `
-    1. `GET /Emails ` [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3) 
-        1. where the call can be enhanced by using the optional parameters on seen in the [documentation](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3) 
-        1. In the response body see the Response.Data array of a list objects. Find the <code>Response.Data[0..n].ID </code>[screenshot](https://www.dropbox.com/s/9m0t0hvhq0g4wza/2018-09-19_10-52-59.png?dl=0)
-1. Use a GET call
-    1. <strong>GET /Emails/{ID}/Report  </strong>[link](https://developer.benchmarkemail.com/#8819bcb9-afc9-9e7c-b31a-44aab47ed758)
-1. Confirm the response provides 
+1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
+1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
+2. A benchmark email account. APIs are included with a free account [link](https://ui.benchmarkemail.com/Login)
+   * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
+
+## Solution _using the Benchmark API v3.0 RESTful endpoints_ on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3)
+
+---
+
+1. Make a request for the email ID to be used for the report request [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3)
+
+```js
+     GET /Emails
+     or
+     GET /Emails/?Filter={{Filter}}
+     //where the call can be enhanced by using the optional parameters, see documentation in link above
+     //In the response body see the Response.Data array of a list objects.Seen in reesponse body as Response.Data[0..n].ID
+```
+
+2. Make a request using the email id, above, to get the summary data such as Opens, Clicks, Bounces, Unsubscribes [link](https://developer.benchmarkemail.com/#8819bcb9-afc9-9e7c-b31a-44aab47ed758)
+
+```js
+    GET /Emails/{{ID}}/Report
+```
+
+### Response Notes
+
+1. Confirm the response provides
     1. a status of 200 OK 
-    1. the response body does NOT contain a value of -1 for Response.Status 
-    1. Confirm Response.Status value is 1 [screenshot](https://www.dropbox.com/s/ewwb8p0pshwwwxz/2018-09-13_13-41-35.png?dl=0)
-1. See the various aggregated metrics such as Opens, Clicks, Bounces, Unsubscribes [screenshot](https://www.dropbox.com/s/bijnxgti7e5ga6l/2018-09-13_13-44-41.png?dl=0)
+    1. the response body does NOT contain a value of -1 for Response.Status
+    1. Confirm Response.Status value is 1.
