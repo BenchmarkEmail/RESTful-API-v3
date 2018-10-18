@@ -3,7 +3,7 @@
   - [Solution](#solution)
     - [Response Notes](#response-notes)
   - [Variations of problem](#variations-of-problem)
-  - [Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/](#index-of-all-use-cases-linkhttpsbenchmarkemailgithubiorestful-api-v3)
+  - [Index of all Use Cases link](#index-of-all-use-cases-link)
 
 # Use case:
 
@@ -58,4 +58,4 @@ Add an email address and the contact information to a list
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/
+## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)

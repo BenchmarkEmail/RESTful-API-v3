@@ -3,7 +3,7 @@
   - [Solution](#solution)
     - [Response Notes](#response-notes)
   - [Variation(s) of problem](#variations-of-problem)
-  - [Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/](#index-of-all-use-cases-linkhttpsbenchmarkemailgithubiorestful-api-v3)
+  - [Index of all Use Cases link](#index-of-all-use-cases-link)
 
 # Use case
 
@@ -44,4 +44,4 @@ I to want create a new list and get its list Id #
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/
+## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)
