@@ -15,7 +15,7 @@ I to want create a new list and get its list Id #
 1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
 1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
 1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3) 
-1. A benchmark email account. APIs are included with a free account [link](https://ui.benchmarkemail.com/Login)
+1. A benchmark email account. API usage included with a free account [link](https://ui.benchmarkemail.com/Login)
    * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
 
 ## Solution
