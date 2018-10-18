@@ -3,6 +3,7 @@
   - [Solution](#solution)
     - [Response Notes](#response-notes)
   - [Variations of problem](#variations-of-problem)
+  - [Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/](#index-of-all-use-cases-linkhttpsbenchmarkemailgithubiorestful-api-v3)
 
 # Use case:
 
@@ -52,5 +53,9 @@ Add an email address and the contact information to a list
 
 ## Variations of problem
 
-1. I want to get a list id # for an existing list(s). 
-1. I want to create a new list and get its list id #. 
+1. I want to get a list id # for an existing list(s).
+1. I want to create a new list and get its list id #.
+
+---
+
+## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/

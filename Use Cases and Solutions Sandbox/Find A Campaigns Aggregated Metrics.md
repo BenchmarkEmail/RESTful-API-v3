@@ -2,11 +2,11 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
         - [Response Notes](#response-notes)
+    - [Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/](#index-of-all-use-cases-linkhttpsbenchmarkemailgithubiorestful-api-v3)
 
 # Use case:
 
 You have a contact list id and want to get a summary of common metrics for my email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc.
-
 
 ## Prerequisites
 
@@ -44,3 +44,7 @@ You have a contact list id and want to get a summary of common metrics for my em
     1. a status of 200 OK 
     1. the response body does NOT contain a value of -1 for Response.Status
     1. Confirm Response.Status value is 1.
+
+---
+
+## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/
