@@ -1,11 +1,10 @@
-- [Use case:](#use-case)
+- [Use case](#use-case)
   - [Prerequisites](#prerequisites)
   - [Solution](#solution)
     - [Response Notes](#response-notes)
   - [Index of all Use Cases link](#index-of-all-use-cases-link)
 
-# Use case:
-
+# Use case
 
 
 ## Prerequisites

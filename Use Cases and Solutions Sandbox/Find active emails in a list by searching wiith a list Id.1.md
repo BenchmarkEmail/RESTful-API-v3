@@ -6,7 +6,7 @@
 
 # Use case
 
-You want to find the active email address, exluding the hard-bounces and unsubscirbes in a list by searching with a list Id #.
+You want to find the active email address(es) in a list, exluding the hard-bounces and unsubscirbes by searching with a list Id #.
 
 ## Prerequisites
 
