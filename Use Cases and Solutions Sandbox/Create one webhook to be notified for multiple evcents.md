@@ -22,7 +22,7 @@ You want to create one webhook to be notified for multiple events on a contact f
 
 <sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
-1. {Explain} [link]()
+1. Make a request to create a webhook, the body of the request will given a value of 1 for being notified of an event and a 0 value for not being notified with the given URL [link](https://developer.benchmarkemail.com/#a83163d0-3af1-9671-8a8c-c7d4d31e6c13)
 
 ```js
      POST /Contact/{{ListID}}/Webhooks
