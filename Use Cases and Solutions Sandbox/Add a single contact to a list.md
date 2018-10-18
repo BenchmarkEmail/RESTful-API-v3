@@ -33,13 +33,13 @@ Add an email address and the contact information to a list
      // id found at Response.Data[0..n].ID
 ```
 
-2. Add your new contact by providing the contacts information and the listID from above. [link](https://developer.benchmarkemail.com/#375fa862-2ac6-9d5d-3669-6e9a23524241). For a list of all data fields available to add contact information, see [link](https://www.benchmarkemail.com/models.htm#ContactDetailRecord)
+2. Add your new contact by providing the contacts information and the listID from above, [link](https://developer.benchmarkemail.com/#375fa862-2ac6-9d5d-3669-6e9a23524241). For a list of all data fields available to add contact information, see [link](https://www.benchmarkemail.com/models.htm#ContactDetailRecord)
 
 ```js
     POST /Contact/{{ListID}}/ContactDetails
     //where the minimum data to provide in the request body is:
       {"Data":{"Email":"{{EMail}}","FirstName":"{{FirstName}}","LastName":"{{LastName}}","EmailPerm":"{{1|0}}"}}
-    //Note the key in the request of "EmailPerm". This be a 1 or it will not save and will be an error
+    //Note the key in the request of "EmailPerm". This must be a 1 or it will not save and will be an error
 ```
 
 
