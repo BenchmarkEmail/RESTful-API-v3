@@ -6,7 +6,8 @@
 
 # Use case
 
-
+You want to find the contact list general detials by searching with its contact list name.
+examples of contact list data details [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord)
 ## Prerequisites
 
 ---
@@ -21,13 +22,12 @@
 
 <sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
-1. {Explain} [link]()
+1. Make a request to search for the contact list [link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The response body will provide the list details if it finds the list queried [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord).
 
 ```js
-     Verb /Path
-     or
-     Verb /Path
-     //
+    GET /Contact/?SearchFilter={{SearchFilter}}
+    //where {{SearchFilter}} will be replaced with all or part of your contact list name.
+    //in the response body find Resonse.Data[1..n] to see the details for the respective list name
 ```
 
 ### Response Notes
