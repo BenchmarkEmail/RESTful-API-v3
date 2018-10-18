@@ -8,7 +8,7 @@
 - [Create webhook to be notified of unsubscribes to a list](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20webhook%20to%20be%20notified%20of%20unsubscribes%20to%20a%20list.md#use-case)
 - [Create webhook to be notified when a contact field changes](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20webhook%20to%20be%20notified%20when%20a%20contact%20field%20changes.md#use-case)
 - [Create webhook to be notified when an email address has changed](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20webhook%20to%20be%20notified%20when%20an%20email%20address%20has%20changed.md#use-case)
-- [Create one webhook to be notified for multiple evcents](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20one%20webhook%20to%20be%20notified%20for%20multiple%20events.md#use-case)
+- [Create one webhook to be notified for multiple evcents](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20one%20webhook%20to%20be%20notified%20for%20multiple%20evcents.md#use-case)
 
 ### Email Campaigns
 
