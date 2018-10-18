@@ -14,7 +14,7 @@ You have a contact list id and want to get a summary of common metrics for my em
 
 1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
 1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
-1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3) 
+1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
 1. A benchmark email account. APIs are included with a free account [link](https://ui.benchmarkemail.com/Login)
    * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
 

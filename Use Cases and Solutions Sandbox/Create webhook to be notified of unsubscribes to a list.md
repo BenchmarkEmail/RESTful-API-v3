@@ -14,7 +14,7 @@ You want to create a webhook to be notified when a person unsubscribes from a li
 
 1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
 1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
-1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3) 
+1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
 1. A benchmark email account. API usage is included with a free account [link](https://ui.benchmarkemail.com/Login)
    * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
 
