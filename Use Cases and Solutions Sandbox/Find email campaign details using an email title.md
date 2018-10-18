@@ -1,12 +1,12 @@
 - [Use case:](#use-case)
-  - [Prerequisites](#prerequisites)
-  - [Solution](#solution)
-    - [Response Notes](#response-notes)
-  - [Index of all Use Cases link](#index-of-all-use-cases-link)
+    - [Prerequisites](#prerequisites)
+    - [Solution](#solution)
+        - [Response Notes](#response-notes)
+    - [Index of all Use Cases link](#index-of-all-use-cases-link)
 
 # Use case:
 
-
+You want to find an email campaign id # and details of the campaign when you know the email campaign name.
 
 ## Prerequisites
 
@@ -22,13 +22,14 @@
 
 <sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
-1. {Explain} [link]()
+1. Make a request to find the email by name [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3). For a full list of all the details returned see [link](https://www.benchmarkemail.com/models.htm#EmailListData)
 
 ```js
-     Verb /Path
+     GET /Emails
+     //returns all email campaigns and their details
      or
-     Verb /Path
-     //
+     GET /Emails/?Filter={{Filter}}
+     //where the {{Filter}} is replaced with your email campaign name.
 ```
 
 ### Response Notes
