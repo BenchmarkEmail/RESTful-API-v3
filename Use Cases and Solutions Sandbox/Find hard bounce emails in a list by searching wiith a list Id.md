@@ -32,7 +32,7 @@ You want to find the hard-bounces in a list by searching with a list Id #.
     //
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

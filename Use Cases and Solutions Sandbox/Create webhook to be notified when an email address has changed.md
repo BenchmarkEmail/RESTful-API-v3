@@ -43,7 +43,7 @@ You want to create a webhook to be notified when a email address has changed for
      //where {{ListID}} will be your list id this webhook will be associated with
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

@@ -32,7 +32,7 @@ You want to find an email campaign id # and details of the campaign when you kno
      //where the {{Filter}} is replaced with your email campaign name.
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

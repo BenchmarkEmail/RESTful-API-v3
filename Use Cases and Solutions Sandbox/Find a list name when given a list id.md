@@ -29,7 +29,7 @@ You have a list id, and want the list details like list name, creation date, act
     //where response body will provide list info. and fields used for contacts
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

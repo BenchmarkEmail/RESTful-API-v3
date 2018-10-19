@@ -43,7 +43,7 @@ You want to create one webhook to be notified for multiple events on a contact f
      //where {{ListID}} will be your list id this webhook will be associated with
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

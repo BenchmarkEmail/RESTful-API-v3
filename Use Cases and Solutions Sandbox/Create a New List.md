@@ -1,7 +1,7 @@
 - [Problem Statement](#problem-statement)
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
-        - [Response Notes](#response-notes)
+    - [Validate Response from Server](#validate-response-from-server)
     - [Variation(s) of problem](#variations-of-problem)
     - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
@@ -31,7 +31,7 @@ I to want create a new list and get its list Id #
    //Take the ID returned for future use in API calls
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 

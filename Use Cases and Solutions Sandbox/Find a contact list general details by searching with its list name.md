@@ -30,7 +30,7 @@ examples of contact list data details [link](https://www.benchmarkemail.com/mode
     //in the response body find Resonse.Data[1..n] to see the details for the respective list name
 ```
 
-### Response Notes
+## Validate Response from Server
 
 1. Confirm the response provides
     1. a status of 200 OK 
