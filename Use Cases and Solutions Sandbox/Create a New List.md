@@ -1,9 +1,9 @@
-- [Problem Statement](#use-case)
-  - [Prerequisites](#prerequisites)
-  - [Solution](#solution)
-    - [Response Notes](#response-notes)
-  - [Variation(s) of problem](#variations-of-problem)
-  - [Index of all Problem Statements link](#index-of-all-use-cases-link)
+- [Problem Statement](#problem-statement)
+    - [Prerequisites](#prerequisites)
+    - [Solution](#solution)
+        - [Response Notes](#response-notes)
+    - [Variation(s) of problem](#variations-of-problem)
+    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 

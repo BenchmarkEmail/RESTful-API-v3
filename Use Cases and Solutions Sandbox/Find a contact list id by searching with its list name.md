@@ -1,4 +1,4 @@
-- [Problem Statement](#use-case)
+- [Problem Statement](#problem-statement)
   - [Prerequisites](#prerequisites)
   - [Solution](#solution)
     - [Response Notes](#response-notes)

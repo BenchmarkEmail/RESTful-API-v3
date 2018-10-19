@@ -1,4 +1,4 @@
-- [Problem Statement](#use-case)
+- [Problem Statement](#problem-statement)
     - [Solution](#solution)
     - [Directions and Steps](#directions-and-steps)
   
