@@ -2,9 +2,9 @@
   - [Prerequisites](#prerequisites)
   - [Solution](#solution)
     - [Response Notes](#response-notes)
-  - [Index of all Use Cases link](#index-of-all-use-cases-link)
+  - [Index of all Problem Statements link](#index-of-all-use-cases-link)
 
-# Use case:
+# Problem Statement
 
 You have a list id, and want the list details like list name, creation date, active contact count, the fields being used for the contacts in the list
 
@@ -38,4 +38,4 @@ You have a list id, and want the list details like list name, creation date, act
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

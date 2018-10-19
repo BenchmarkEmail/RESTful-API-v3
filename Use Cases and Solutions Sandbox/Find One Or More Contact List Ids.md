@@ -2,7 +2,7 @@
     - [Solution](#solution)
     - [Variation(s) of problem.](#variations-of-problem)
 
-# Use Case:
+# Problem Statement
 
 Given a benchmarkemail account. \
 Then How do I see all its lists and the details of those lists?

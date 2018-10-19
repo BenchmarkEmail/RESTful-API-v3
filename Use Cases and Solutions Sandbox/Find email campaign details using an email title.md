@@ -2,9 +2,9 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
         - [Response Notes](#response-notes)
-    - [Index of all Use Cases link](#index-of-all-use-cases-link)
+    - [Index of all Problem Statements link](#index-of-all-use-cases-link)
 
-# Use case:
+# Problem Statement
 
 You want to find an email campaign id # and details of the campaign when you know the email campaign name.
 
@@ -41,4 +41,4 @@ You want to find an email campaign id # and details of the campaign when you kno
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

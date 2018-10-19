@@ -2,9 +2,9 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
         - [Response Notes](#response-notes)
-    - [Index of all Use Cases link](#index-of-all-use-cases-link)
+    - [Index of all Problem Statements link](#index-of-all-use-cases-link)
 
-# Use case
+# Problem Statement
 
 You want to create a webhook to be notified when a person subscribes to a list [link](https://developer.benchmarkemail.com/#a83163d0-3af1-9671-8a8c-c7d4d31e6c13)
 
@@ -52,4 +52,4 @@ You want to create a webhook to be notified when a person subscribes to a list [
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

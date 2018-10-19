@@ -2,7 +2,7 @@
     - [Solution](#solution)
     - [Directions and Steps](#directions-and-steps)
 
-# Use Case
+# Problem Statement
 
 Given a list id,
 Then I want to see the aggregate summary of metrics for that list, ie:   \

@@ -2,9 +2,9 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
         - [Response Notes](#response-notes)
-    - [Index of all Use Cases link](#index-of-all-use-cases-link)
+    - [Index of all Problem Statements link](#index-of-all-use-cases-link)
 
-# Use case
+# Problem Statement
 
 You want to find the contact list approval status by searching with its contact list name.
 examples of contact list data details [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord)
@@ -39,4 +39,4 @@ examples of contact list data details [link](https://www.benchmarkemail.com/mode
 
 ---
 
-## Index of all Use Cases [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
