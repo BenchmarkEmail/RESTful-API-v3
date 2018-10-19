@@ -43,4 +43,4 @@ You want to find the unsubscribe emails in a list by searching with a list Id #.
 
 ---
 
-## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+# Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

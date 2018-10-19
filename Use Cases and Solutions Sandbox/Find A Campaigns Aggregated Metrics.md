@@ -2,7 +2,7 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
     - [Validate Response from Server](#validate-response-from-server)
-    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
+- [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 
@@ -47,4 +47,4 @@ You have a contact list id and want to get a summary of common metrics for my em
 
 ---
 
-## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+# Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

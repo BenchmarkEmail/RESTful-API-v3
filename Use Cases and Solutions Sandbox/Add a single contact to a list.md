@@ -58,4 +58,4 @@ Add an email address and the contact information to a list
 
 ---
 
-## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+# Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

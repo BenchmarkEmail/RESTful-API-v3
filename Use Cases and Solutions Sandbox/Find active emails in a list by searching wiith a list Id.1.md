@@ -42,4 +42,4 @@ You want to find the active email address(es) in a list, exluding the hard-bounc
 
 ---
 
-## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+# Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)

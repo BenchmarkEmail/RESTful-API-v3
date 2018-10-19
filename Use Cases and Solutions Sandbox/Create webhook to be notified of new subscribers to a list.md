@@ -52,4 +52,4 @@ You want to create a webhook to be notified when a person subscribes to a list [
 
 ---
 
-## Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
+# Index of all Problem Statements [link](https://benchmarkemail.github.io/RESTful-API-v3/)
