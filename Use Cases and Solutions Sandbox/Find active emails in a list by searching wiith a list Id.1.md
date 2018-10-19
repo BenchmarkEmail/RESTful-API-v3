@@ -2,7 +2,7 @@
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
         - [Response Notes](#response-notes)
-    - [Index of all Problem Statements link](#index-of-all-use-cases-link)
+    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 
