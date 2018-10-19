@@ -1,10 +1,10 @@
 - [Problem](#problem)
-  - [Solution](#solution)
-  - [Directions and Steps](#directions-and-steps)
+    - [Solution](#solution)
+    - [Directions and Steps](#directions-and-steps)
 
 # Problem
 
-I want to get my summary of common metrics for my email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc/
+You want to get a summary of common metrics related to your email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc
 
 ## Solution
 

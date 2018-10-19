@@ -6,7 +6,7 @@
 
 # Problem Statement
 
-You have a contact list id and want to get a summary of common metrics for my email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc.
+You have a contact list id and want to get a summary of common metrics for your email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc.
 
 ## Prerequisites
 
