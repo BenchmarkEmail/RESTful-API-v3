@@ -1,9 +1,9 @@
 - [Problem Statement](#problem-statement)
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
-        - [Response Notes](#response-notes)
+    - [Validate Response from Server](#validate-response-from-server)
     - [Variations of problem](#variations-of-problem)
-    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
+- [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 
