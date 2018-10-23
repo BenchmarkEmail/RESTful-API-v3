@@ -4235,6 +4235,20 @@
                   "body": "{\"Response\":{\"ID\":\"\",\"Status\":\"1\"}}"
                 }
               ]
+            },
+            {
+              "_postman_id": "9a3dd8f3-4cd5-447c-9ab2-0ff80f744dc7",
+              "name": "Client Profile Details",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
@@ -33930,6 +33944,24 @@
         {
           "_postman_id": "c74516bd-2b70-45a2-957e-79a1108231fa",
           "name": "Upload an Image",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "329e0a1a-ab72-4b7a-94ad-0f1a0fc6ef6b",
+                "exec": [
+                  "let json = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Response body status is 1\", function() {\r",
+                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.environment.set(\"ImageID\", json.Response.ID);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
             "method": "POST",
             "header": [
@@ -33949,9 +33981,9 @@
               "formdata": [
                 {
                   "key": "Data",
-                  "value": null,
                   "description": "Image File to be uploaded",
-                  "type": "file"
+                  "type": "file",
+                  "value": null
                 }
               ]
             },
