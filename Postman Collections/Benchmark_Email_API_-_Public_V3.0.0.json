@@ -4246,7 +4246,7 @@
                   "mode": "raw",
                   "raw": ""
                 },
-                "url": ""
+                "url": "https://restapi.benchmarkemail.com/Client/ProfileDetails"
               },
               "response": []
             }
