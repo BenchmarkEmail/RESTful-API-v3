@@ -1491,7 +1491,7 @@
             },
             {
               "_postman_id": "b426c42b-d180-4c63-ab4a-f80ed0af4945",
-              "name": "Change Security PIN  Copy",
+              "name": "/Client/Authenticate",
               "request": {
                 "method": "POST",
                 "header": [
