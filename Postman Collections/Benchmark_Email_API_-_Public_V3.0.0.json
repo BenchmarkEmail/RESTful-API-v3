@@ -1511,7 +1511,7 @@
                   "raw": "{\"ResetPIN\": \"{{New PIN}}\", \"ResetConfirmPIN\": \"{{Confirm New PIN}}\", \"ResetOldPIN\": \"{{Current PIN}}\"}"
                 },
                 "url": "https://restapi.benchmarkemail.com/Client/Authenticate",
-                "description": "<h4>Change Security PIN</h4>\n<b>Body Parameters (to be encoded as a JSON string)</b>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Required</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>ResetPIN</td>\n<td>Required</td>\n<td>New PIN</td>\n</tr>\n<tr>\n<td>ResetConfirmPIN</td>\n<td>Required</td>\n<td>Confirm New PIN</td>\n</tr>\n<tr>\n<td>ResetOldPIN</td>\n<td>Required</td>\n<td>Current PIN</td>\n</tr>\n</tbody>\n</table>\n<b>Response Body Parameters :</b>\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Type</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>retVal</td>\n      <td>string</td>\n      <td>return Value</td>\n    </tr>\n    <tr>\n      <td>Error</td>\n      <td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\" >ErrorData</a></td>\n      <td>Array of error</td>\n    </tr>\n    <tr>\n      <td>Status</td>\n      <td>string</td>\n      <td>1 = Successful, -1 Error</td>\n    </tr>\n  </tbody>\n</table>"
+                "description": "A means to acquire a temporary token to an account"
               },
               "response": [
                 {
