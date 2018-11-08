@@ -1379,7 +1379,7 @@
         },
         {
           "_postman_id": "dd4a209d-bcb6-47cf-98fd-9192d9dfe161",
-          "name": "Security Pin",
+          "name": "Security",
           "description": "",
           "item": [
             {
@@ -1409,6 +1409,113 @@
               "response": [
                 {
                   "id": "dd3084c6-02f1-4f0b-bc1d-05c194f56ac1",
+                  "name": "Change Security PIN ",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\"ResetPIN\": \"{{New PIN}}\", \"ResetConfirmPIN\": \"{{Confirm New PIN}}\", \"ResetOldPIN\": \"{{Current PIN}}\"}"
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Client/PIN"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "name": "Access-Control-Allow-Origin",
+                      "description": ""
+                    },
+                    {
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "name": "Cache-Control",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8",
+                      "name": "Content-Type",
+                      "description": ""
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 02 Nov 2017 10:06:11 GMT",
+                      "name": "Date",
+                      "description": ""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.0",
+                      "name": "Server",
+                      "description": ""
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked",
+                      "name": "Transfer-Encoding",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "name": "X-AspNet-Version",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "name": "X-Powered-By",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Errors\":[],\"Status\":\"1\",\"retVal\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "_postman_id": "b426c42b-d180-4c63-ab4a-f80ed0af4945",
+              "name": "/Client/Authenticate",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"ResetPIN\": \"{{New PIN}}\", \"ResetConfirmPIN\": \"{{Confirm New PIN}}\", \"ResetOldPIN\": \"{{Current PIN}}\"}"
+                },
+                "url": "https://restapi.benchmarkemail.com/Client/Authenticate",
+                "description": "A means to acquire a temporary token to an account"
+              },
+              "response": [
+                {
+                  "id": "03659c0a-7205-4a33-b443-88dc1ea6b62c",
                   "name": "Change Security PIN ",
                   "originalRequest": {
                     "method": "POST",
@@ -4235,6 +4342,60 @@
                   "body": "{\"Response\":{\"ID\":\"\",\"Status\":\"1\"}}"
                 }
               ]
+            },
+            {
+              "_postman_id": "9a3dd8f3-4cd5-447c-9ab2-0ff80f744dc7",
+              "name": "Client Profile Details",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "0277b45f-2ada-4587-9a89-e584dcfccd3f",
+                    "exec": [
+                      "let json = pm.response.json();\r",
+                      "  \r",
+                      "pm.test(\"Request was successful\", function() {\r",
+                      "  pm.response.to.be.success;\r",
+                      "});\r",
+                      "\r",
+                      "// pm.test(\"Expected Metadata properties of dc, api_endpoint, login, user_id\", function() {\r",
+                      "\r",
+                      "// //   pm.expect(json).to.have.property(\"dc\");\r",
+                      "// //   pm.expect(json).to.have.property(\"api_endpoint\");\r",
+                      "// //   pm.expect(json).to.have.property(\"login\");\r",
+                      "// //   pm.expect(json).to.have.property(\"user_id\");\r",
+                      "// //   pm.response.to.be.success;\r",
+                      "// });\r",
+                      "\r",
+                      "\r",
+                      "\r",
+                      "pm.environment.set(\"ClientId\", json.Response.client_id);"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://restapi.benchmarkemail.com/Client/ProfileDetails"
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
@@ -33930,6 +34091,24 @@
         {
           "_postman_id": "c74516bd-2b70-45a2-957e-79a1108231fa",
           "name": "Upload an Image",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "329e0a1a-ab72-4b7a-94ad-0f1a0fc6ef6b",
+                "exec": [
+                  "let json = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"Response body status is 1\", function() {\r",
+                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.environment.set(\"ImageID\", json.Response.ID);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
             "method": "POST",
             "header": [
@@ -33949,9 +34128,9 @@
               "formdata": [
                 {
                   "key": "Data",
-                  "value": null,
                   "description": "Image File to be uploaded",
-                  "type": "file"
+                  "type": "file",
+                  "value": null
                 }
               ]
             },
