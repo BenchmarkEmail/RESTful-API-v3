@@ -33,5 +33,5 @@
 - [Upload an image to the image gallery](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Upload%20An%20Image.md)
 - [Find details of a specific image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20Details%20of%20an%20Image.md)
 - [Find a list of images or one specific image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20all%20images%20or%20filter%20for%20one.md)
-
+- [Delete an image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Delete%20an%20image.md)
 - from [google docs](https://docs.google.com/document/d/1Mos9EEGKrbq1WL8-2Vx77YYgBJsKHOuG5sSKTiHBL88/edit?usp=sharing)
