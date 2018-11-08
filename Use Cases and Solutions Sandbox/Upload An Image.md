@@ -6,6 +6,7 @@
 
 # Problem Statement
 
+Upload an image to your image gallery
 
 ## Prerequisites
 
