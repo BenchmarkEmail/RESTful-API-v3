@@ -31,5 +31,6 @@
 ## Images
 
 - [Upload an image to the image gallery](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Upload%20An%20Image.md)
+- [Find details of a specific image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20Details%20of%20an%20Image.md)
 
 - from [google docs](https://docs.google.com/document/d/1Mos9EEGKrbq1WL8-2Vx77YYgBJsKHOuG5sSKTiHBL88/edit?usp=sharing)
