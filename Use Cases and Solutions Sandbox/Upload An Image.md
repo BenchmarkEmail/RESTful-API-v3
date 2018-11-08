@@ -28,8 +28,8 @@ Upload an image to your image gallery
      POST /Images/
      // where the body will hold the image reference psuedo example:
      headers = {
-    'content-type': "multipart/form-data;, 
-    'Content-Type': "application/x-www-form-urlencoded",
+    'content-type': "multipart/form-data;",
+    'Content-Type': "application/x-www-form-urlencoded"
     }
     payload = "Content-Disposition: form-data; name=\"Data\"; filename=\"C:\\Path\\To\\Pictures\\benchmark-logo.1.jpg\" Content-Type: image/jpeg"
 ```
