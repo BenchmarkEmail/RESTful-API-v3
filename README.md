@@ -28,7 +28,7 @@
 - [Find the active contact count for a list by searching with its list name](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20the%20active%20contact%20count%20for%20a%20list%20by%20searching%20with%20its%20list%20name.md#problem-statement)
 - [Find a contact list's general details by searching with its list name](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20a%20contact%20list%20general%20details%20by%20searching%20with%20its%20list%20name.md#problem-statement)
 
-## Images
+### Images
 
 - [Upload an image to the image gallery](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Upload%20An%20Image.md)
 - [Find details of a specific image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20Details%20of%20an%20Image.md)
@@ -37,6 +37,6 @@
 - [Update and Image](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Update%20an%20Image.md)
 - from [google docs](https://docs.google.com/document/d/1Mos9EEGKrbq1WL8-2Vx77YYgBJsKHOuG5sSKTiHBL88/edit?usp=sharing)
 
-## Security
+### Security
 
 - [Get a 24 hour temorary API Token to make API requests](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Get%20a%2024hr%20API%20Token%20%20using%20id%20and%20password.md)
