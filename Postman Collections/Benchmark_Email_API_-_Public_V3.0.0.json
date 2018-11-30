@@ -7403,113 +7403,6 @@
               ]
             },
             {
-              "_postman_id": "b5fb4a7d-a545-481f-a31c-d4226183d4b5",
-              "name": "Get signup form list",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ListbuilderLists",
-                "description": "<h4>Get a list of contacts</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSignupFormRecord\">SignupFormRecord</a></td><td>Signup Form Data</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "d5d74d14-1cc8-4ce5-8b12-aad9debc4140",
-                  "name": "Get signup form list",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ListbuilderLists"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Mon, 23 Oct 2017 05:15:52 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"Response\": {\n        \"Count\": 4,\n        \"Data\": [\n            {\n                \"ID\": \"986572\",\n                \"Name\": \"Test Signup Form 1\"\n            },\n            {\n                \"ID\": \"986554\",\n                \"Name\": \"Test Signup Form 2\"\n            },\n            {\n                \"ID\": \"986547\",\n                \"Name\": \"Test Signup Form 3\"\n            },\n            {\n                \"ID\": \"986546\",\n                \"Name\": \"Test Signup Form 4\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
-                }
-              ]
-            },
-            {
               "_postman_id": "1c6852fc-f8bc-4a23-864d-1ac77383fa68",
               "name": "Get signup form list",
               "request": {
@@ -11576,7 +11469,7 @@
         },
         {
           "_postman_id": "b9c9ee1e-18f1-4e3f-9dbd-16cc1d51f6e1",
-          "name": "Reporting Metrics",
+          "name": "Reporting or  Metrics",
           "description": "",
           "item": [
             {
@@ -13219,6 +13112,28 @@
               ]
             }
           ],
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "16dbf7c1-6ca8-4084-aa57-3cde5d3f6b70",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "a6213b8d-671a-4e57-b32e-9407cfb2e8e4",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
@@ -13446,6 +13361,115 @@
             }
           ],
           "_postman_isSubFolder": true
+        },
+        {
+          "_postman_id": "cf0b0dd4-5d16-48ae-b59a-dc57a1728066",
+          "name": "/ || Create new List, Create List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "AuthToken",
+                "value": "{{Authentication Token}}",
+                "description": "Authentication Token"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "Content Type"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"Data\":{\"Name\":\"{{Name}}\",\"Description\":\"{{Description}}\"}}"
+            },
+            "url": "https://clientapi.benchmarkemail.com/Contact/",
+            "description": "<h4>Create List</h4>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Data</td><td>required</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Details</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Errors</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Details</td></tr>\r\n</tbody>\r\n</table>"
+          },
+          "response": [
+            {
+              "id": "d304ddf0-f56f-4acc-89fb-1f5546786530",
+              "name": "Create List",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "warning": ""
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type",
+                    "warning": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"Data\":{\"Name\":\"{{Name}}\",\"Description\":\"{{Description}}\"}}"
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "access-control-allow-origin",
+                  "key": "access-control-allow-origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Fri, 20 Oct 2017 10:00:17 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Microsoft-IIS/8.0",
+                  "description": ""
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": ""
+                },
+                {
+                  "name": "x-aspnet-version",
+                  "key": "x-aspnet-version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "x-powered-by",
+                  "key": "x-powered-by",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"0\",\"CreatedDateTime\":\"Oct 20 2017, 03:29 PM\",\"Description\":\"Rest API Creation 1\",\"Field10Name\":\"Job Title\",\"Field10Type\":\"1\",\"Field11Name\":\"Business Phone\",\"Field11Type\":\"1\",\"Field12Name\":\"Business Fax\",\"Field12Type\":\"1\",\"Field13Name\":\"Business Address\",\"Field13Type\":\"1\",\"Field14Name\":\"Business City\",\"Field14Type\":\"1\",\"Field15Name\":\"Business State\",\"Field15Type\":\"1\",\"Field16Name\":\"Business Zip\",\"Field16Type\":\"1\",\"Field17Name\":\"Business Country\",\"Field17Type\":\"1\",\"Field18Name\":\"Notes\",\"Field18Type\":\"1\",\"Field19Name\":\"Date 1\",\"Field19Type\":\"4\",\"Field1Name\":\"Address\",\"Field1Type\":\"1\",\"Field20Name\":\"Date 2\",\"Field20Type\":\"4\",\"Field21Name\":\"Extra 3\",\"Field21Type\":\"1\",\"Field22Name\":\"Extra 4\",\"Field22Type\":\"1\",\"Field23Name\":\"Extra 5\",\"Field23Type\":\"1\",\"Field24Name\":\"Extra 6\",\"Field24Type\":\"1\",\"Field2Name\":\"City\",\"Field2Type\":\"1\",\"Field3Name\":\"State\",\"Field3Type\":\"1\",\"Field4Name\":\"Zip\",\"Field4Type\":\"1\",\"Field5Name\":\"Country\",\"Field5Type\":\"1\",\"Field6Name\":\"Phone\",\"Field6Type\":\"1\",\"Field7Name\":\"Fax\",\"Field7Type\":\"1\",\"Field8Name\":\"Cell Phone\",\"Field8Type\":\"1\",\"Field9Name\":\"Company Name\",\"Field9Type\":\"1\",\"FirstnameLabel\":\"First Name\",\"ID\":\"15266225\",\"IsMasterUnsubscribe\":\"0\",\"LastnameLabel\":\"Last Name\",\"MiddlenameLabel\":\"Middle Name\",\"Name\":\"Rest API Creation 1\"},\"Errors\":[],\"Status\":\"1\"}}"
+            }
+          ]
         },
         {
           "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
@@ -14519,115 +14543,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
-            }
-          ]
-        },
-        {
-          "_postman_id": "cf0b0dd4-5d16-48ae-b59a-dc57a1728066",
-          "name": "/ || Create new List, Create List",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "AuthToken",
-                "value": "{{Authentication Token}}",
-                "description": "Authentication Token"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": "Content Type"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\"Data\":{\"Name\":\"{{Name}}\",\"Description\":\"{{Description}}\"}}"
-            },
-            "url": "https://clientapi.benchmarkemail.com/Contact/",
-            "description": "<h4>Create List</h4>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Data</td><td>required</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Details</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Errors</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Details</td></tr>\r\n</tbody>\r\n</table>"
-          },
-          "response": [
-            {
-              "id": "d304ddf0-f56f-4acc-89fb-1f5546786530",
-              "name": "Create List",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token",
-                    "warning": ""
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type",
-                    "warning": ""
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\"Data\":{\"Name\":\"{{Name}}\",\"Description\":\"{{Description}}\"}}"
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "access-control-allow-origin",
-                  "key": "access-control-allow-origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "cache-control",
-                  "key": "cache-control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "content-type",
-                  "key": "content-type",
-                  "value": "application/json; charset=utf-8",
-                  "description": ""
-                },
-                {
-                  "name": "date",
-                  "key": "date",
-                  "value": "Fri, 20 Oct 2017 10:00:17 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "server",
-                  "key": "server",
-                  "value": "Microsoft-IIS/8.0",
-                  "description": ""
-                },
-                {
-                  "name": "transfer-encoding",
-                  "key": "transfer-encoding",
-                  "value": "chunked",
-                  "description": ""
-                },
-                {
-                  "name": "x-aspnet-version",
-                  "key": "x-aspnet-version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "x-powered-by",
-                  "key": "x-powered-by",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"0\",\"CreatedDateTime\":\"Oct 20 2017, 03:29 PM\",\"Description\":\"Rest API Creation 1\",\"Field10Name\":\"Job Title\",\"Field10Type\":\"1\",\"Field11Name\":\"Business Phone\",\"Field11Type\":\"1\",\"Field12Name\":\"Business Fax\",\"Field12Type\":\"1\",\"Field13Name\":\"Business Address\",\"Field13Type\":\"1\",\"Field14Name\":\"Business City\",\"Field14Type\":\"1\",\"Field15Name\":\"Business State\",\"Field15Type\":\"1\",\"Field16Name\":\"Business Zip\",\"Field16Type\":\"1\",\"Field17Name\":\"Business Country\",\"Field17Type\":\"1\",\"Field18Name\":\"Notes\",\"Field18Type\":\"1\",\"Field19Name\":\"Date 1\",\"Field19Type\":\"4\",\"Field1Name\":\"Address\",\"Field1Type\":\"1\",\"Field20Name\":\"Date 2\",\"Field20Type\":\"4\",\"Field21Name\":\"Extra 3\",\"Field21Type\":\"1\",\"Field22Name\":\"Extra 4\",\"Field22Type\":\"1\",\"Field23Name\":\"Extra 5\",\"Field23Type\":\"1\",\"Field24Name\":\"Extra 6\",\"Field24Type\":\"1\",\"Field2Name\":\"City\",\"Field2Type\":\"1\",\"Field3Name\":\"State\",\"Field3Type\":\"1\",\"Field4Name\":\"Zip\",\"Field4Type\":\"1\",\"Field5Name\":\"Country\",\"Field5Type\":\"1\",\"Field6Name\":\"Phone\",\"Field6Type\":\"1\",\"Field7Name\":\"Fax\",\"Field7Type\":\"1\",\"Field8Name\":\"Cell Phone\",\"Field8Type\":\"1\",\"Field9Name\":\"Company Name\",\"Field9Type\":\"1\",\"FirstnameLabel\":\"First Name\",\"ID\":\"15266225\",\"IsMasterUnsubscribe\":\"0\",\"LastnameLabel\":\"Last Name\",\"MiddlenameLabel\":\"Middle Name\",\"Name\":\"Rest API Creation 1\"},\"Errors\":[],\"Status\":\"1\"}}"
             }
           ]
         }
@@ -26482,6 +26397,113 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\"Response\":\"1\"}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "b5fb4a7d-a545-481f-a31c-d4226183d4b5",
+          "name": "Get signup form list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "AuthToken",
+                "value": "{{Authentication Token}}",
+                "description": "Authentication Token"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "Content Type"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ListbuilderLists",
+            "description": "<h4>Get a list of contacts</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSignupFormRecord\">SignupFormRecord</a></td><td>Signup Form Data</td></tr>\r\n</tbody>\r\n</table>"
+          },
+          "response": [
+            {
+              "id": "d5d74d14-1cc8-4ce5-8b12-aad9debc4140",
+              "name": "Get signup form list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ListbuilderLists"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "access-control-allow-origin",
+                  "key": "access-control-allow-origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Mon, 23 Oct 2017 05:15:52 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Microsoft-IIS/8.0",
+                  "description": ""
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": ""
+                },
+                {
+                  "name": "x-aspnet-version",
+                  "key": "x-aspnet-version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "x-powered-by",
+                  "key": "x-powered-by",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Response\": {\n        \"Count\": 4,\n        \"Data\": [\n            {\n                \"ID\": \"986572\",\n                \"Name\": \"Test Signup Form 1\"\n            },\n            {\n                \"ID\": \"986554\",\n                \"Name\": \"Test Signup Form 2\"\n            },\n            {\n                \"ID\": \"986547\",\n                \"Name\": \"Test Signup Form 3\"\n            },\n            {\n                \"ID\": \"986546\",\n                \"Name\": \"Test Signup Form 4\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
             }
           ]
         }
