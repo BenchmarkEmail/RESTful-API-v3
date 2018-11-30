@@ -13480,6 +13480,115 @@
                   "body": "{\"Response\":{\"Count\":102,\"Data\":[{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 17, 2017\",\"ID\":\"15259556\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"NameShort\":\"Test Email Campaign List - Unopened+FilteredDomain\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257849\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Target List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Target List\",\"NameShort\":\"Test Target List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":8,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257848\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Source List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Source List\",\"NameShort\":\"Test Source List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":2,\"CreatedDate\":\"Oct 06, 2017\",\"ID\":\"15242896\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test 1\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test 1\",\"NameShort\":\"Test 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":1,\"CreatedDate\":\"Sep 19, 2017\",\"ID\":\"15210912\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"jQuery API Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"jQuery API Test List\",\"NameShort\":\"jQuery API Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31112,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202989\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 2\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 2\",\"NameShort\":\"Sep 13 2017 Test Upload List 2\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31412,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202975\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 1\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 1\",\"NameShort\":\"Sep 13 2017 Test Upload List 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31111,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202923\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List\",\"NameShort\":\"Sep 13 2017 Test Upload List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Sep 08, 2017\",\"ID\":\"15192327\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 08 2017 Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 08 2017 Test List\",\"NameShort\":\"Sep 08 2017 Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":7,\"CreatedDate\":\"Aug 09, 2017\",\"ID\":\"15112393\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Benchmark Tech Support Test List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Benchmark Tech Support Test List\",\"NameShort\":\"Benchmark Tech Support Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"}],\"Status\":\"1\"}}"
                 }
               ]
+            },
+            {
+              "_postman_id": "24332813-ef61-4b4f-99c3-fb1c4794f3bd",
+              "name": "/{{ListID}}/All || Deep View of a list, fields and types, Get contact lists",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListIDs}}/All",
+                "description": "<h4>Get contact lists</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Detail</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "b1387f87-a3d3-4c30-9ee4-f87dc197618a",
+                  "name": "Get contact lists",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListIDs}}/All"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 05:48:24 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Response\": {\n        \"Count\": 2,\n        \"Data\": [\n            {\n                \"ActiveContactCount\": \"5\",\n                \"CreatedDateTime\": \"Sep 08 2017, 05:34 PM\",\n                \"Description\": \"Welcome test\",\n                \"Field10Name\": \"State\",\n                \"Field10Type\": \"1\",\n                \"Field11Name\": \"Country\",\n                \"Field11Type\": \"1\",\n                \"Field12Name\": \"Continent\",\n                \"Field12Type\": \"1\",\n                \"Field13Name\": \"Planet\",\n                \"Field13Type\": \"1\",\n                \"Field14Name\": \"Galaxy\",\n                \"Field14Type\": \"1\",\n                \"Field15Name\": \"BirthDate\",\n                \"Field15Type\": \"4\",\n                \"Field16Name\": \"Allowed\",\n                \"Field16Type\": \"3\",\n                \"Field17Name\": \"Field 17\",\n                \"Field17Type\": \"1\",\n                \"Field18Name\": \"Field 18\",\n                \"Field18Type\": \"1\",\n                \"Field19Name\": \"Field 19\",\n                \"Field19Type\": \"1\",\n                \"Field1Name\": \"Phone No.\",\n                \"Field1Type\": \"1\",\n                \"Field20Name\": \"Field 20\",\n                \"Field20Type\": \"1\",\n                \"Field21Name\": \"Field 21\",\n                \"Field21Type\": \"1\",\n                \"Field22Name\": \"Field 22\",\n                \"Field22Type\": \"1\",\n                \"Field23Name\": \"Field 23\",\n                \"Field23Type\": \"1\",\n                \"Field24Name\": \"Field 24\",\n                \"Field24Type\": \"1\",\n                \"Field2Name\": \"Mobile No.\",\n                \"Field2Type\": \"1\",\n                \"Field3Name\": \"Room No.\",\n                \"Field3Type\": \"1\",\n                \"Field4Name\": \"Floor\",\n                \"Field4Type\": \"1\",\n                \"Field5Name\": \"Building\",\n                \"Field5Type\": \"1\",\n                \"Field6Name\": \"Street\",\n                \"Field6Type\": \"1\",\n                \"Field7Name\": \"City\",\n                \"Field7Type\": \"1\",\n                \"Field8Name\": \"Taluka\",\n                \"Field8Type\": \"1\",\n                \"Field9Name\": \"District\",\n                \"Field9Type\": \"1\",\n                \"FirstnameLabel\": \"First Name\",\n                \"ID\": \"15192333\",\n                \"IsMasterUnsubscribe\": \"0\",\n                \"LastnameLabel\": \"Last Name\",\n                \"MiddlenameLabel\": \"Middle Name\",\n                \"Name\": \"Test List 1\"\n            },\n            {\n                \"ActiveContactCount\": \"0\",\n                \"CreatedDateTime\": \"Sep 13 2017, 05:22 PM\",\n                \"Description\": \"This list is Created by Indominus Rex\",\n                \"Field10Name\": \"State\",\n                \"Field10Type\": \"1\",\n                \"Field11Name\": \"Country\",\n                \"Field11Type\": \"1\",\n                \"Field12Name\": \"Continent\",\n                \"Field12Type\": \"1\",\n                \"Field13Name\": \"Planet\",\n                \"Field13Type\": \"1\",\n                \"Field14Name\": \"Galaxy\",\n                \"Field14Type\": \"1\",\n                \"Field15Name\": \"BirthDate\",\n                \"Field15Type\": \"4\",\n                \"Field16Name\": \"Allowed\",\n                \"Field16Type\": \"3\",\n                \"Field17Name\": \"Field 17\",\n                \"Field17Type\": \"1\",\n                \"Field18Name\": \"Field 18\",\n                \"Field18Type\": \"1\",\n                \"Field19Name\": \"Dinosour Type\",\n                \"Field19Type\": \"1\",\n                \"Field1Name\": \"Phone No.\",\n                \"Field1Type\": \"1\",\n                \"Field20Name\": \"Field 20\",\n                \"Field20Type\": \"1\",\n                \"Field21Name\": \"Field 21\",\n                \"Field21Type\": \"1\",\n                \"Field22Name\": \"Field 22\",\n                \"Field22Type\": \"1\",\n                \"Field23Name\": \"Field 23\",\n                \"Field23Type\": \"1\",\n                \"Field24Name\": \"Field 24\",\n                \"Field24Type\": \"1\",\n                \"Field2Name\": \"Mobile No.\",\n                \"Field2Type\": \"1\",\n                \"Field3Name\": \"Room No.\",\n                \"Field3Type\": \"1\",\n                \"Field4Name\": \"Floor\",\n                \"Field4Type\": \"1\",\n                \"Field5Name\": \"Building\",\n                \"Field5Type\": \"1\",\n                \"Field6Name\": \"Street\",\n                \"Field6Type\": \"1\",\n                \"Field7Name\": \"City\",\n                \"Field7Type\": \"1\",\n                \"Field8Name\": \"Taluka\",\n                \"Field8Type\": \"1\",\n                \"Field9Name\": \"District\",\n                \"Field9Type\": \"1\",\n                \"FirstnameLabel\": \"First Name\",\n                \"ID\": \"15201061\",\n                \"IsMasterUnsubscribe\": \"0\",\n                \"LastnameLabel\": \"Last Name\",\n                \"MiddlenameLabel\": \"Middle Name\",\n                \"Name\": \"Test List 2\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
+                }
+              ]
             }
           ],
           "_postman_isSubFolder": true
@@ -14216,115 +14325,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"Response\": {\n        \"Data\": {\n            \"ContactMasterID\": \"15259441\",\n            \"Email\": \"test@cybermaxsolutions.com\",\n            \"EmailPerm\": null,\n            \"EmailType\": \"2\",\n            \"Field1\": \"\",\n            \"Field10\": \"\",\n            \"Field11\": \"\",\n            \"Field12\": \"\",\n            \"Field13\": \"\",\n            \"Field14\": \"\",\n            \"Field15\": \"\",\n            \"Field16\": \"\",\n            \"Field17\": \"\",\n            \"Field18\": \"\",\n            \"Field19\": \"\",\n            \"Field2\": \"\",\n            \"Field20\": \"\",\n            \"Field21\": \"\",\n            \"Field22\": \"\",\n            \"Field23\": \"\",\n            \"Field24\": \"\",\n            \"Field3\": \"\",\n            \"Field4\": \"\",\n            \"Field5\": \"\",\n            \"Field6\": \"\",\n            \"Field7\": \"\",\n            \"Field8\": \"\",\n            \"Field9\": \"\",\n            \"FirstName\": \"\",\n            \"Flag\": \"\",\n            \"ID\": \"2040826674\",\n            \"IPAddress\": null,\n            \"LastName\": \"\",\n            \"MiddleName\": \"\",\n            \"Optin\": \"\",\n            \"OptinDate\": \"\",\n            \"OptinIP\": \"\",\n            \"Status\": \"\"\n        },\n        \"Status\": \"1\"\n    }\n}"
-            }
-          ]
-        },
-        {
-          "_postman_id": "24332813-ef61-4b4f-99c3-fb1c4794f3bd",
-          "name": "/{{ListID}}/All || Get contact lists",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "AuthToken",
-                "value": "{{Authentication Token}}",
-                "description": "Authentication Token"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": "Content Type"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "https://clientapi.benchmarkemail.com/Contact/{{ListIDs}}/All",
-            "description": "<h4>Get contact lists</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactMasterRecord\">ContactMasterRecord</a></td><td>List Detail</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n</tbody>\r\n</table>"
-          },
-          "response": [
-            {
-              "id": "b1387f87-a3d3-4c30-9ee4-f87dc197618a",
-              "name": "Get contact lists",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token",
-                    "warning": ""
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type",
-                    "warning": ""
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListIDs}}/All"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "access-control-allow-origin",
-                  "key": "access-control-allow-origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "cache-control",
-                  "key": "cache-control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "content-type",
-                  "key": "content-type",
-                  "value": "application/json; charset=utf-8",
-                  "description": ""
-                },
-                {
-                  "name": "date",
-                  "key": "date",
-                  "value": "Mon, 23 Oct 2017 05:48:24 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "server",
-                  "key": "server",
-                  "value": "Microsoft-IIS/8.0",
-                  "description": ""
-                },
-                {
-                  "name": "transfer-encoding",
-                  "key": "transfer-encoding",
-                  "value": "chunked",
-                  "description": ""
-                },
-                {
-                  "name": "x-aspnet-version",
-                  "key": "x-aspnet-version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "x-powered-by",
-                  "key": "x-powered-by",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Response\": {\n        \"Count\": 2,\n        \"Data\": [\n            {\n                \"ActiveContactCount\": \"5\",\n                \"CreatedDateTime\": \"Sep 08 2017, 05:34 PM\",\n                \"Description\": \"Welcome test\",\n                \"Field10Name\": \"State\",\n                \"Field10Type\": \"1\",\n                \"Field11Name\": \"Country\",\n                \"Field11Type\": \"1\",\n                \"Field12Name\": \"Continent\",\n                \"Field12Type\": \"1\",\n                \"Field13Name\": \"Planet\",\n                \"Field13Type\": \"1\",\n                \"Field14Name\": \"Galaxy\",\n                \"Field14Type\": \"1\",\n                \"Field15Name\": \"BirthDate\",\n                \"Field15Type\": \"4\",\n                \"Field16Name\": \"Allowed\",\n                \"Field16Type\": \"3\",\n                \"Field17Name\": \"Field 17\",\n                \"Field17Type\": \"1\",\n                \"Field18Name\": \"Field 18\",\n                \"Field18Type\": \"1\",\n                \"Field19Name\": \"Field 19\",\n                \"Field19Type\": \"1\",\n                \"Field1Name\": \"Phone No.\",\n                \"Field1Type\": \"1\",\n                \"Field20Name\": \"Field 20\",\n                \"Field20Type\": \"1\",\n                \"Field21Name\": \"Field 21\",\n                \"Field21Type\": \"1\",\n                \"Field22Name\": \"Field 22\",\n                \"Field22Type\": \"1\",\n                \"Field23Name\": \"Field 23\",\n                \"Field23Type\": \"1\",\n                \"Field24Name\": \"Field 24\",\n                \"Field24Type\": \"1\",\n                \"Field2Name\": \"Mobile No.\",\n                \"Field2Type\": \"1\",\n                \"Field3Name\": \"Room No.\",\n                \"Field3Type\": \"1\",\n                \"Field4Name\": \"Floor\",\n                \"Field4Type\": \"1\",\n                \"Field5Name\": \"Building\",\n                \"Field5Type\": \"1\",\n                \"Field6Name\": \"Street\",\n                \"Field6Type\": \"1\",\n                \"Field7Name\": \"City\",\n                \"Field7Type\": \"1\",\n                \"Field8Name\": \"Taluka\",\n                \"Field8Type\": \"1\",\n                \"Field9Name\": \"District\",\n                \"Field9Type\": \"1\",\n                \"FirstnameLabel\": \"First Name\",\n                \"ID\": \"15192333\",\n                \"IsMasterUnsubscribe\": \"0\",\n                \"LastnameLabel\": \"Last Name\",\n                \"MiddlenameLabel\": \"Middle Name\",\n                \"Name\": \"Test List 1\"\n            },\n            {\n                \"ActiveContactCount\": \"0\",\n                \"CreatedDateTime\": \"Sep 13 2017, 05:22 PM\",\n                \"Description\": \"This list is Created by Indominus Rex\",\n                \"Field10Name\": \"State\",\n                \"Field10Type\": \"1\",\n                \"Field11Name\": \"Country\",\n                \"Field11Type\": \"1\",\n                \"Field12Name\": \"Continent\",\n                \"Field12Type\": \"1\",\n                \"Field13Name\": \"Planet\",\n                \"Field13Type\": \"1\",\n                \"Field14Name\": \"Galaxy\",\n                \"Field14Type\": \"1\",\n                \"Field15Name\": \"BirthDate\",\n                \"Field15Type\": \"4\",\n                \"Field16Name\": \"Allowed\",\n                \"Field16Type\": \"3\",\n                \"Field17Name\": \"Field 17\",\n                \"Field17Type\": \"1\",\n                \"Field18Name\": \"Field 18\",\n                \"Field18Type\": \"1\",\n                \"Field19Name\": \"Dinosour Type\",\n                \"Field19Type\": \"1\",\n                \"Field1Name\": \"Phone No.\",\n                \"Field1Type\": \"1\",\n                \"Field20Name\": \"Field 20\",\n                \"Field20Type\": \"1\",\n                \"Field21Name\": \"Field 21\",\n                \"Field21Type\": \"1\",\n                \"Field22Name\": \"Field 22\",\n                \"Field22Type\": \"1\",\n                \"Field23Name\": \"Field 23\",\n                \"Field23Type\": \"1\",\n                \"Field24Name\": \"Field 24\",\n                \"Field24Type\": \"1\",\n                \"Field2Name\": \"Mobile No.\",\n                \"Field2Type\": \"1\",\n                \"Field3Name\": \"Room No.\",\n                \"Field3Type\": \"1\",\n                \"Field4Name\": \"Floor\",\n                \"Field4Type\": \"1\",\n                \"Field5Name\": \"Building\",\n                \"Field5Type\": \"1\",\n                \"Field6Name\": \"Street\",\n                \"Field6Type\": \"1\",\n                \"Field7Name\": \"City\",\n                \"Field7Type\": \"1\",\n                \"Field8Name\": \"Taluka\",\n                \"Field8Type\": \"1\",\n                \"Field9Name\": \"District\",\n                \"Field9Type\": \"1\",\n                \"FirstnameLabel\": \"First Name\",\n                \"ID\": \"15201061\",\n                \"IsMasterUnsubscribe\": \"0\",\n                \"LastnameLabel\": \"Last Name\",\n                \"MiddlenameLabel\": \"Middle Name\",\n                \"Name\": \"Test List 2\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
             }
           ]
         },
