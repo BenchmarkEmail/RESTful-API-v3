@@ -15,7 +15,7 @@ I to want create a new list and get its list Id #
 
 1. A free or paid Benchmark Email account. It will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
 1. Always use host of: `https://clientapi.benchmarkemail.com`
-1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
+1. An HTTP library or HTTP app, such as [postman](https://www.getpostman.com/), to make API calls
 
 ## Solution
 

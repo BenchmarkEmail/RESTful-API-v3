@@ -14,7 +14,7 @@ Add an email address and the contact information to a list
 ## Prerequisites
 1. A free or paid Benchmark Email account. It will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
 1. Always use host of: `https://clientapi.benchmarkemail.com`
-1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
+1. An HTTP library or HTTP app, such as [postman](https://www.getpostman.com/), to make API calls
 ## Solution
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
