@@ -12287,6 +12287,173 @@
               ]
             },
             {
+              "_postman_id": "7c336847-d1bd-4f2d-a454-0c62c81d0017",
+              "name": "/ExportToList? || Engagement Reporting, Get Export List",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/ExportToList?ReportFor={{ReportFor}}&EmailID={{EmailID}}&IsOverWrite={{IsOverWrite}}",
+                  "protocol": "https",
+                  "host": [
+                    "clientapi",
+                    "benchmarkemail",
+                    "com"
+                  ],
+                  "path": [
+                    "Contact",
+                    "ExportToList"
+                  ],
+                  "query": [
+                    {
+                      "key": "ReportFor",
+                      "value": "{{ReportFor}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "EmailID",
+                      "value": "{{EmailID}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "IsOverWrite",
+                      "value": "{{IsOverWrite}}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": "Export List\r\n\r\n<h4>Query String Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th>\r\n<th>Required</th>\r\n<th>Description</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>ReportFor</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - Clicks</li><li><code>2</code> - Forwards</li><li><code>3</code> - Bounces</li><li><code>5</code> - Unsubscribe</li><li><code>6</code> - Opens</li><li><code>7</code> - Unopens</li><li><code>8</code> \u2013 Clicks For url</li><li><code>11</code> - Individual Survey</li><li><code>12</code> - Opens State Wise</li></ul></td>\r\n</tr>\r\n<tr><td>EmailID</td><td>optional</td><td>Unique ID (i.e Campaign ID)</td></tr>\r\n<tr>\r\n<td>IsOverWrite</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - OverWrite if List Exists</li><li><code>0</code> - Don't Over Write if List Exists (It will stop process if list found with the same name)</li></td>\r\n</tr>\r\n</ul>\r\n<tr><td>LinkName</td><td>optional</td><td>Name of link</td></tr>\r\n<tr>\r\n<td>Filter</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - Soft Bounces</li><li><code>2</code> - Hard Bounces</li></ul></td>\r\n</tr>\r\n<tr><td>Region</td><td>optional</td><td>Region or  State</td></tr>\r\n\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>ReportTypeText</td><td>string</td><td>Returns the report type like bounces,SURVEY RESPONDENTS,OPENS etc</td></tr>\r\n<tr><td>ListName</td><td>string</td><td>List Name</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "bd6eef78-e235-4121-8930-013d30969fe1",
+                  "name": "Get Export List",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "https://clientapi.benchmarkemail.com/Contact/ExportToList?ReportFor={{ReportFor}}&EmailID={{EmailID}}&IsOverWrite={{IsOverWrite}}",
+                      "protocol": "https",
+                      "host": [
+                        "clientapi",
+                        "benchmarkemail",
+                        "com"
+                      ],
+                      "path": [
+                        "Contact",
+                        "ExportToList"
+                      ],
+                      "query": [
+                        {
+                          "key": "ReportFor",
+                          "value": "{{ReportFor}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "EmailID",
+                          "value": "{{EmailID}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "IsOverWrite",
+                          "value": "{{IsOverWrite}}",
+                          "equals": true
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Tue, 17 Oct 2017 05:51:36 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"ListName\":\"Unopened Report : Oct 06 2017 Email 1\",\"ReportTypeText\":\"UNOPENS\",\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
               "_postman_id": "2b0e52d3-f838-4249-b4cc-faf7be9b1f1b",
               "name": "/{{ContactID}}/ContactReportHistory || Get contact history",
               "request": {
@@ -12834,173 +13001,6 @@
                   "body": "{\n    \"Response\": {\n        \"Count\": 1,\n        \"Data\": [\n            {\n                \"Date\": \"Oct 10, 2016\",\n                \"Email\": \"test @cybermaxsolutions.com\",\n                \"ID\": \"1\"\n            }\n        ],\n        \"Errors\": [],\n        \"Status\": \"1\"\n    }\n}"
                 }
               ]
-            },
-            {
-              "_postman_id": "7c336847-d1bd-4f2d-a454-0c62c81d0017",
-              "name": "/ExportToList? || Engagement Reporting, Get Export List",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/ExportToList?ReportFor={{ReportFor}}&EmailID={{EmailID}}&IsOverWrite={{IsOverWrite}}",
-                  "protocol": "https",
-                  "host": [
-                    "clientapi",
-                    "benchmarkemail",
-                    "com"
-                  ],
-                  "path": [
-                    "Contact",
-                    "ExportToList"
-                  ],
-                  "query": [
-                    {
-                      "key": "ReportFor",
-                      "value": "{{ReportFor}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "EmailID",
-                      "value": "{{EmailID}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "IsOverWrite",
-                      "value": "{{IsOverWrite}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": "Export List\r\n\r\n<h4>Query String Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th>\r\n<th>Required</th>\r\n<th>Description</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>ReportFor</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - Clicks</li><li><code>2</code> - Forwards</li><li><code>3</code> - Bounces</li><li><code>5</code> - Unsubscribe</li><li><code>6</code> - Opens</li><li><code>7</code> - Unopens</li><li><code>8</code> \u2013 Clicks For url</li><li><code>11</code> - Individual Survey</li><li><code>12</code> - Opens State Wise</li></ul></td>\r\n</tr>\r\n<tr><td>EmailID</td><td>optional</td><td>Unique ID (i.e Campaign ID)</td></tr>\r\n<tr>\r\n<td>IsOverWrite</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - OverWrite if List Exists</li><li><code>0</code> - Don't Over Write if List Exists (It will stop process if list found with the same name)</li></td>\r\n</tr>\r\n</ul>\r\n<tr><td>LinkName</td><td>optional</td><td>Name of link</td></tr>\r\n<tr>\r\n<td>Filter</td>\r\n<td>optional</td>\r\n<td><ul><li><code>1</code> - Soft Bounces</li><li><code>2</code> - Hard Bounces</li></ul></td>\r\n</tr>\r\n<tr><td>Region</td><td>optional</td><td>Region or  State</td></tr>\r\n\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>ReportTypeText</td><td>string</td><td>Returns the report type like bounces,SURVEY RESPONDENTS,OPENS etc</td></tr>\r\n<tr><td>ListName</td><td>string</td><td>List Name</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "bd6eef78-e235-4121-8930-013d30969fe1",
-                  "name": "Get Export List",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": {
-                      "raw": "https://clientapi.benchmarkemail.com/Contact/ExportToList?ReportFor={{ReportFor}}&EmailID={{EmailID}}&IsOverWrite={{IsOverWrite}}",
-                      "protocol": "https",
-                      "host": [
-                        "clientapi",
-                        "benchmarkemail",
-                        "com"
-                      ],
-                      "path": [
-                        "Contact",
-                        "ExportToList"
-                      ],
-                      "query": [
-                        {
-                          "key": "ReportFor",
-                          "value": "{{ReportFor}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "EmailID",
-                          "value": "{{EmailID}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "IsOverWrite",
-                          "value": "{{IsOverWrite}}",
-                          "equals": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Tue, 17 Oct 2017 05:51:36 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"ListName\":\"Unopened Report : Oct 06 2017 Email 1\",\"ReportTypeText\":\"UNOPENS\",\"Status\":\"1\"}}"
-                }
-              ]
             }
           ],
           "event": [
@@ -13247,6 +13247,237 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Count\":29,\"Data\":[\"email\",\"firstname\",\"lastname\",\"middlename\",\"emailtype\",\"Address\",\"City\",\"State\",\"Zip\",\"Country\",\"Phone\",\"Fax\",\"Cell Phone\",\"Company Name\",\"Job Title\",\"Business Phone\",\"Business Fax\",\"Business Address\",\"Business City\",\"Business State\",\"Business Zip\",\"Business Country\",\"Notes\",\"Date 1\",\"Date 2\",\"Text\",\"Age\",\"Indian\",\"Modified On\"],\"Errors\":[],\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "_postman_id": "3c4ab45b-0286-48e1-b944-47c144bf962c",
+              "name": "/Contact/  || All Lists, one or many with details, Get a list of contacts",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "262c1968-bf19-4430-acb7-fff79aa7a86c",
+                    "exec": [
+                      "let json = pm.response.json();\r",
+                      "  \r",
+                      "pm.test(\"Request was successful\", function() {\r",
+                      "  pm.response.to.be.success;\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"Response body status is 1\", function() {\r",
+                      "\r",
+                      "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
+                      "\r",
+                      "});\r",
+                      "\r",
+                      "\r",
+                      "\r",
+                      "pm.environment.set(\"ListID\", json.Response.Data[0].ID);"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "disabled": false
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/?SearchFilter={{ContactListName}}",
+                  "protocol": "https",
+                  "host": [
+                    "clientapi",
+                    "benchmarkemail",
+                    "com"
+                  ],
+                  "path": [
+                    "Contact",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "Status",
+                      "value": "{{Status}}",
+                      "equals": true,
+                      "description": "don't use \"\" send as undefined",
+                      "disabled": true
+                    },
+                    {
+                      "key": "PageNumber",
+                      "value": "{{PageNumber}}",
+                      "equals": true,
+                      "disabled": true
+                    },
+                    {
+                      "key": "PageSize",
+                      "value": "{{PageSize}}",
+                      "equals": true,
+                      "disabled": true
+                    },
+                    {
+                      "key": "SearchFilter",
+                      "value": "{{ContactListName}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "OrderBy",
+                      "value": "{{OrderByFieldName}}",
+                      "equals": true,
+                      "disabled": true
+                    },
+                    {
+                      "key": "SortOrder",
+                      "value": "{{AscDesc}}",
+                      "equals": true,
+                      "disabled": true
+                    }
+                  ]
+                },
+                "description": "<h4>Get a list of contacts</h4>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of records to show per page</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>string</td><td>Field to order by, <code>email</code>, <code>date</code>, <code>count</code>, <code>schedule</code></td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>string</td><td>Sort Order, <code>asc</code> or <code>desc</code></td></tr>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string</td><td>Filter value</td></tr>\r\n<tr><td>Status</td><td>optional</td><td>string</td><td>Status filter</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactFullRecord\">ContactFullRecord</a></td><td>EMail History</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "66d60c6f-c610-4812-955a-d2e52a888093",
+                  "name": "Get a list of contacts",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "https://clientapi.benchmarkemail.com/Contact/?Status={{Status}}&PageNumber={{PageNumber}}&PageSize={{PageSize}}&SearchFilter={{SearchFilter}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}",
+                      "protocol": "https",
+                      "host": [
+                        "clientapi",
+                        "benchmarkemail",
+                        "com"
+                      ],
+                      "path": [
+                        "Contact",
+                        ""
+                      ],
+                      "query": [
+                        {
+                          "key": "Status",
+                          "value": "{{Status}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "PageNumber",
+                          "value": "{{PageNumber}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "PageSize",
+                          "value": "{{PageSize}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "SearchFilter",
+                          "value": "{{SearchFilter}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "OrderBy",
+                          "value": "{{OrderBy}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "SortOrder",
+                          "value": "{{SortOrder}}",
+                          "equals": true
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 04:36:12 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":102,\"Data\":[{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 17, 2017\",\"ID\":\"15259556\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"NameShort\":\"Test Email Campaign List - Unopened+FilteredDomain\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257849\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Target List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Target List\",\"NameShort\":\"Test Target List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":8,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257848\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Source List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Source List\",\"NameShort\":\"Test Source List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":2,\"CreatedDate\":\"Oct 06, 2017\",\"ID\":\"15242896\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test 1\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test 1\",\"NameShort\":\"Test 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":1,\"CreatedDate\":\"Sep 19, 2017\",\"ID\":\"15210912\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"jQuery API Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"jQuery API Test List\",\"NameShort\":\"jQuery API Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31112,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202989\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 2\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 2\",\"NameShort\":\"Sep 13 2017 Test Upload List 2\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31412,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202975\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 1\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 1\",\"NameShort\":\"Sep 13 2017 Test Upload List 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31111,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202923\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List\",\"NameShort\":\"Sep 13 2017 Test Upload List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Sep 08, 2017\",\"ID\":\"15192327\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 08 2017 Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 08 2017 Test List\",\"NameShort\":\"Sep 08 2017 Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":7,\"CreatedDate\":\"Aug 09, 2017\",\"ID\":\"15112393\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Benchmark Tech Support Test List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Benchmark Tech Support Test List\",\"NameShort\":\"Benchmark Tech Support Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"}],\"Status\":\"1\"}}"
                 }
               ]
             }
@@ -13985,237 +14216,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"Response\": {\n        \"Data\": {\n            \"ContactMasterID\": \"15259441\",\n            \"Email\": \"test@cybermaxsolutions.com\",\n            \"EmailPerm\": null,\n            \"EmailType\": \"2\",\n            \"Field1\": \"\",\n            \"Field10\": \"\",\n            \"Field11\": \"\",\n            \"Field12\": \"\",\n            \"Field13\": \"\",\n            \"Field14\": \"\",\n            \"Field15\": \"\",\n            \"Field16\": \"\",\n            \"Field17\": \"\",\n            \"Field18\": \"\",\n            \"Field19\": \"\",\n            \"Field2\": \"\",\n            \"Field20\": \"\",\n            \"Field21\": \"\",\n            \"Field22\": \"\",\n            \"Field23\": \"\",\n            \"Field24\": \"\",\n            \"Field3\": \"\",\n            \"Field4\": \"\",\n            \"Field5\": \"\",\n            \"Field6\": \"\",\n            \"Field7\": \"\",\n            \"Field8\": \"\",\n            \"Field9\": \"\",\n            \"FirstName\": \"\",\n            \"Flag\": \"\",\n            \"ID\": \"2040826674\",\n            \"IPAddress\": null,\n            \"LastName\": \"\",\n            \"MiddleName\": \"\",\n            \"Optin\": \"\",\n            \"OptinDate\": \"\",\n            \"OptinIP\": \"\",\n            \"Status\": \"\"\n        },\n        \"Status\": \"1\"\n    }\n}"
-            }
-          ]
-        },
-        {
-          "_postman_id": "3c4ab45b-0286-48e1-b944-47c144bf962c",
-          "name": "/Contact/  || All Lists, one or many with details, Get a list of contacts",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "262c1968-bf19-4430-acb7-fff79aa7a86c",
-                "exec": [
-                  "let json = pm.response.json();\r",
-                  "  \r",
-                  "pm.test(\"Request was successful\", function() {\r",
-                  "  pm.response.to.be.success;\r",
-                  "});\r",
-                  "\r",
-                  "pm.test(\"Response body status is 1\", function() {\r",
-                  "\r",
-                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
-                  "\r",
-                  "});\r",
-                  "\r",
-                  "\r",
-                  "\r",
-                  "pm.environment.set(\"ListID\", json.Response.Data[0].ID);"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "AuthToken",
-                "value": "{{Authentication Token}}",
-                "description": "Authentication Token",
-                "disabled": false
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": "Content Type",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "https://clientapi.benchmarkemail.com/Contact/?SearchFilter={{ContactListName}}",
-              "protocol": "https",
-              "host": [
-                "clientapi",
-                "benchmarkemail",
-                "com"
-              ],
-              "path": [
-                "Contact",
-                ""
-              ],
-              "query": [
-                {
-                  "key": "Status",
-                  "value": "{{Status}}",
-                  "equals": true,
-                  "description": "don't use \"\" send as undefined",
-                  "disabled": true
-                },
-                {
-                  "key": "PageNumber",
-                  "value": "{{PageNumber}}",
-                  "equals": true,
-                  "disabled": true
-                },
-                {
-                  "key": "PageSize",
-                  "value": "{{PageSize}}",
-                  "equals": true,
-                  "disabled": true
-                },
-                {
-                  "key": "SearchFilter",
-                  "value": "{{ContactListName}}",
-                  "equals": true
-                },
-                {
-                  "key": "OrderBy",
-                  "value": "{{OrderByFieldName}}",
-                  "equals": true,
-                  "disabled": true
-                },
-                {
-                  "key": "SortOrder",
-                  "value": "{{AscDesc}}",
-                  "equals": true,
-                  "disabled": true
-                }
-              ]
-            },
-            "description": "<h4>Get a list of contacts</h4>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of records to show per page</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>string</td><td>Field to order by, <code>email</code>, <code>date</code>, <code>count</code>, <code>schedule</code></td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>string</td><td>Sort Order, <code>asc</code> or <code>desc</code></td></tr>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string</td><td>Filter value</td></tr>\r\n<tr><td>Status</td><td>optional</td><td>string</td><td>Status filter</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Count</td><td>int</td><td>Total number</td></tr>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactFullRecord\">ContactFullRecord</a></td><td>EMail History</td></tr>\r\n</tbody>\r\n</table>"
-          },
-          "response": [
-            {
-              "id": "66d60c6f-c610-4812-955a-d2e52a888093",
-              "name": "Get a list of contacts",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token",
-                    "warning": ""
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type",
-                    "warning": ""
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/?Status={{Status}}&PageNumber={{PageNumber}}&PageSize={{PageSize}}&SearchFilter={{SearchFilter}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}",
-                  "protocol": "https",
-                  "host": [
-                    "clientapi",
-                    "benchmarkemail",
-                    "com"
-                  ],
-                  "path": [
-                    "Contact",
-                    ""
-                  ],
-                  "query": [
-                    {
-                      "key": "Status",
-                      "value": "{{Status}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "PageNumber",
-                      "value": "{{PageNumber}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "PageSize",
-                      "value": "{{PageSize}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "OrderBy",
-                      "value": "{{OrderBy}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "SortOrder",
-                      "value": "{{SortOrder}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "access-control-allow-origin",
-                  "key": "access-control-allow-origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "cache-control",
-                  "key": "cache-control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "content-type",
-                  "key": "content-type",
-                  "value": "application/json; charset=utf-8",
-                  "description": ""
-                },
-                {
-                  "name": "date",
-                  "key": "date",
-                  "value": "Mon, 23 Oct 2017 04:36:12 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "server",
-                  "key": "server",
-                  "value": "Microsoft-IIS/8.0",
-                  "description": ""
-                },
-                {
-                  "name": "transfer-encoding",
-                  "key": "transfer-encoding",
-                  "value": "chunked",
-                  "description": ""
-                },
-                {
-                  "name": "x-aspnet-version",
-                  "key": "x-aspnet-version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "x-powered-by",
-                  "key": "x-powered-by",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\"Response\":{\"Count\":102,\"Data\":[{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 17, 2017\",\"ID\":\"15259556\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Email Campaign List - Unopened+FilteredDomains\",\"NameShort\":\"Test Email Campaign List - Unopened+FilteredDomain\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257849\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Target List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Target List\",\"NameShort\":\"Test Target List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":8,\"CreatedDate\":\"Oct 16, 2017\",\"ID\":\"15257848\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test Source List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test Source List\",\"NameShort\":\"Test Source List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":2,\"CreatedDate\":\"Oct 06, 2017\",\"ID\":\"15242896\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Test 1\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Test 1\",\"NameShort\":\"Test 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":1,\"CreatedDate\":\"Sep 19, 2017\",\"ID\":\"15210912\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"jQuery API Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"jQuery API Test List\",\"NameShort\":\"jQuery API Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31112,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202989\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 2\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 2\",\"NameShort\":\"Sep 13 2017 Test Upload List 2\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31412,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202975\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List 1\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List 1\",\"NameShort\":\"Sep 13 2017 Test Upload List 1\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":31111,\"CreatedDate\":\"Sep 14, 2017\",\"ID\":\"15202923\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 13 2017 Test Upload List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 13 2017 Test Upload List\",\"NameShort\":\"Sep 13 2017 Test Upload List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":0,\"CreatedDate\":\"Sep 08, 2017\",\"ID\":\"15192327\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Sep 08 2017 Test List\",\"ListImportV3\":\"0\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Sep 08 2017 Test List\",\"NameShort\":\"Sep 08 2017 Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"},{\"AllowDelete\":\"1\",\"ContactCount\":7,\"CreatedDate\":\"Aug 09, 2017\",\"ID\":\"15112393\",\"IsImporting\":\"0\",\"IsMasterUnsubscribe\":\"0\",\"ListAudited\":\"1\",\"ListDescription\":\"Benchmark Tech Support Test List\",\"ListImportV3\":\"1\",\"ModifiedDate\":\"Oct 17, 2017\",\"Name\":\"Benchmark Tech Support Test List\",\"NameShort\":\"Benchmark Tech Support Test List\",\"PermissionPassList\":\"0\",\"Segments\":[],\"Status\":\"\"}],\"Status\":\"1\"}}"
             }
           ]
         },
