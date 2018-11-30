@@ -9181,7 +9181,7 @@
             },
             {
               "_postman_id": "3c4ab45b-0286-48e1-b944-47c144bf962c",
-              "name": "Get a list of contacts",
+              "name": "/Contact/  || Get a list of contacts",
               "event": [
                 {
                   "listen": "test",
