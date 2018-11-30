@@ -5571,115 +5571,6 @@
               ]
             },
             {
-              "_postman_id": "3393857b-e97f-45f1-a59c-aae912e6dc74",
-              "name": "/{{ListID}}/ContactSummary || Send Performance, Get the contact summary",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactSummary",
-                "description": "Get summary details of a contact list\n<h4>URL Parameters</h4>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Required</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>{{ListID}}</td>\n<td>required</td>\n<td>ID of the contact list</td>\n</tr>\n</tbody>\n</table>\n\n<h4>Response body parameters</h4>\n<table>\n<thead>\n<tr>\n<th>Key</th><th>Type</th><th>Description</th></tr>\n</thead>\n<tbody>\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\n<tr><td>Data</td><td>ContactSummaryRecord</td><td>Array of data</td></tr>\n<tr><td>Error</td><td>ErrorData</td><td>Array of errors</td></tr>\n</tbody>\n</table>"
-              },
-              "response": [
-                {
-                  "id": "54984bcf-e1ac-421c-9402-bbae101d3974",
-                  "name": "Get the contact summary",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactSummary"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Tue, 17 Oct 2017 05:44:02 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"12\",\"BounceContactCount\":\"0\",\"HardContactCount\":\"0\",\"NotOptinContactCount\":\"0\",\"OptinContactCount\":\"0\",\"SoftContactCount\":\"0\",\"UnsubscribeContactCount\":\"2\"},\"Errors\":[],\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
               "_postman_id": "8134d837-90f4-42ac-81e3-f2cfb872c0da",
               "name": "Get the clean count ",
               "request": {
@@ -14619,7 +14510,117 @@
           "_postman_id": "b9c9ee1e-18f1-4e3f-9dbd-16cc1d51f6e1",
           "name": "Reporting Metrics",
           "description": "",
-          "item": [],
+          "item": [
+            {
+              "_postman_id": "3393857b-e97f-45f1-a59c-aae912e6dc74",
+              "name": "/{{ListID}}/ContactSummary || Send Performance, Get the contact summary",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactSummary",
+                "description": "Get summary details of a contact list\n<h4>URL Parameters</h4>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Required</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>{{ListID}}</td>\n<td>required</td>\n<td>ID of the contact list</td>\n</tr>\n</tbody>\n</table>\n\n<h4>Response body parameters</h4>\n<table>\n<thead>\n<tr>\n<th>Key</th><th>Type</th><th>Description</th></tr>\n</thead>\n<tbody>\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\n<tr><td>Data</td><td>ContactSummaryRecord</td><td>Array of data</td></tr>\n<tr><td>Error</td><td>ErrorData</td><td>Array of errors</td></tr>\n</tbody>\n</table>"
+              },
+              "response": [
+                {
+                  "id": "54984bcf-e1ac-421c-9402-bbae101d3974",
+                  "name": "Get the contact summary",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactSummary"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Tue, 17 Oct 2017 05:44:02 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"12\",\"BounceContactCount\":\"0\",\"HardContactCount\":\"0\",\"NotOptinContactCount\":\"0\",\"OptinContactCount\":\"0\",\"SoftContactCount\":\"0\",\"UnsubscribeContactCount\":\"2\"},\"Errors\":[],\"Status\":\"1\"}}"
+                }
+              ]
+            }
+          ],
           "_postman_isSubFolder": true
         }
       ]
