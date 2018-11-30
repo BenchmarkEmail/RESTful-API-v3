@@ -39,4 +39,4 @@
 
 ### Security
 
-- [Get a 24 hour temorary API Token to make API requests](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Get%20a%2024hr%20API%20Token%20%20using%20id%20and%20password.md)
+- [Get a 24 hour temporary API Token to make API requests](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Get%20a%2024hr%20API%20Token%20%20using%20id%20and%20password.md)
