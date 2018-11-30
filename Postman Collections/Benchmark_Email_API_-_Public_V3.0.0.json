@@ -12398,6 +12398,148 @@
               ]
             },
             {
+              "_postman_id": "b76fdd1a-afd3-4190-9fb9-3317034033a8",
+              "name": "/{{ListID}}/AuditHistory || Get contact audit history",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/AuditHistory",
+                "description": "<h4>Get contact audit history</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of records to show per page</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>int</td><td>Field to order by</td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>int</td><td>Sort Order, <code>asc</code> or <code>desc</code></td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactAuditHistoryRecord\">AuditHistoryRecord</a></td><td>Audit history data</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Error</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "82afc196-0d6d-422b-a3ae-8e460b834ab2",
+                  "name": "Get contact audit history",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/AuditHistory?PageNumber={{PageNumber}}&PageSize={{PageSize}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}",
+                      "protocol": "https",
+                      "host": [
+                        "clientapi",
+                        "benchmarkemail",
+                        "com"
+                      ],
+                      "path": [
+                        "Contact",
+                        "{{ListID}}",
+                        "AuditHistory"
+                      ],
+                      "query": [
+                        {
+                          "key": "PageNumber",
+                          "value": "{{PageNumber}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "PageSize",
+                          "value": "{{PageSize}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "OrderBy",
+                          "value": "{{OrderBy}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "SortOrder",
+                          "value": "{{SortOrder}}",
+                          "equals": true
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Wed, 18 Oct 2017 11:35:55 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":2,\"Data\":[{\"ApprovedBatchSize\":\"0\",\"BadEmails\":\"0\",\"BatchID\":\"8dd4843b-20aa-42ee-9872-d43c78c84106\",\"BatchSize\":\"0\",\"CreatedDate\":\"Oct 17, 2017\",\"Duplicates\":\"1\",\"FileName\":\"text.csv\",\"FilteredKeyword\":\"0\",\"FilteredOther\":\"1\",\"ID\":\"1\",\"JsonData\":\"\",\"ListAudited\":\"1\",\"RoleBased\":\"0\",\"SyntaxError\":\"0\",\"TotalBatchSize\":\"1\",\"Unsubscribes\":\"0\"},{\"ApprovedBatchSize\":\"1\",\"BadEmails\":\"0\",\"BatchID\":\"aa1abf41-64ff-4ec6-8758-1b235c9ca967\",\"BatchSize\":\"0\",\"CreatedDate\":\"Oct 17, 2017\",\"Duplicates\":\"0\",\"FileName\":\"text.csv\",\"FilteredKeyword\":\"0\",\"FilteredOther\":\"0\",\"ID\":\"2\",\"JsonData\":\"\",\"ListAudited\":\"1\",\"RoleBased\":\"0\",\"SyntaxError\":\"0\",\"TotalBatchSize\":\"1\",\"Unsubscribes\":\"0\"}],\"Errors\":[],\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
               "_postman_id": "8134d837-90f4-42ac-81e3-f2cfb872c0da",
               "name": "Get the clean count ",
               "request": {
@@ -13517,148 +13659,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Count\":22,\"Data\":[{\"Clicks\":\"0\",\"Forwards\":\"0\",\"ID\":\"0\",\"Opens\":\"0\",\"Schedule\":\"Oct 17, 2017\",\"TemplateName\":\"Jun 16 2016 Email Oct 17 2017\"},{\"Clicks\":\"0\",\"Forwards\":\"0\",\"ID\":\"0\",\"Opens\":\"0\",\"Schedule\":\"Oct 16, 2017\",\"TemplateName\":\"Jun 16 2016 Email Oct 16 2017\"}],\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
-              "_postman_id": "b76fdd1a-afd3-4190-9fb9-3317034033a8",
-              "name": "/{{ListID}}/AuditHistory || Get contact audit history",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/AuditHistory",
-                "description": "<h4>Get contact audit history</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of records to show per page</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>int</td><td>Field to order by</td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>int</td><td>Sort Order, <code>asc</code> or <code>desc</code></td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactAuditHistoryRecord\">AuditHistoryRecord</a></td><td>Audit history data</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Error</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "82afc196-0d6d-422b-a3ae-8e460b834ab2",
-                  "name": "Get contact audit history",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": {
-                      "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/AuditHistory?PageNumber={{PageNumber}}&PageSize={{PageSize}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}",
-                      "protocol": "https",
-                      "host": [
-                        "clientapi",
-                        "benchmarkemail",
-                        "com"
-                      ],
-                      "path": [
-                        "Contact",
-                        "{{ListID}}",
-                        "AuditHistory"
-                      ],
-                      "query": [
-                        {
-                          "key": "PageNumber",
-                          "value": "{{PageNumber}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "PageSize",
-                          "value": "{{PageSize}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "OrderBy",
-                          "value": "{{OrderBy}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "SortOrder",
-                          "value": "{{SortOrder}}",
-                          "equals": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Wed, 18 Oct 2017 11:35:55 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":2,\"Data\":[{\"ApprovedBatchSize\":\"0\",\"BadEmails\":\"0\",\"BatchID\":\"8dd4843b-20aa-42ee-9872-d43c78c84106\",\"BatchSize\":\"0\",\"CreatedDate\":\"Oct 17, 2017\",\"Duplicates\":\"1\",\"FileName\":\"text.csv\",\"FilteredKeyword\":\"0\",\"FilteredOther\":\"1\",\"ID\":\"1\",\"JsonData\":\"\",\"ListAudited\":\"1\",\"RoleBased\":\"0\",\"SyntaxError\":\"0\",\"TotalBatchSize\":\"1\",\"Unsubscribes\":\"0\"},{\"ApprovedBatchSize\":\"1\",\"BadEmails\":\"0\",\"BatchID\":\"aa1abf41-64ff-4ec6-8758-1b235c9ca967\",\"BatchSize\":\"0\",\"CreatedDate\":\"Oct 17, 2017\",\"Duplicates\":\"0\",\"FileName\":\"text.csv\",\"FilteredKeyword\":\"0\",\"FilteredOther\":\"0\",\"ID\":\"2\",\"JsonData\":\"\",\"ListAudited\":\"1\",\"RoleBased\":\"0\",\"SyntaxError\":\"0\",\"TotalBatchSize\":\"1\",\"Unsubscribes\":\"0\"}],\"Errors\":[],\"Status\":\"1\"}}"
                 }
               ]
             }
