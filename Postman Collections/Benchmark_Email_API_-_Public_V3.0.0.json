@@ -5572,7 +5572,7 @@
             },
             {
               "_postman_id": "3393857b-e97f-45f1-a59c-aae912e6dc74",
-              "name": "Get the contact summary",
+              "name": "/{{ListID}}/ContactSummary || Send Performance, Get the contact summary",
               "request": {
                 "method": "GET",
                 "header": [
