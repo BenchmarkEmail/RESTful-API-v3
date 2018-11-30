@@ -13885,6 +13885,13 @@
           "_postman_isSubFolder": true
         },
         {
+          "_postman_id": "b5e8ce36-6795-4248-a7dd-c9c7d8b3bdb2",
+          "name": "list configurations",
+          "description": "",
+          "item": [],
+          "_postman_isSubFolder": true
+        },
+        {
           "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
           "name": "/ContactDetails || Search Contacts",
           "event": [
