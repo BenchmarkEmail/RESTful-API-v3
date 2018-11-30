@@ -14186,7 +14186,7 @@
         },
         {
           "_postman_id": "581e172a-b74b-4207-b2bd-cb978b6635fa",
-          "name": "/{{ListID}}/ContactDetails/{{ContactID}} || Contact Details",
+          "name": "/{{ListID}}/ContactDetails/{{ContactID}} || Show a contact field names valuesand rating , Contact Details",
           "request": {
             "method": "GET",
             "header": [
