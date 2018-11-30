@@ -8614,7 +8614,7 @@
             },
             {
               "_postman_id": "d51b7d23-c0cf-47c2-ba85-cd8d2d9695bd",
-              "name": "Get contact lists attributes",
+              "name": "/{{ListID}}/Fields || List Field Names, Get contact lists attributes",
               "request": {
                 "method": "GET",
                 "header": [
