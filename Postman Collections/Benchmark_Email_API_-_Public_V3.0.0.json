@@ -13671,115 +13671,6 @@
           "description": "",
           "item": [
             {
-              "_postman_id": "d51b7d23-c0cf-47c2-ba85-cd8d2d9695bd",
-              "name": "/{{ListID}}/Fields || List Field Names, Get contact lists attributes",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/Fields",
-                "description": "<h4>Get contact lists attributes</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td>String</td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Errors</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "893e1e88-5fce-4dbe-955f-54ebee4659b7",
-                  "name": "Get contact lists attributes",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/Fields"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Mon, 23 Oct 2017 05:39:29 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":29,\"Data\":[\"email\",\"firstname\",\"lastname\",\"middlename\",\"emailtype\",\"Address\",\"City\",\"State\",\"Zip\",\"Country\",\"Phone\",\"Fax\",\"Cell Phone\",\"Company Name\",\"Job Title\",\"Business Phone\",\"Business Fax\",\"Business Address\",\"Business City\",\"Business State\",\"Business Zip\",\"Business Country\",\"Notes\",\"Date 1\",\"Date 2\",\"Text\",\"Age\",\"Indian\",\"Modified On\"],\"Errors\":[],\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
               "_postman_id": "5389ee29-ee25-45cb-9234-540b4241a2cd",
               "name": "/{{ListID}} || Deep View, Get contact lists detail",
               "request": {
@@ -13885,6 +13776,115 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"9\",\"CreatedDateTime\":\"Oct 06 2017, 05:44 PM\",\"Description\":\"This list is modified\",\"Field10Name\":\"Job Title\",\"Field10Type\":\"1\",\"Field11Name\":\"Business Phone\",\"Field11Type\":\"1\",\"Field12Name\":\"Business Fax\",\"Field12Type\":\"1\",\"Field13Name\":\"Business Address\",\"Field13Type\":\"1\",\"Field14Name\":\"Business City\",\"Field14Type\":\"1\",\"Field15Name\":\"Business State\",\"Field15Type\":\"1\",\"Field16Name\":\"Business Zip\",\"Field16Type\":\"1\",\"Field17Name\":\"Business Country\",\"Field17Type\":\"1\",\"Field18Name\":\"Notes\",\"Field18Type\":\"1\",\"Field19Name\":\"Date 1\",\"Field19Type\":\"4\",\"Field1Name\":\"Address\",\"Field1Type\":\"1\",\"Field20Name\":\"Date 2\",\"Field20Type\":\"4\",\"Field21Name\":\"Text\",\"Field21Type\":\"1\",\"Field22Name\":\"Age\",\"Field22Type\":\"2\",\"Field23Name\":\"Indian\",\"Field23Type\":\"3\",\"Field24Name\":\"Modified On\",\"Field24Type\":\"4\",\"Field2Name\":\"City\",\"Field2Type\":\"1\",\"Field3Name\":\"State\",\"Field3Type\":\"1\",\"Field4Name\":\"Zip\",\"Field4Type\":\"1\",\"Field5Name\":\"Country\",\"Field5Type\":\"1\",\"Field6Name\":\"Phone\",\"Field6Type\":\"1\",\"Field7Name\":\"Fax\",\"Field7Type\":\"1\",\"Field8Name\":\"Cell Phone\",\"Field8Type\":\"1\",\"Field9Name\":\"Company Name\",\"Field9Type\":\"1\",\"FirstnameLabel\":\"First Name\",\"ID\":\"15242968\",\"IsMasterUnsubscribe\":\"0\",\"LastnameLabel\":\"Last Name\",\"MiddlenameLabel\":\"Middle Name\",\"Name\":\"Targeted EMailing List Modified\"},\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "_postman_id": "d51b7d23-c0cf-47c2-ba85-cd8d2d9695bd",
+              "name": "/{{ListID}}/Fields || List Field Names, Get contact lists attributes",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/Fields",
+                "description": "<h4>Get contact lists attributes</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td>String</td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Errors</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "893e1e88-5fce-4dbe-955f-54ebee4659b7",
+                  "name": "Get contact lists attributes",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/Fields"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 05:39:29 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":29,\"Data\":[\"email\",\"firstname\",\"lastname\",\"middlename\",\"emailtype\",\"Address\",\"City\",\"State\",\"Zip\",\"Country\",\"Phone\",\"Fax\",\"Cell Phone\",\"Company Name\",\"Job Title\",\"Business Phone\",\"Business Fax\",\"Business Address\",\"Business City\",\"Business State\",\"Business Zip\",\"Business Country\",\"Notes\",\"Date 1\",\"Date 2\",\"Text\",\"Age\",\"Indian\",\"Modified On\"],\"Errors\":[],\"Status\":\"1\"}}"
                 }
               ]
             }
