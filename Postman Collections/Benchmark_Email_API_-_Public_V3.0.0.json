@@ -5295,247 +5295,6 @@
           "description": "",
           "item": [
             {
-              "_postman_id": "14b52353-6bd1-436a-957e-79706ad0a78c",
-              "name": "Get Filtered Contacts with extra fields",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "https://restapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/ExtraFields?SortOrder={{SortOrder}}",
-                  "protocol": "https",
-                  "host": [
-                    "restapi",
-                    "benchmarkemail",
-                    "com"
-                  ],
-                  "path": [
-                    "Contact",
-                    "{{ListID}}",
-                    "ContactDetails",
-                    "ExtraFields"
-                  ],
-                  "query": [
-                    {
-                      "key": "?SearchType",
-                      "value": "{{SearchType}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "SearchField",
-                      "value": "{{SearchField}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "PageNumber",
-                      "value": "{{PageNumber}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "PageSize",
-                      "value": "{{PageSize}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "OrderBy",
-                      "value": "{{OrderBy}}",
-                      "equals": true,
-                      "disabled": true
-                    },
-                    {
-                      "key": "SortOrder",
-                      "value": "{{SortOrder}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "Filter",
-                      "value": "{{Filter}}",
-                      "equals": true,
-                      "disabled": true
-                    }
-                  ]
-                },
-                "description": "<h4>Get filtered contacts with extra fields</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n<tr><td>{{ContactID}}</td><td>required</td><td>string</td><td>ID of the contact</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search value</td></tr>\r\n<tr><td>SearchType</td><td>optional</td><td>string</td><td><code>1</code> - Starts \r\n<code>2</code> - exact \r\n<code>3</code> - contains \r\n<code>4</code> - end</td></tr>\r\n<tr><td>SearchField</td><td>optional</td><td>string</td><td>Search field (like <code>email</code>, <code>name</code>, <code>address</code>, <code>date1</code>, <code>date2</code> etc)</td></tr>\r\n<tr><td>Filter</td><td>optional</td><td>string</td><td>Filter contact\r\n<code>2</code> - unsubscribe\r\n<code>5</code> - hard bounce\r\n<code>100</code> \u2013 all other contacts except unsubscribe and hard bounce</td></tr>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page Number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of pages</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>string</td><td>Order by <code>email</code>, <code>firstname</code>, <code>lastname</code>, <code>date</code></td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>int</td><td><code>Desc</code> or <code>ASC</code></td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactDetailRecord\">ContactDetailRecord</a></td><td>Contact Data</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "374638e1-93f0-448b-8cb3-453684d01640",
-                  "name": "Get Filtered Contacts with extra fields",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": {
-                      "raw": "https://restapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/ExtraFields?SearchType={{SearchType}}&SearchField={{SearchField}}&SearchFilter={{SearchFilter}}&PageNumber={{PageNumber}}&PageSize={{PageSize}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}&Filter={{Filter}}",
-                      "protocol": "https",
-                      "host": [
-                        "restapi",
-                        "benchmarkemail",
-                        "com"
-                      ],
-                      "path": [
-                        "Contact",
-                        "{{ListID}}",
-                        "ContactDetails",
-                        "ExtraFields"
-                      ],
-                      "query": [
-                        {
-                          "key": "SearchType",
-                          "value": "{{SearchType}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "SearchField",
-                          "value": "{{SearchField}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "SearchFilter",
-                          "value": "{{SearchFilter}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "PageNumber",
-                          "value": "{{PageNumber}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "PageSize",
-                          "value": "{{PageSize}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "OrderBy",
-                          "value": "{{OrderBy}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "SortOrder",
-                          "value": "{{SortOrder}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "Filter",
-                          "value": "{{Filter}}",
-                          "equals": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Tue, 15 May 2018 06:12:47 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.0",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked",
-                      "name": "Transfer-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [
-                    {
-                      "expires": "Invalid Date",
-                      "httpOnly": true,
-                      "domain": "benchmarkemail.com",
-                      "path": "/",
-                      "secure": false,
-                      "value": "gskbe4xkvt5chb5xoks0idwj",
-                      "key": "ASP.NET_SessionId"
-                    },
-                    {
-                      "expires": "Invalid Date",
-                      "httpOnly": false,
-                      "domain": "benchmarkemail.com",
-                      "path": "/",
-                      "secure": false,
-                      "value": "a80c004f03144b7aacb4efdbc54adc65",
-                      "key": "token"
-                    }
-                  ],
-                  "responseTime": null,
-                  "body": "{\n    \"Response\": {\n        \"Count\": 1,\n        \"Data\": [\n            {\n                \"ClientZone\": \"IST\",\n                \"ContactMasterID\": \"15639577\",\n                \"CreatedDate\": \"Apr 27, 2018\",\n                \"Email\": \"test@cybermaxsolutions.com\",\n                \"EmailType\": \"\",\n                \"Field1\": \"Planet Earth\",\n                \"Field10\": \"Developer\",\n                \"Field11\": \"456789\",\n                \"Field12\": \"456\",\n                \"Field13\": \"Planet Earth\",\n                \"Field14\": \"Mumbai\",\n                \"Field15\": \"Maharashtra\",\n                \"Field16\": \"456321\",\n                \"Field17\": \"India\",\n                \"Field18\": \"None\",\n                \"Field19\": \"11/04/1988\",\n                \"Field2\": \"Dombivali\",\n                \"Field20\": \"05/11/2018\",\n                \"Field21\": \"3\",\n                \"Field22\": \"4\",\n                \"Field23\": \"5\",\n                \"Field24\": \"6\",\n                \"Field3\": \"Maharashtra\",\n                \"Field4\": \"456123\",\n                \"Field5\": \"India\",\n                \"Field6\": \"9876543210\",\n                \"Field7\": \"123\",\n                \"Field8\": \"9876543210\",\n                \"Field9\": \"Cybermax Solutions\",\n                \"FirstName\": \"Test\",\n                \"Flag\": \"\",\n                \"ID\": \"2325118363\",\n                \"LastName\": \"Test\",\n                \"MiddleName\": \"Test\",\n                \"OptinDate\": \"\",\n                \"OptinIP\": \"\",\n                \"ReSend\": \"\",\n                \"Status\": \"\",\n                \"UpdatedDate\": \"May 10, 2018\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
-                }
-              ]
-            },
-            {
               "_postman_id": "dc125070-7a85-491d-a49a-d87176c264d7",
               "name": "Modify Contact List",
               "request": {
@@ -13703,191 +13462,6 @@
           ]
         },
         {
-          "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
-          "name": "/ContactDetails || Search by email and show lists it belongs to and status, Search Contacts",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "c1aab537-beda-4afe-83ef-0458cbf7bbcc",
-                "exec": [
-                  "let json = pm.response.json();\r",
-                  "  \r",
-                  "pm.test(\"Request was successful\", function() {\r",
-                  "  pm.response.to.be.success;\r",
-                  "});\r",
-                  "\r",
-                  "pm.test(\"Response body status is 1\", function() {\r",
-                  "\r",
-                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
-                  "\r",
-                  "});\r",
-                  "\r",
-                  "\r",
-                  "\r",
-                  "pm.environment.set(\"ContactID\", json.Response.Data[0].ID);\r",
-                  "pm.environment.set(\"ContactEmail\", json.Response.Data[0].Email);"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "AuthToken",
-                "value": "{{Authentication Token}}",
-                "description": "Authentication Token"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": "Content Type"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?Search={{SearchEmailAddress}}",
-              "protocol": "https",
-              "host": [
-                "clientapi",
-                "benchmarkemail",
-                "com"
-              ],
-              "path": [
-                "Contact",
-                "ContactDetails"
-              ],
-              "query": [
-                {
-                  "key": "SearchFilter",
-                  "value": "{{SearchFilterStartsWith}}",
-                  "equals": true,
-                  "disabled": true
-                },
-                {
-                  "key": "Search",
-                  "value": "{{SearchEmailAddress}}",
-                  "equals": true
-                }
-              ]
-            },
-            "description": "<h4>Search Contacts</h4>\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search Filter</td></tr>\r\n<tr><td>Search</td><td>required</td><td>string </td><td>Email Address you want to search</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSearchRecord\">ContactSearchRecord</a></td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
-          },
-          "response": [
-            {
-              "id": "7108baf3-5857-45ce-be90-204f7ae2ed9e",
-              "name": "Search Contacts",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token",
-                    "warning": ""
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type",
-                    "warning": ""
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter}}&Search={{Search}}",
-                  "protocol": "https",
-                  "host": [
-                    "clientapi",
-                    "benchmarkemail",
-                    "com"
-                  ],
-                  "path": [
-                    "Contact",
-                    "ContactDetails"
-                  ],
-                  "query": [
-                    {
-                      "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "Search",
-                      "value": "{{Search}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "access-control-allow-origin",
-                  "key": "access-control-allow-origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "cache-control",
-                  "key": "cache-control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "content-type",
-                  "key": "content-type",
-                  "value": "application/json; charset=utf-8",
-                  "description": ""
-                },
-                {
-                  "name": "date",
-                  "key": "date",
-                  "value": "Tue, 17 Oct 2017 11:22:46 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "server",
-                  "key": "server",
-                  "value": "Microsoft-IIS/8.0",
-                  "description": ""
-                },
-                {
-                  "name": "transfer-encoding",
-                  "key": "transfer-encoding",
-                  "value": "chunked",
-                  "description": ""
-                },
-                {
-                  "name": "x-aspnet-version",
-                  "key": "x-aspnet-version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "x-powered-by",
-                  "key": "x-powered-by",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\"Response\":{\"Count\":4,\"Data\":[{\"ContactMasterID\":\"15112393\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"Test2\",\"ID\":\"1950474841\",\"IsMasterUnsubScribe\":0,\"LastName\":\"Test2\",\"ListName\":\"Benchmark Tech Support Test List\"},{\"ContactMasterID\":\"15242968\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039133647\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Targeted EMailing List Modified\"},{\"ContactMasterID\":\"15257848\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039912369\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Test Source List\"},{\"ContactMasterID\":\"15257899\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2040815886\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"New Target List\"}],\"Status\":\"1\"}}"
-            }
-          ]
-        },
-        {
           "_postman_id": "430a51c3-5521-4533-9ba5-7f017fb62eb9",
           "name": "/{{ListID}}/ContactDetails? || Search a List, Get Filtered Contacts",
           "request": {
@@ -14113,10 +13687,37 @@
           ]
         },
         {
-          "_postman_id": "613919cd-5340-42b1-8c40-61222da54d24",
-          "name": "/ContactDetails/All || Delete the selected contacts from ALL lists",
+          "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
+          "name": "/ContactDetails || Search by email and show lists it belongs to and status, Search Contacts",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c1aab537-beda-4afe-83ef-0458cbf7bbcc",
+                "exec": [
+                  "let json = pm.response.json();\r",
+                  "  \r",
+                  "pm.test(\"Request was successful\", function() {\r",
+                  "  pm.response.to.be.success;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response body status is 1\", function() {\r",
+                  "\r",
+                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
+                  "\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "\r",
+                  "pm.environment.set(\"ContactID\", json.Response.Data[0].ID);\r",
+                  "pm.environment.set(\"ContactEmail\", json.Response.Data[0].Email);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
-            "method": "DELETE",
+            "method": "GET",
             "header": [
               {
                 "key": "AuthToken",
@@ -14131,17 +13732,42 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"ListID\":\"{{ListID}}\",\"ContactID\":\"{{ContactID}}\"}"
+              "raw": ""
             },
-            "url": "https://clientapi.benchmarkemail.com/Contact/ContactDetails/All",
-            "description": "<h4>Delete the selected contacts from ALL lists</h4>\r\n\r\n<h4>Request body  parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Search</td><td>optional</td><td>string</td><td>Search value like email address</td></tr>\r\n<tr><td>Filter</td><td>optional</td><td>string</td><td>Filter value</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n<tr><td>{{ContactID}}</td><td>required</td><td>string</td><td>ID of the contact</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Error Data</td></tr>\r\n</tbody>\r\n</table>"
+            "url": {
+              "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?Search={{SearchEmailAddress}}",
+              "protocol": "https",
+              "host": [
+                "clientapi",
+                "benchmarkemail",
+                "com"
+              ],
+              "path": [
+                "Contact",
+                "ContactDetails"
+              ],
+              "query": [
+                {
+                  "key": "SearchFilter",
+                  "value": "{{SearchFilterStartsWith}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "Search",
+                  "value": "{{SearchEmailAddress}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "<h4>Search Contacts</h4>\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search Filter</td></tr>\r\n<tr><td>Search</td><td>required</td><td>string </td><td>Email Address you want to search</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSearchRecord\">ContactSearchRecord</a></td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
           },
           "response": [
             {
-              "id": "f6caaf05-2e89-4446-9028-bb48e4174daa",
-              "name": "Delete the selected contacts from ALL lists",
+              "id": "7108baf3-5857-45ce-be90-204f7ae2ed9e",
+              "name": "Search Contacts",
               "originalRequest": {
-                "method": "DELETE",
+                "method": "GET",
                 "header": [
                   {
                     "key": "AuthToken",
@@ -14158,9 +13784,33 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"ListID\":\"{{ListID}}\",\"ContactID\":\"{{ContactID}}\"}"
+                  "raw": ""
                 },
-                "url": "https://clientapi.benchmarkemail.com/Contact/ContactDetails/All"
+                "url": {
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter}}&Search={{Search}}",
+                  "protocol": "https",
+                  "host": [
+                    "clientapi",
+                    "benchmarkemail",
+                    "com"
+                  ],
+                  "path": [
+                    "Contact",
+                    "ContactDetails"
+                  ],
+                  "query": [
+                    {
+                      "key": "SearchFilter",
+                      "value": "{{SearchFilter}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "Search",
+                      "value": "{{Search}}",
+                      "equals": true
+                    }
+                  ]
+                }
               },
               "status": "OK",
               "code": 200,
@@ -14187,7 +13837,7 @@
                 {
                   "name": "date",
                   "key": "date",
-                  "value": "Tue, 17 Oct 2017 10:39:44 GMT",
+                  "value": "Tue, 17 Oct 2017 11:22:46 GMT",
                   "description": ""
                 },
                 {
@@ -14217,7 +13867,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
+              "body": "{\"Response\":{\"Count\":4,\"Data\":[{\"ContactMasterID\":\"15112393\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"Test2\",\"ID\":\"1950474841\",\"IsMasterUnsubScribe\":0,\"LastName\":\"Test2\",\"ListName\":\"Benchmark Tech Support Test List\"},{\"ContactMasterID\":\"15242968\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039133647\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Targeted EMailing List Modified\"},{\"ContactMasterID\":\"15257848\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039912369\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Test Source List\"},{\"ContactMasterID\":\"15257899\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2040815886\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"New Target List\"}],\"Status\":\"1\"}}"
             }
           ]
         },
@@ -14329,6 +13979,115 @@
           ]
         },
         {
+          "_postman_id": "613919cd-5340-42b1-8c40-61222da54d24",
+          "name": "/ContactDetails/All || Delete the selected contacts from ALL lists",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "AuthToken",
+                "value": "{{Authentication Token}}",
+                "description": "Authentication Token"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "Content Type"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"ListID\":\"{{ListID}}\",\"ContactID\":\"{{ContactID}}\"}"
+            },
+            "url": "https://clientapi.benchmarkemail.com/Contact/ContactDetails/All",
+            "description": "<h4>Delete the selected contacts from ALL lists</h4>\r\n\r\n<h4>Request body  parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Search</td><td>optional</td><td>string</td><td>Search value like email address</td></tr>\r\n<tr><td>Filter</td><td>optional</td><td>string</td><td>Filter value</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n<tr><td>{{ContactID}}</td><td>required</td><td>string</td><td>ID of the contact</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Errors</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ErrorData\">ErrorData</a></td><td>Error Data</td></tr>\r\n</tbody>\r\n</table>"
+          },
+          "response": [
+            {
+              "id": "f6caaf05-2e89-4446-9028-bb48e4174daa",
+              "name": "Delete the selected contacts from ALL lists",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "warning": ""
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type",
+                    "warning": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"ListID\":\"{{ListID}}\",\"ContactID\":\"{{ContactID}}\"}"
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/ContactDetails/All"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "access-control-allow-origin",
+                  "key": "access-control-allow-origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Tue, 17 Oct 2017 10:39:44 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Microsoft-IIS/8.0",
+                  "description": ""
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": ""
+                },
+                {
+                  "name": "x-aspnet-version",
+                  "key": "x-aspnet-version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "x-powered-by",
+                  "key": "x-powered-by",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
+            }
+          ]
+        },
+        {
           "_postman_id": "e2b7a81d-f7be-4eef-8930-e76176a301ab",
           "name": "/{{ListID}} || Delete list",
           "request": {
@@ -14434,6 +14193,247 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "14b52353-6bd1-436a-957e-79706ad0a78c",
+          "name": "Get Filtered Contacts with extra fields",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "AuthToken",
+                "value": "{{Authentication Token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://restapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/ExtraFields?SortOrder={{SortOrder}}",
+              "protocol": "https",
+              "host": [
+                "restapi",
+                "benchmarkemail",
+                "com"
+              ],
+              "path": [
+                "Contact",
+                "{{ListID}}",
+                "ContactDetails",
+                "ExtraFields"
+              ],
+              "query": [
+                {
+                  "key": "?SearchType",
+                  "value": "{{SearchType}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "SearchField",
+                  "value": "{{SearchField}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "SearchFilter",
+                  "value": "{{SearchFilter}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "PageNumber",
+                  "value": "{{PageNumber}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "PageSize",
+                  "value": "{{PageSize}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "OrderBy",
+                  "value": "{{OrderBy}}",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "SortOrder",
+                  "value": "{{SortOrder}}",
+                  "equals": true
+                },
+                {
+                  "key": "Filter",
+                  "value": "{{Filter}}",
+                  "equals": true,
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "<h4>Get filtered contacts with extra fields</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody\r\n<tr><td>{{ListID}}</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n<tr><td>{{ContactID}}</td><td>required</td><td>string</td><td>ID of the contact</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search value</td></tr>\r\n<tr><td>SearchType</td><td>optional</td><td>string</td><td><code>1</code> - Starts \r\n<code>2</code> - exact \r\n<code>3</code> - contains \r\n<code>4</code> - end</td></tr>\r\n<tr><td>SearchField</td><td>optional</td><td>string</td><td>Search field (like <code>email</code>, <code>name</code>, <code>address</code>, <code>date1</code>, <code>date2</code> etc)</td></tr>\r\n<tr><td>Filter</td><td>optional</td><td>string</td><td>Filter contact\r\n<code>2</code> - unsubscribe\r\n<code>5</code> - hard bounce\r\n<code>100</code> \u2013 all other contacts except unsubscribe and hard bounce</td></tr>\r\n<tr><td>PageNumber</td><td>optional</td><td>int</td><td>Page Number</td></tr>\r\n<tr><td>PageSize</td><td>optional</td><td>int</td><td>Number of pages</td></tr>\r\n<tr><td>OrderBy</td><td>optional</td><td>string</td><td>Order by <code>email</code>, <code>firstname</code>, <code>lastname</code>, <code>date</code></td></tr>\r\n<tr><td>SortOrder</td><td>optional</td><td>int</td><td><code>Desc</code> or <code>ASC</code></td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactDetailRecord\">ContactDetailRecord</a></td><td>Contact Data</td></tr>\r\n</tbody>\r\n</table>"
+          },
+          "response": [
+            {
+              "id": "374638e1-93f0-448b-8cb3-453684d01640",
+              "name": "Get Filtered Contacts with extra fields",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://restapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/ExtraFields?SearchType={{SearchType}}&SearchField={{SearchField}}&SearchFilter={{SearchFilter}}&PageNumber={{PageNumber}}&PageSize={{PageSize}}&OrderBy={{OrderBy}}&SortOrder={{SortOrder}}&Filter={{Filter}}",
+                  "protocol": "https",
+                  "host": [
+                    "restapi",
+                    "benchmarkemail",
+                    "com"
+                  ],
+                  "path": [
+                    "Contact",
+                    "{{ListID}}",
+                    "ContactDetails",
+                    "ExtraFields"
+                  ],
+                  "query": [
+                    {
+                      "key": "SearchType",
+                      "value": "{{SearchType}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "SearchField",
+                      "value": "{{SearchField}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "SearchFilter",
+                      "value": "{{SearchFilter}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "PageNumber",
+                      "value": "{{PageNumber}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "PageSize",
+                      "value": "{{PageSize}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "OrderBy",
+                      "value": "{{OrderBy}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "SortOrder",
+                      "value": "{{SortOrder}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "Filter",
+                      "value": "{{Filter}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 15 May 2018 06:12:47 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.0",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "httpOnly": true,
+                  "domain": "benchmarkemail.com",
+                  "path": "/",
+                  "secure": false,
+                  "value": "gskbe4xkvt5chb5xoks0idwj",
+                  "key": "ASP.NET_SessionId"
+                },
+                {
+                  "expires": "Invalid Date",
+                  "httpOnly": false,
+                  "domain": "benchmarkemail.com",
+                  "path": "/",
+                  "secure": false,
+                  "value": "a80c004f03144b7aacb4efdbc54adc65",
+                  "key": "token"
+                }
+              ],
+              "responseTime": null,
+              "body": "{\n    \"Response\": {\n        \"Count\": 1,\n        \"Data\": [\n            {\n                \"ClientZone\": \"IST\",\n                \"ContactMasterID\": \"15639577\",\n                \"CreatedDate\": \"Apr 27, 2018\",\n                \"Email\": \"test@cybermaxsolutions.com\",\n                \"EmailType\": \"\",\n                \"Field1\": \"Planet Earth\",\n                \"Field10\": \"Developer\",\n                \"Field11\": \"456789\",\n                \"Field12\": \"456\",\n                \"Field13\": \"Planet Earth\",\n                \"Field14\": \"Mumbai\",\n                \"Field15\": \"Maharashtra\",\n                \"Field16\": \"456321\",\n                \"Field17\": \"India\",\n                \"Field18\": \"None\",\n                \"Field19\": \"11/04/1988\",\n                \"Field2\": \"Dombivali\",\n                \"Field20\": \"05/11/2018\",\n                \"Field21\": \"3\",\n                \"Field22\": \"4\",\n                \"Field23\": \"5\",\n                \"Field24\": \"6\",\n                \"Field3\": \"Maharashtra\",\n                \"Field4\": \"456123\",\n                \"Field5\": \"India\",\n                \"Field6\": \"9876543210\",\n                \"Field7\": \"123\",\n                \"Field8\": \"9876543210\",\n                \"Field9\": \"Cybermax Solutions\",\n                \"FirstName\": \"Test\",\n                \"Flag\": \"\",\n                \"ID\": \"2325118363\",\n                \"LastName\": \"Test\",\n                \"MiddleName\": \"Test\",\n                \"OptinDate\": \"\",\n                \"OptinIP\": \"\",\n                \"ReSend\": \"\",\n                \"Status\": \"\",\n                \"UpdatedDate\": \"May 10, 2018\"\n            }\n        ],\n        \"Status\": \"1\"\n    }\n}"
             }
           ]
         }
