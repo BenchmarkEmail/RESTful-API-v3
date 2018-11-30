@@ -5899,7 +5899,7 @@
             },
             {
               "_postman_id": "430a51c3-5521-4533-9ba5-7f017fb62eb9",
-              "name": "Get Filtered Contacts",
+              "name": "/{{ListID}}/ContactDetails? || Search a List, Get Filtered Contacts",
               "request": {
                 "method": "GET",
                 "header": [
@@ -5919,7 +5919,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?Filter={{Filter}}",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?SearchField={{SearchField}}&SearchFilter={{SearchFor}}",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -5934,26 +5934,25 @@
                   "query": [
                     {
                       "key": "SearchType",
-                      "value": "{{SearchType}}",
+                      "value": "{{1Starts_2Exact_3Contains_4End}}",
                       "equals": true,
                       "disabled": true
                     },
                     {
                       "key": "SearchField",
                       "value": "{{SearchField}}",
-                      "equals": true,
-                      "disabled": true
+                      "equals": true
                     },
                     {
                       "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true,
-                      "disabled": true
+                      "value": "{{SearchFor}}",
+                      "equals": true
                     },
                     {
                       "key": "Filter",
-                      "value": "{{Filter}}",
-                      "equals": true
+                      "value": "{{2Unsubscribe_5HardBounce_100AllOther}}",
+                      "equals": true,
+                      "disabled": true
                     },
                     {
                       "key": "PageNumber",
