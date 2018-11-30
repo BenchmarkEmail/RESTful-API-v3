@@ -6457,7 +6457,7 @@
             },
             {
               "_postman_id": "613919cd-5340-42b1-8c40-61222da54d24",
-              "name": "/Contact/ContactDetails/All || Delete the selected contacts from ALL lists",
+              "name": "/ContactDetails/All || Delete the selected contacts from ALL lists",
               "request": {
                 "method": "DELETE",
                 "header": [
