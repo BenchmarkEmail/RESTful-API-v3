@@ -9956,115 +9956,6 @@
               ]
             },
             {
-              "_postman_id": "004758a1-2529-48ec-9a47-64d1cc69dab0",
-              "name": "Get TrashCount",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/TrashCount",
-                "description": "<h4>Get a list of contacts</h4>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "b326bbe5-cc70-4279-82a9-d1c3907fa6fa",
-                  "name": "Get TrashCount",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/TrashCount"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Mon, 23 Oct 2017 09:57:01 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":29,\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
               "_postman_id": "e4009cd8-1648-4a52-93a5-23d3773a6f56",
               "name": "Download report",
               "request": {
@@ -13878,6 +13769,115 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Count\":3899,\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "_postman_id": "004758a1-2529-48ec-9a47-64d1cc69dab0",
+              "name": "/TrashCount || Get TrashCount",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/TrashCount",
+                "description": "<h4>Get a list of contacts</h4>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "b326bbe5-cc70-4279-82a9-d1c3907fa6fa",
+                  "name": "Get TrashCount",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/TrashCount"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 09:57:01 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":29,\"Status\":\"1\"}}"
                 }
               ]
             }
