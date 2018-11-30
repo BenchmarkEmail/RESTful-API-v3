@@ -6274,7 +6274,7 @@
             },
             {
               "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
-              "name": "/Contact/ContactDetails || Search Contacts",
+              "name": "/ContactDetails || Search Contacts",
               "event": [
                 {
                   "listen": "test",
