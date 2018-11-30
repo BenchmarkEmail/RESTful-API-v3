@@ -6055,189 +6055,6 @@
               ]
             },
             {
-              "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
-              "name": "/ContactDetails || Search Contacts",
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "c1aab537-beda-4afe-83ef-0458cbf7bbcc",
-                    "exec": [
-                      "let json = pm.response.json();\r",
-                      "  \r",
-                      "pm.test(\"Request was successful\", function() {\r",
-                      "  pm.response.to.be.success;\r",
-                      "});\r",
-                      "\r",
-                      "pm.test(\"Response body status is 1\", function() {\r",
-                      "\r",
-                      "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
-                      "\r",
-                      "});\r",
-                      "\r",
-                      "\r",
-                      "\r",
-                      "pm.environment.set(\"ContactID\", json.Response.Data[0].ID);"
-                    ],
-                    "type": "text/javascript"
-                  }
-                }
-              ],
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilterStartsWith}}&Search={{SearchEmailAddress}}",
-                  "protocol": "https",
-                  "host": [
-                    "clientapi",
-                    "benchmarkemail",
-                    "com"
-                  ],
-                  "path": [
-                    "Contact",
-                    "ContactDetails"
-                  ],
-                  "query": [
-                    {
-                      "key": "SearchFilter",
-                      "value": "{{SearchFilterStartsWith}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "Search",
-                      "value": "{{SearchEmailAddress}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": "<h4>Search Contacts</h4>\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search Filter</td></tr>\r\n<tr><td>Search</td><td>required</td><td>string </td><td>Email Address you want to search</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSearchRecord\">ContactSearchRecord</a></td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "7108baf3-5857-45ce-be90-204f7ae2ed9e",
-                  "name": "Search Contacts",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": {
-                      "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter}}&Search={{Search}}",
-                      "protocol": "https",
-                      "host": [
-                        "clientapi",
-                        "benchmarkemail",
-                        "com"
-                      ],
-                      "path": [
-                        "Contact",
-                        "ContactDetails"
-                      ],
-                      "query": [
-                        {
-                          "key": "SearchFilter",
-                          "value": "{{SearchFilter}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "Search",
-                          "value": "{{Search}}",
-                          "equals": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Tue, 17 Oct 2017 11:22:46 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":4,\"Data\":[{\"ContactMasterID\":\"15112393\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"Test2\",\"ID\":\"1950474841\",\"IsMasterUnsubScribe\":0,\"LastName\":\"Test2\",\"ListName\":\"Benchmark Tech Support Test List\"},{\"ContactMasterID\":\"15242968\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039133647\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Targeted EMailing List Modified\"},{\"ContactMasterID\":\"15257848\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039912369\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Test Source List\"},{\"ContactMasterID\":\"15257899\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2040815886\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"New Target List\"}],\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
               "_postman_id": "613919cd-5340-42b1-8c40-61222da54d24",
               "name": "/ContactDetails/All || Delete the selected contacts from ALL lists",
               "request": {
@@ -14622,6 +14439,189 @@
             }
           ],
           "_postman_isSubFolder": true
+        },
+        {
+          "_postman_id": "5c7167e5-3695-4b7f-ae00-85124f3a0964",
+          "name": "/ContactDetails || Search Contacts",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c1aab537-beda-4afe-83ef-0458cbf7bbcc",
+                "exec": [
+                  "let json = pm.response.json();\r",
+                  "  \r",
+                  "pm.test(\"Request was successful\", function() {\r",
+                  "  pm.response.to.be.success;\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response body status is 1\", function() {\r",
+                  "\r",
+                  "  pm.expect(json.Response.Status).to.equal(\"1\");\r",
+                  "\r",
+                  "});\r",
+                  "\r",
+                  "\r",
+                  "\r",
+                  "pm.environment.set(\"ContactID\", json.Response.Data[0].ID);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "AuthToken",
+                "value": "{{Authentication Token}}",
+                "description": "Authentication Token"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "Content Type"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilterStartsWith}}&Search={{SearchEmailAddress}}",
+              "protocol": "https",
+              "host": [
+                "clientapi",
+                "benchmarkemail",
+                "com"
+              ],
+              "path": [
+                "Contact",
+                "ContactDetails"
+              ],
+              "query": [
+                {
+                  "key": "SearchFilter",
+                  "value": "{{SearchFilterStartsWith}}",
+                  "equals": true
+                },
+                {
+                  "key": "Search",
+                  "value": "{{SearchEmailAddress}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "<h4>Search Contacts</h4>\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>SearchFilter</td><td>optional</td><td>string </td><td>Search Filter</td></tr>\r\n<tr><td>Search</td><td>required</td><td>string </td><td>Email Address you want to search</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactSearchRecord\">ContactSearchRecord</a></td><td>Data</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
+          },
+          "response": [
+            {
+              "id": "7108baf3-5857-45ce-be90-204f7ae2ed9e",
+              "name": "Search Contacts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "warning": ""
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type",
+                    "warning": ""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter}}&Search={{Search}}",
+                  "protocol": "https",
+                  "host": [
+                    "clientapi",
+                    "benchmarkemail",
+                    "com"
+                  ],
+                  "path": [
+                    "Contact",
+                    "ContactDetails"
+                  ],
+                  "query": [
+                    {
+                      "key": "SearchFilter",
+                      "value": "{{SearchFilter}}",
+                      "equals": true
+                    },
+                    {
+                      "key": "Search",
+                      "value": "{{Search}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "access-control-allow-origin",
+                  "key": "access-control-allow-origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Tue, 17 Oct 2017 11:22:46 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Microsoft-IIS/8.0",
+                  "description": ""
+                },
+                {
+                  "name": "transfer-encoding",
+                  "key": "transfer-encoding",
+                  "value": "chunked",
+                  "description": ""
+                },
+                {
+                  "name": "x-aspnet-version",
+                  "key": "x-aspnet-version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "x-powered-by",
+                  "key": "x-powered-by",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"Response\":{\"Count\":4,\"Data\":[{\"ContactMasterID\":\"15112393\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"Test2\",\"ID\":\"1950474841\",\"IsMasterUnsubScribe\":0,\"LastName\":\"Test2\",\"ListName\":\"Benchmark Tech Support Test List\"},{\"ContactMasterID\":\"15242968\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039133647\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Targeted EMailing List Modified\"},{\"ContactMasterID\":\"15257848\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2039912369\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"Test Source List\"},{\"ContactMasterID\":\"15257899\",\"Email\":\"test02@cybermaxsolutions.com\",\"FirstName\":\"\",\"ID\":\"2040815886\",\"IsMasterUnsubScribe\":0,\"LastName\":\"\",\"ListName\":\"New Target List\"}],\"Status\":\"1\"}}"
+            }
+          ]
         }
       ]
     },
