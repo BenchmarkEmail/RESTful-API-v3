@@ -13,25 +13,24 @@ Add an email address and the contact information to a list
 
 ---
 
-1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
-1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
+1. An HTTP client library or app to make API Calls, such as postman [link](https://www.getpostman.com/)
+1. Always use host of: : `https://clientapi.benchmarkemail.com`
 1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
-1. A benchmark email account. API usage is included with a free account [link](https://ui.benchmarkemail.com/Login)
-   * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
-1. Authorize all requests with this key/value pair in your request header, key is `AuthToken` and its value is `{{Authentication Token}}`, where {{Authentication Token}} is replaced with your API Key from previous step [image](https://images.benchmarkemail.com/client963265/image6234734.png).
+1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. The API Token, above, is used as a   key/value pair in your request header, key is `AuthToken` and its value is `{{Authentication Token}}`, where {{Authentication Token}} is replaced with your API Token [image](https://images.benchmarkemail.com/client963265/image6234734.png).
 
 ## Solution
 
 <sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
-1. Make an API call to retrieve your list(s) and get its respective list id # [link:](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The list id # will be found in the response body.
+1. Make an API call to retrieve your list(s) id # [link:](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The list id # will be found in the response body.
 
 ```js
     GET /Contact
-    or
+    // or filter your search by adding the query string parameter
     GET /Contact/?SearchFilter={{SearchFilter}}
-     //where SearchFilter is a partial or full name of a list
-     //to see full list of parameters available see docs. in link above
+     // where SearchFilter is a partial or full name of a list
+     // to see full list of parameters available see docs. in link above
      // id found at Response.Data[0..n].ID
 ```
 

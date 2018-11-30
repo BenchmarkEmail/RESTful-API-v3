@@ -4,7 +4,7 @@
 
 # Use Case 1
 
-Given a benchmark email account. \
+Given Any free or paid Benchmark Email Account will have a needed API Token. \
 Then I want to see the recipients on a list who are unsubscribed. 
 
 ## Solution

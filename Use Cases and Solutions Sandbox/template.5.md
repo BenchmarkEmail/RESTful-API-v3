@@ -1,12 +1,11 @@
 - [Problem Statement](#problem-statement)
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
-    - [Validate Response from Server](#validate-response-from-server)
-- [Index of all Problem Statements link](#index-of-all-problem-statements-link)
+        - [Response Notes](#response-notes)
+    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 
-You want to find an email campaign id # and details of the campaign when you know the email campaign name.
 
 ## Prerequisites
 
@@ -17,20 +16,18 @@ You want to find an email campaign id # and details of the campaign when you kno
 1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
 1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
 
-1. The API Token, above, is used as a   key/value pair in your request header, key is `AuthToken` and its value is `{{Authentication Token}}`, where {{Authentication Token}} is replaced with your API Token [image](https://images.benchmarkemail.com/client963265/image6234734.png).
 
 ## Solution
 
 <sub>using the Benchmark API v3.0 RESTful endpoints</sub>
 
-1. Make a request to find the email by name [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3). For a full list of all the details returned see [link](https://www.benchmarkemail.com/models.htm#EmailListData)
+1. {Explain} [link]()
 
 ```js
-     GET /Emails
-     //returns all email campaigns and their details
+     Verb /Path
      or
-     GET /Emails/?Filter={{Filter}}
-     //where the {{Filter}} is replaced with your email campaign name.
+     Verb /Path
+     //
 ```
 
 ## Validate Response from Server

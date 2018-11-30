@@ -12,11 +12,11 @@ Update the image noame or the imageURL
 
 ---
 
-1. A client to make an API call, such as postman [link](https://www.getpostman.com/)
-1. Use base URL/Host : `https://clientapi.benchmarkemail.com`
+1. An HTTP client library or app to make API Calls, such as postman [link](https://www.getpostman.com/)
+1. Always use host of: : `https://clientapi.benchmarkemail.com`
 1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
-1. A benchmark email account. API usage is included with a free account [link](https://ui.benchmarkemail.com/Login)
-   * Your API Key, for your requests to be validated. Found [here](https://ui.benchmarkemail.com/Integrate#API)
+1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+
 
 ## Solution
 
