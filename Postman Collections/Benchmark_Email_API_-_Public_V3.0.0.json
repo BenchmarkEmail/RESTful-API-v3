@@ -7571,7 +7571,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?Search={{SearchEmailAddress}}",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter-4StartsWith}}&Search={{SearchEmailAddress}}",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -7585,9 +7585,8 @@
                   "query": [
                     {
                       "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true,
-                      "disabled": true
+                      "value": "{{SearchFilter-4StartsWith}}",
+                      "equals": true
                     },
                     {
                       "key": "Search",
