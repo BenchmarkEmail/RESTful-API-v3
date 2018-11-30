@@ -13483,7 +13483,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?SearchType={{1Starts_2Exact_3Contains_4End}}&SearchField={{SearchContactFieldName}}&SearchFilter={{SearchFieldFor}}&Filter=&PageNumber=1&PageSize=50&OrderBy={{OrderByContactFieldName}}&SortOrder={{orderDescAsc}}",
+              "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?SearchType={{1Starts_2Exact_3Contains_4End}}&SearchField={{SearchContactFieldName}}&SearchFilter={{SearchFieldFor}}&Filter=&PageNumber={{PageNumber}}&PageSize={{PageSize}}&OrderBy={{OrderByContactFieldName}}&SortOrder={{orderDescAsc}}",
               "protocol": "https",
               "host": [
                 "clientapi",
@@ -13518,12 +13518,12 @@
                 },
                 {
                   "key": "PageNumber",
-                  "value": "1",
+                  "value": "{{PageNumber}}",
                   "equals": true
                 },
                 {
                   "key": "PageSize",
-                  "value": "50",
+                  "value": "{{PageSize}}",
                   "equals": true
                 },
                 {
