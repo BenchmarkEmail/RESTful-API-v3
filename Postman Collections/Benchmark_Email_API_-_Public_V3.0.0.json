@@ -5286,12 +5286,12 @@
     },
     {
       "_postman_id": "7d696b91-ff7a-46b1-ab2e-bcf14328314f",
-      "name": "Contacts",
+      "name": "/Contact || Contacts",
       "description": "Contains API about Contacts",
       "item": [
         {
           "_postman_id": "147153a1-b117-4970-8f73-644e067a4d27",
-          "name": "/Contact || General",
+          "name": "General",
           "description": "",
           "item": [
             {
