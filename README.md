@@ -22,7 +22,7 @@
 
 - [Create a new list](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Create%20a%20New%20List.md#problem-statement)
 - [Add a single contact to a list](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Add%20a%20single%20contact%20to%20a%20list.md#problem-statement)
-- [Find coantct list information and contact field labels, when given a list id #](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20a%20list%20name%20when%20given%20a%20list%20id.md#problem-statement)
+- [See details about a contact list, such as the list name, its field names, it description, by searching with a list id #](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20a%20list%20name%20when%20given%20a%20list%20id.md#problem-statement)
 - [Find a contact list id by searching with its list name](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20a%20contact%20list%20id%20by%20searching%20with%20its%20list%20name.md#problem-statement)
 - [Find a contact list approval status by searching with its list name](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20a%20contact%20list%20approval%20status%20by%20searching%20with%20its%20list%20name.md#problem-statement)
 - [Find the active contact count for a list by searching with its list name](https://github.com/BenchmarkEmail/RESTful-API-v3/blob/master/Use%20Cases%20and%20Solutions%20Sandbox/Find%20the%20active%20contact%20count%20for%20a%20list%20by%20searching%20with%20its%20list%20name.md#problem-statement)
