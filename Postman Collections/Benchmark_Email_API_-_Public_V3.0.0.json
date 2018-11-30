@@ -12917,7 +12917,7 @@
             },
             {
               "_postman_id": "e0881fe2-9b55-4d89-b75d-2586743bf0d5",
-              "name": "/ActiveCount || Only Show Number of Active emails, Get ActiveCount",
+              "name": "/ActiveCount || Show only active email by account, Get ActiveCount",
               "request": {
                 "method": "GET",
                 "header": [
