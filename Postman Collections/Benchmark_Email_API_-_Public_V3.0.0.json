@@ -9186,7 +9186,7 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "8cab2619-a0fe-430b-a4ac-8d80e200b24d",
+                    "id": "262c1968-bf19-4430-acb7-fff79aa7a86c",
                     "exec": [
                       "let json = pm.response.json();\r",
                       "  \r",
@@ -9202,7 +9202,7 @@
                       "\r",
                       "\r",
                       "\r",
-                      "pm.environment.set(\"access_token_dc\", json.dc);"
+                      "pm.environment.set(\"ListID\", json.Response.Data[0].ID);"
                     ],
                     "type": "text/javascript"
                   }
@@ -9229,7 +9229,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/?SearchFilter={{SearchFilter}}",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -9262,8 +9262,9 @@
                     },
                     {
                       "key": "SearchFilter",
-                      "value": "{{SearchFilter}}",
-                      "equals": true
+                      "value": "{{ContactListName}}",
+                      "equals": true,
+                      "disabled": true
                     },
                     {
                       "key": "OrderBy",
