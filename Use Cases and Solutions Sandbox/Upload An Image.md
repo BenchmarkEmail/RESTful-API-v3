@@ -27,21 +27,18 @@ Upload an image to your image gallery
 
 headers = {
     'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
-    'Content-Type': "application/json" 
+    'content-type': "multipart/form-data;",
+    'Content-Type': "application/x-www-form-urlencoded"
 }
 
-// application/json is used for all GET requests
 ```
 
 2. Make a POST request of content type multipart/form-data with the body showing the form-data of a "Data" object [link](https://developer.benchmarkemail.com/#c6f94eae-3d70-41d5-8423-040e8c945a22)
 
 ```js
 POST /Images/
+
 // where the body will hold the image reference psuedo example:
-  headers = {
-  'content-type': "multipart/form-data;",
-  'Content-Type': "application/x-www-form-urlencoded"
-  }
   payload = "Content-Disposition: form-data; name=\"Data\"; filename=\"C:\\Path\\To\\Pictures\\benchmark-logo.1.jpg\" Content-Type: image/jpeg"
 ```
 
