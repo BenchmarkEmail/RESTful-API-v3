@@ -9229,7 +9229,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/?SearchFilter={{ContactListName}}",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -9263,12 +9263,11 @@
                     {
                       "key": "SearchFilter",
                       "value": "{{ContactListName}}",
-                      "equals": true,
-                      "disabled": true
+                      "equals": true
                     },
                     {
                       "key": "OrderBy",
-                      "value": "{{OrderBy}}",
+                      "value": "{{OrderByFieldName}}",
                       "equals": true,
                       "disabled": true
                     },
