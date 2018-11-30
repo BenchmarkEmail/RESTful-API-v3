@@ -7882,7 +7882,7 @@
             },
             {
               "_postman_id": "2b0e52d3-f838-4249-b4cc-faf7be9b1f1b",
-              "name": "Get contact history",
+              "name": "/{{ContactID}}/ContactReportHistory || Get contact history",
               "request": {
                 "method": "GET",
                 "header": [
