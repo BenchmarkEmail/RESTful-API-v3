@@ -6,22 +6,19 @@
 
 # Problem Statement
 
+---
 
 ## Prerequisites
 
----
-
-1. An HTTP client library or app to make API Calls, such as postman [link](https://www.getpostman.com/)
-1. Always use host of: : `https://clientapi.benchmarkemail.com`
-1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
-1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
-
+1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. Always use host of: `https://clientapi.benchmarkemail.com`
+1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
 
 ## Solution
 
-<sub>using the Benchmark API v3.0 RESTful endpoints</sub>
+<sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. {Explain} [link]()
+1.  [link]()
 
 ```js
      Verb /Path

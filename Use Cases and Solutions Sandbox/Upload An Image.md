@@ -8,30 +8,28 @@
 
 Upload an image to your image gallery
 
-## Prerequisites
-
 ---
 
-1. An HTTP client library or app to make API Calls, such as postman [link](https://www.getpostman.com/)
-1. Always use host of: : `https://clientapi.benchmarkemail.com`
-1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
-1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+## Prerequisites
 
+1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. Always use host of: `https://clientapi.benchmarkemail.com`
+1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
 
 ## Solution
 
-<sub>using the Benchmark API v3.0 RESTful endpoints</sub>
+<sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
 1. Make a POST request of content type multipart/form-data with the body showing the form-data of a "Data" object [link](https://developer.benchmarkemail.com/#c6f94eae-3d70-41d5-8423-040e8c945a22)
 
 ```js
-     POST /Images/
-     // where the body will hold the image reference psuedo example:
-     headers = {
-    'content-type': "multipart/form-data;",
-    'Content-Type': "application/x-www-form-urlencoded"
-    }
-    payload = "Content-Disposition: form-data; name=\"Data\"; filename=\"C:\\Path\\To\\Pictures\\benchmark-logo.1.jpg\" Content-Type: image/jpeg"
+POST /Images/
+// where the body will hold the image reference psuedo example:
+  headers = {
+  'content-type': "multipart/form-data;",
+  'Content-Type': "application/x-www-form-urlencoded"
+  }
+  payload = "Content-Disposition: form-data; name=\"Data\"; filename=\"C:\\Path\\To\\Pictures\\benchmark-logo.1.jpg\" Content-Type: image/jpeg"
 ```
 
 ## Validate Response from Server

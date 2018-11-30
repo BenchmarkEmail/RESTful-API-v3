@@ -8,20 +8,18 @@
 
 You want to find the contact list id and its details by searching with its contact list name.
 examples of contact list data details [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord)
-## Prerequisites
 
 ---
 
-1. An HTTP client library or app to make API Calls, such as postman [link](https://www.getpostman.com/)
-1. Always use host of: : `https://clientapi.benchmarkemail.com`
-1. RESTful collection found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections) 
-1. Any free or paid Benchmark Email Account will have a needed API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+## Prerequisites
 
-1. The API Token, above, is used as a   key/value pair in your request header, key is `AuthToken` and its value is `{{Authentication Token}}`, where {{Authentication Token}} is replaced with your API Token [image](https://images.benchmarkemail.com/client963265/image6234734.png).
+1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. Always use host of: `https://clientapi.benchmarkemail.com`
+1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
 
 ## Solution
 
-<sub>using the Benchmark API v3.0 RESTful endpoints</sub>
+<sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
 1. Make a request to search for the contact list [link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The response body will provide the list details if it finds the list queried [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord).
 

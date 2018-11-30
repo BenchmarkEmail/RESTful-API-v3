@@ -1,12 +1,12 @@
 - [Problem Statement](#problem-statement)
     - [Prerequisites](#prerequisites)
     - [Solution](#solution)
-    - [Validate Response from Server](#validate-response-from-server)
-- [Index of all Problem Statements link](#index-of-all-problem-statements-link)
+        - [Response Notes](#response-notes)
+    - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
 
-You have a list id, and want the list details like list name, creation date, active contact count, the fields being used for the contacts in the list
+You want search using an email address to find what lists the email subscribes to. Results will provide the email id # and list id #. Also provides the first, last and middle name and rating.
 
 ---
 
@@ -20,11 +20,18 @@ You have a list id, and want the list details like list name, creation date, act
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a request using your list id [link](https://developer.benchmarkemail.com/#dfa2a8a6-f1ba-d4b8-4d9f-d3b637be2291)
+1. {Explain} [link]()
 
 ```js
-    GET /Contact/{{ListID}}
-    //where response body will provide list info. and fields used for contacts
+     Get /Contact/ContactDetails?Search={{Search}} 
+     // REQUIRED: the {{Search}} is a placeholder that you will replace with the full email address.
+     // If the full email address isn't known, adding the SearchFilter value will allow you to use a partioal email
+     // SearchFilter values: 1 - Starts 2 - exact 3 - contains 4 - end
+     // the result will give the list id as the ContactMasterID
+     DELETE /Contact/ContactDetails/All
+     // body
+     {"ListID":"{{ListID}}","ContactID":"{{ContactID}}"} 
+     // DELETE Contact only from search contact page
 ```
 
 ## Validate Response from Server

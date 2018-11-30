@@ -6,13 +6,17 @@
 
 You want to get a summary of common metrics related to your email campaign, such as Opens, Clicks, Bounces, Unsubscribes, etc
 
+---
+
+## Prerequisites
+
+1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. Always use host of: `https://clientapi.benchmarkemail.com`
+1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
+
 ## Solution
 
-1. Prerequisite: Get the email ID to be used for the report request
-    1.`GET /Emails` [link](https://developer.benchmarkemail.com/#0068614f-f224-141b-b1eb-8768abc0f5d3) 
-        1. where the request can be enhanced by searching
-1. Make a request using the email id, above, to the share URL hyperlink for sending in your social media
-    1.`GET /Emails/{{ID}}/Report` [link](https://developer.benchmarkemail.com/#8819bcb9-afc9-9e7c-b31a-44aab47ed758) 
+<sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
 ## Directions and Steps 
 

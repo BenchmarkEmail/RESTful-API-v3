@@ -7,7 +7,17 @@
 Given a list id,
 Then I want to see the unsubscribed recipients on the list.
 
-## Solution 
+---
+
+## Prerequisites
+
+1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. Always use host of: `https://clientapi.benchmarkemail.com`
+1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
+
+## Solution
+
+<sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
 1. Make a request using your list Id and adding the 1 query-string parameter seen below
     1. `GET /Contact/{{ListID}}/ContactDetails`
