@@ -13236,7 +13236,7 @@
             },
             {
               "_postman_id": "797d580b-8bc3-47f4-bbd7-693c52da8941",
-              "name": "Get contact history",
+              "name": "/{{ContactEmail}}/ContactReportHistory || Get contact history",
               "request": {
                 "method": "GET",
                 "header": [
