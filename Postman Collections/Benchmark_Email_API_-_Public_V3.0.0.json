@@ -6031,7 +6031,7 @@
             },
             {
               "_postman_id": "e2b7a81d-f7be-4eef-8930-e76176a301ab",
-              "name": "Delete list",
+              "name": "/{{ListID}} || Delete list",
               "request": {
                 "method": "DELETE",
                 "header": [
