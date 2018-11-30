@@ -7571,7 +7571,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?SearchFilter={{SearchFilter}}&Search={{Search}}",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/ContactDetails?Search={{SearchEmailAddress}}",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -7586,11 +7586,12 @@
                     {
                       "key": "SearchFilter",
                       "value": "{{SearchFilter}}",
-                      "equals": true
+                      "equals": true,
+                      "disabled": true
                     },
                     {
                       "key": "Search",
-                      "value": "{{Search}}",
+                      "value": "{{SearchEmailAddress}}",
                       "equals": true
                     }
                   ]
@@ -9273,7 +9274,7 @@
                     },
                     {
                       "key": "SortOrder",
-                      "value": "{{SortOrder}}",
+                      "value": "{{AscDesc}}",
                       "equals": true,
                       "disabled": true
                     }
