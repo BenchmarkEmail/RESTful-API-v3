@@ -9847,141 +9847,6 @@
               ]
             },
             {
-              "_postman_id": "62d503fc-6212-41c4-b299-00f3c289eb40",
-              "name": "Get Contacts Count",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/Count/{{ListIDs}}/{{SegmentIDs}}",
-                "description": "<h4>Get Contacts Count</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n<tr><td>{{SegmentIDs}}</td><td>required</td><td>string</td><td>IDs of the segments</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>ExcludeListIDs</td><td>optional</td><td>int</td><td>IDs of the lists to exclude</td></tr>\r\n<tr><td>ExcludeSegmentIDs</td><td>optional</td><td>int</td><td>IDs of the segments to exclude</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "74771918-3cb1-4d0d-8f57-76c840ac8143",
-                  "name": "Get Contacts Count",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": {
-                      "raw": "https://clientapi.benchmarkemail.com/Contact/Count/{{ListIDs}}/{{SegmentIDs}}?ExcludeListIDs={{ExcludeListIDs}}&ExcludeSegmentIDs={{ExcludeSegmentIDs}}",
-                      "protocol": "https",
-                      "host": [
-                        "clientapi",
-                        "benchmarkemail",
-                        "com"
-                      ],
-                      "path": [
-                        "Contact",
-                        "Count",
-                        "{{ListIDs}}",
-                        "{{SegmentIDs}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "ExcludeListIDs",
-                          "value": "{{ExcludeListIDs}}",
-                          "equals": true
-                        },
-                        {
-                          "key": "ExcludeSegmentIDs",
-                          "value": "{{ExcludeSegmentIDs}}",
-                          "equals": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Mon, 23 Oct 2017 09:18:24 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":3899,\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
               "_postman_id": "c6c9ba57-732e-4d8a-bbec-b19fbb3b892c",
               "name": "Get UniqueCount",
               "request": {
@@ -13878,6 +13743,141 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Count\":162,\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "_postman_id": "62d503fc-6212-41c4-b299-00f3c289eb40",
+              "name": "/Count/{{ListIDs}}/{{SegmentIDs}} ||Get Contacts Count",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/Count/{{ListIDs}}/{{SegmentIDs}}",
+                "description": "<h4>Get Contacts Count</h4>\r\n<h4>URL Parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>{{ListIDs}}</td><td>required</td><td>string</td><td>IDs of the lists</td></tr>\r\n<tr><td>{{SegmentIDs}}</td><td>required</td><td>string</td><td>IDs of the segments</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Query String parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>ExcludeListIDs</td><td>optional</td><td>int</td><td>IDs of the lists to exclude</td></tr>\r\n<tr><td>ExcludeSegmentIDs</td><td>optional</td><td>int</td><td>IDs of the segments to exclude</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "74771918-3cb1-4d0d-8f57-76c840ac8143",
+                  "name": "Get Contacts Count",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "https://clientapi.benchmarkemail.com/Contact/Count/{{ListIDs}}/{{SegmentIDs}}?ExcludeListIDs={{ExcludeListIDs}}&ExcludeSegmentIDs={{ExcludeSegmentIDs}}",
+                      "protocol": "https",
+                      "host": [
+                        "clientapi",
+                        "benchmarkemail",
+                        "com"
+                      ],
+                      "path": [
+                        "Contact",
+                        "Count",
+                        "{{ListIDs}}",
+                        "{{SegmentIDs}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "ExcludeListIDs",
+                          "value": "{{ExcludeListIDs}}",
+                          "equals": true
+                        },
+                        {
+                          "key": "ExcludeSegmentIDs",
+                          "value": "{{ExcludeSegmentIDs}}",
+                          "equals": true
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 09:18:24 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":3899,\"Status\":\"1\"}}"
                 }
               ]
             }
