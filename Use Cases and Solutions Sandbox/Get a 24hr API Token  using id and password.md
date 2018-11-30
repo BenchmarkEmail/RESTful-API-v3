@@ -12,7 +12,7 @@ I want to get a temporary API Token to make api calls
 
 ## Prerequisites
 
-1. A free or paid Benchmark Email account. t will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
+1. A free or paid Benchmark Email account. It will have your secured API token.  [link](https://ui.benchmarkemail.com/Integrate#AP)
 1. Always use host of: `https://clientapi.benchmarkemail.com`
 1. An HTTP library or HTTP app, such as postman [link](https://www.getpostman.com/), to make API calls
 
