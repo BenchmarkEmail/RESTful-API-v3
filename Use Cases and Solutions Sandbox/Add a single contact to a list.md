@@ -29,9 +29,9 @@ Add an email address and the contact information to a list
     GET /Contact
     // or filter your search by adding the query string parameter
     GET /Contact/?SearchFilter={{SearchFilter}}
-     // where SearchFilter is a partial or full name of a list
+     // {{SearchFilter}} is a placeholder and will be provided by you. It is a your partial or full name of your list
      // to see full list of parameters available see docs. in link above
-     // id found at Response.Data[0..n].ID
+     // list id found at Response.Data[0..n].ID
 ```
 
 2. Add your new contact by providing the contacts information and the listID from above, [link](https://developer.benchmarkemail.com/#375fa862-2ac6-9d5d-3669-6e9a23524241). For a list of all data fields available to add contact information, see [link](https://www.benchmarkemail.com/models.htm#ContactDetailRecord)
