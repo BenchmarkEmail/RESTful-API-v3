@@ -5316,7 +5316,7 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?SearchField={{SearchField}}&SearchFilter={{SearchFor}}",
+                  "raw": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails?SearchType={{1Starts_2Exact_3Contains_4End}}&SearchField={{SearchField}}&SearchFilter={{SearchFieldFor}}",
                   "protocol": "https",
                   "host": [
                     "clientapi",
@@ -5332,8 +5332,7 @@
                     {
                       "key": "SearchType",
                       "value": "{{1Starts_2Exact_3Contains_4End}}",
-                      "equals": true,
-                      "disabled": true
+                      "equals": true
                     },
                     {
                       "key": "SearchField",
@@ -5342,7 +5341,7 @@
                     },
                     {
                       "key": "SearchFilter",
-                      "value": "{{SearchFor}}",
+                      "value": "{{SearchFieldFor}}",
                       "equals": true
                     },
                     {
@@ -13236,7 +13235,7 @@
             },
             {
               "_postman_id": "797d580b-8bc3-47f4-bbd7-693c52da8941",
-              "name": "/{{ContactEmail}}/ContactReportHistory || Get contact history",
+              "name": "/{{ContactEmail}}/ContactReportHistory || Engagement by a Contact, Get contact history",
               "request": {
                 "method": "GET",
                 "header": [
