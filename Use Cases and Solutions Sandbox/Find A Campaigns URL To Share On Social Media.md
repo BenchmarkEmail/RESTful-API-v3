@@ -18,7 +18,18 @@ You want to get a summary of common metrics related to your email campaign, such
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-## Directions and Steps 
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
 
 1. Open an http client to test a request (we'll use postman, for postman setup see Getting Started )
 1. Use a GET call``

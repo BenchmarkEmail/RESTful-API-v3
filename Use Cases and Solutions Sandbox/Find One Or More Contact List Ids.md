@@ -19,9 +19,19 @@ Then How do I see all its lists and the details of those lists?
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Obtain your [API token](https://ui.benchmarkemail.com/Integrate#API) from your benchmark email account.
-1. Place the API token in your API client of choice, such as [postman](https://www.getpostman.com/apps) or your code 
-   1. For additional information on postman, please see _[Getting Started](https://drive.google.com/a/benchmarkemail.com/open?id=1j4nmyGE3Obepq4-ETSVANoMbY-7OWUIYF1_jlXfXUr4)_
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
 1. In the benchmark email [postman collection](https://developer.benchmarkemail.com/) left navigation, find the reference :  \
 `GET Get a list of contacts ` [link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b) 
     1. Navigation directions in postman collection:

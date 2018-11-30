@@ -20,7 +20,20 @@ Upload an image to your image gallery
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a POST request of content type multipart/form-data with the body showing the form-data of a "Data" object [link](https://developer.benchmarkemail.com/#c6f94eae-3d70-41d5-8423-040e8c945a22)
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a POST request of content type multipart/form-data with the body showing the form-data of a "Data" object [link](https://developer.benchmarkemail.com/#c6f94eae-3d70-41d5-8423-040e8c945a22)
 
 ```js
 POST /Images/

@@ -21,10 +21,24 @@ examples of contact list data details [link](https://www.benchmarkemail.com/mode
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a request to search for the contact list [link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The response body will provide the list details if it finds the list queried [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord).
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a request to search for the contact list [link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b). The response body will provide the list details if it finds the list queried [link](https://www.benchmarkemail.com/models.htm#ContactFullRecord).
 
 ```js
     GET /Contact/?SearchFilter={{SearchFilter}}
+
     //where {{SearchFilter}} will be replaced with all or part of your contact list name.
     //in the response body find Resonse.Data[1..n].ID for the respective list name
 ```

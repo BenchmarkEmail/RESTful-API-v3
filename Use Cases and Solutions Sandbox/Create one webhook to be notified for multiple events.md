@@ -20,7 +20,20 @@ You want to create one webhook to be notified for multiple events on a contact f
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a request to create a webhook, the body of the request will given a value of 1 for being notified of an event and a 0 value for not being notified with the given URL [link](https://developer.benchmarkemail.com/#a83163d0-3af1-9671-8a8c-c7d4d31e6c13)
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a request to create a webhook, the body of the request will given a value of 1 for being notified of an event and a 0 value for not being notified with the given URL [link](https://developer.benchmarkemail.com/#a83163d0-3af1-9671-8a8c-c7d4d31e6c13)
 
 ```js
      POST /Contact/{{ListID}}/Webhooks

@@ -21,7 +21,20 @@ I to want create a new list and get its list Id #
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a POST request with the information for your new list [link](https://developer.benchmarkemail.com/#16e1491e-69f8-e71a-c374-d99e55c322cf)
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a POST request with the information for your new list [link](https://developer.benchmarkemail.com/#16e1491e-69f8-e71a-c374-d99e55c322cf)
 
 ```js
    POST /Contact

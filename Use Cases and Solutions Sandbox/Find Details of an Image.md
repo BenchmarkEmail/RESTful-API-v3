@@ -20,7 +20,20 @@ Want to find the size, name, image gallery url of an image in your image gallery
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a request to find your image id, then use it to find the image details [link](https://developer.benchmarkemail.com/#e216e2f6-fbbc-be61-ba25-54a025ba12a5)
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a request to find your image id, then use it to find the image details [link](https://developer.benchmarkemail.com/#e216e2f6-fbbc-be61-ba25-54a025ba12a5)
 
 ```js
      GET /Images/{{ImageID}}

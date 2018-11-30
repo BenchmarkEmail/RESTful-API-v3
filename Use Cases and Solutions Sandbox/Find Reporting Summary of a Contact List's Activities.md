@@ -21,12 +21,25 @@ Soft Contact Count, Unsubscribe Contact Count
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Prerequisite, Get a list id 
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Get a list id 
     1. 3 ways to get the list id #: 
         1. [Documentation link](https://developer.benchmarkemail.com/#cc3ee91a-0ccb-79c1-9365-c96f8511a68b), 
         1. [General solution](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing), 
         1. [Search a for a list's details by its name](https://docs.google.com/document/d/1WoV5I5hh05CBUGsNpROqHtsvX5-ENawEfR5UHFgZrJQ/edit?usp=sharing)
-1. Make a request using your list Id 
+3. Make a request using your list Id 
    1. `GET /Contact/{{ListID}}/ContactSummary`  [link](https://developer.benchmarkemail.com/#abd3f684-4b7b-b0f3-804d-09b1e98c0c0e)
 
 ## Directions and Steps 

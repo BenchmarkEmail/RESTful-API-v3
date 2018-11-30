@@ -20,7 +20,20 @@ Want to delete an image
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Make a request to delete your image. [link](https://developer.benchmarkemail.com/#50b5a76b-ec90-f0bc-2233-53c05f9a4727)
+1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+
+```javascript
+// example of headers from a python3 request
+
+headers = {
+    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+    'Content-Type': "application/json" 
+}
+
+// application/json is used for all GET requests
+```
+
+2. Make a request to delete your image. [link](https://developer.benchmarkemail.com/#50b5a76b-ec90-f0bc-2233-53c05f9a4727)
 
 ```js
      DELETE /Images/{{ImageID}}
