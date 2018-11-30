@@ -12837,7 +12837,7 @@
             },
             {
               "_postman_id": "7c336847-d1bd-4f2d-a454-0c62c81d0017",
-              "name": "Get Export List",
+              "name": "/ExportToList? || Engagement Reporting, Get Export List",
               "request": {
                 "method": "GET",
                 "header": [
