@@ -7563,7 +7563,7 @@
             },
             {
               "_postman_id": "4dd408bc-da7b-4bb6-a654-a8cbd3428a94",
-              "name": "/ContactImportStatus || Get Contact Import Status",
+              "name": "/ContactImportStatus | Get Contact Import Status",
               "request": {
                 "method": "GET",
                 "header": [
