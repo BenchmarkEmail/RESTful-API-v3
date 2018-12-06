@@ -13463,7 +13463,7 @@
         },
         {
           "_postman_id": "430a51c3-5521-4533-9ba5-7f017fb62eb9",
-          "name": "/{{ListID}}/ContactDetails? || Search a List, Get Filtered Contacts",
+          "name": "/{{ListID}}/ContactDetails? | Search a List, Get Filtered Contacts",
           "request": {
             "method": "GET",
             "header": [
