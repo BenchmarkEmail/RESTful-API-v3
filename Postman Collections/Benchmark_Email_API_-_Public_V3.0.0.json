@@ -345,7 +345,7 @@
             },
             {
               "_postman_id": "97dccf0e-c88a-4bab-816e-ee5cef96865e",
-              "name": "Get Plan Information",
+              "name": "/Plan | Plan Details & Limits, Get Plan Information",
               "request": {
                 "method": "GET",
                 "header": [
@@ -13354,7 +13354,7 @@
         },
         {
           "_postman_id": "cf0b0dd4-5d16-48ae-b59a-dc57a1728066",
-          "name": "/ || Create new List, Create List",
+          "name": "/ | Create new List, Create List",
           "request": {
             "method": "POST",
             "header": [
