@@ -8005,7 +8005,7 @@
             },
             {
               "_postman_id": "004758a1-2529-48ec-9a47-64d1cc69dab0",
-              "name": "/TrashCount || Get TrashCount",
+              "name": "/TrashCount | Get TrashCount",
               "request": {
                 "method": "GET",
                 "header": [
