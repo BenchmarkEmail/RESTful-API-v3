@@ -1498,11 +1498,16 @@
                   "script": {
                     "id": "b9977fb2-91ea-4065-bf66-867918648d28",
                     "exec": [
-                      "let json = pm.response.json();\r",
+                      "pm.test(\"Successful POST request status OK\", function () {\r",
+                      "    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+                      "});\r",
                       "\r",
-                      "pm.test(\"Request was successful\", function() {\r",
-                      "  pm.response.to.be.success;\r",
-                      "});"
+                      "var jsonData = pm.response.json();\r",
+                      "pm.test(\"Successful response body status OK\", function () {\r",
+                      "    pm.expect(jsonData.Response.Status).to.equal(\"1\");\r",
+                      "});\r",
+                      "\r",
+                      "pm.environment.set(\"Authentication Token\", jsonData.Response.Token);"
                     ],
                     "type": "text/javascript"
                   }
@@ -1610,18 +1615,45 @@
             {
               "_postman_id": "ad4b082f-317c-467c-814a-3f6352a22c35",
               "name": "/Client/Setting | Get Client Account Settings",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "971ea826-e8c6-40bc-9127-586fcd5f27f0",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "",
+                      "var jsonData = pm.response.json();",
+                      "pm.test(\"Confirm no Status property in response body\", function () {",
+                      "    pm.expect(jsonData.Response).to.not.have.property(\"Status\");",
+                      "});",
+                      "",
+                      "pm.test(\"Succes, property of Token exist in response body\", function() {",
+                      "    pm.expect(jsonData.Response.Token).to.exist",
+                      "})",
+                      "",
+                      "pm.environment.set(\"Authentication Token\", jsonData.Response.Token);",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
                   {
+                    "description": "Authentication Token",
                     "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
+                    "value": "a29c900a0b59430f81811b991bd9d1e1"
                   },
                   {
+                    "description": "Content Type",
                     "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
+                    "value": "application/json"
                   }
                 ],
                 "body": {
