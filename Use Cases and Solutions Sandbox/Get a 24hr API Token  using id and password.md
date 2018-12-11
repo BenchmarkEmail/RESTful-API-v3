@@ -1,7 +1,7 @@
 - [Problem Statement](#problem-statement)
-    - [Prerequisites](#prerequisites)
-    - [Solution](#solution)
-    - [Validate Response from Server](#validate-response-from-server)
+  - [Prerequisites](#prerequisites)
+  - [Solution](#solution)
+  - [Validate Response from Server](#validate-response-from-server)
 - [Index of all Problem Statements link](#index-of-all-problem-statements-link)
 
 # Problem Statement
@@ -20,13 +20,12 @@ I want to get a temporary API Token to make api calls
 
 <sub>using the Benchmark API v3.0 RESTful endpoints. All our RESTful endpoints documentation found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)></sub>
 
-1. Secure your request by placing your Benchmark Email API Token, see prerequisite #1 above, in the header of your request.
+1. 
 
 ```javascript
 // example of headers from a python3 request
 
 headers = {
-    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
     'Content-Type': "application/json" 
 }
 
