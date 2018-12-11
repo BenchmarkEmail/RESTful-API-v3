@@ -1404,6 +1404,16 @@
                     ],
                     "type": "text/javascript"
                   }
+                },
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "36a4ce7f-fb0b-4e0b-8387-7702b7a45b31",
+                    "exec": [
+                      "pm.environment.unset(\"Authentication Token\");"
+                    ],
+                    "type": "text/javascript"
+                  }
                 }
               ],
               "request": {
