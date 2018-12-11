@@ -1608,6 +1608,113 @@
               ]
             },
             {
+              "_postman_id": "ad4b082f-317c-467c-814a-3f6352a22c35",
+              "name": "/Client/Setting | Get Client Account Settings",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Client/Setting",
+                "description": "<h4>Get Client Account Settings</h4>\n<b>Query String Parameters :</b> None <br>\n\n<b>Request Body Parameters:</b> None <br>\n\n<b>Response Body Parameters :</b>\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Type</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Company</td>\n      <td><a href=\"http://www.benchmarkemail.com/models.htm#ClientSettingCompanyData\" >SettingCompanyData</a></td>\n      <td>Array of error</td>\n    </tr>\n    <tr>\n      <td>FooterID</td>\n      <td>string</td>\n      <td>Email Footer ID</td>\n    </tr>\n    <tr>\n      <td>FromEmail</td>\n      <td>string</td>\n      <td>From Email Address</td>\n    </tr>\n    <tr>\n      <td>FromName</td>\n      <td>string</td>\n      <td>From Name</td>\n    </tr>\n    <tr>\n      <td>Language</td>\n      <td>string</td>\n      <td>Language</td>\n    </tr>\n    <tr>\n      <td>PermissionPositionHeader</td>\n      <td>string</td>\n      <td>Permission Position Header</td>\n    </tr>\n    <tr>\n      <td>SenderID</td>\n      <td>string</td>\n      <td>Sender ID</td>\n    </tr>\n    <tr>\n      <td>SignatureEmail</td>\n      <td>string</td>\n      <td>Signature Email Address</td>\n    </tr>\n    <tr>\n      <td>SignatureURL</td>\n      <td>string</td>\n      <td>Signature URL</td>\n    </tr>\n    <tr>\n      <td>TimeZone</td>\n      <td>string</td>\n      <td>Time Zone</td>\n    </tr>\n    <tr>\n      <td>Token</td>\n      <td>string</td>\n      <td>API Token</td>\n    </tr>\n  </tbody>\n</table>"
+              },
+              "response": [
+                {
+                  "id": "bf29e5c8-ac8c-4760-b789-538fa870d68f",
+                  "name": "Get Client Account Settings",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Client/Setting"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "name": "Access-Control-Allow-Origin",
+                      "description": ""
+                    },
+                    {
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "name": "Cache-Control",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8",
+                      "name": "Content-Type",
+                      "description": ""
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 02 Nov 2017 08:35:48 GMT",
+                      "name": "Date",
+                      "description": ""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.0",
+                      "name": "Server",
+                      "description": ""
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked",
+                      "name": "Transfer-Encoding",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "name": "X-AspNet-Version",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "name": "X-Powered-By",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Response\": {\n        \"Company\": {\n            \"Address\": \"\u8def/\u8857\",\n            \"CategoryID\": \"3\",\n            \"City\": \"\u57ce\u5e02\",\n            \"Country\": \"India\",\n            \"LogoURL\": \"https://images.benchmarkemail.com/client553754/companylogo.jpg\",\n            \"Name\": \"\u7d44\u7e54\u540d\u7a31\",\n            \"Phone\": \"\",\n            \"State\": \"\u5dde/\u7701\",\n            \"Website\": \"www.google.com\",\n            \"Zip\": \"\u90f5\u905e\u5340\u865f\"\n        },\n        \"FooterID\": \"9\",\n        \"FromEmail\": \"test@cybermaxsolutions.com\",\n        \"FromName\": \"\u5bc4\u4ef6\u4eba\u540d\u7a31\",\n        \"Language\": \"Chinese\",\n        \"PermissionPositionHeader\": \"0\",\n        \"SenderID\": \"1\",\n        \"SignatureEmail\": \"test@cybermaxsolutions.com\",\n        \"SignatureName\": \"\u90f5\u905e\u5340\u865f\",\n        \"SignatureURL\": \"https://images.benchmarkemail.com/client553754/sign.gif\",\n        \"TimeZone\": \"IST\",\n        \"Token\": \"{{Token}}\"\n    }\n}"
+                }
+              ]
+            },
+            {
               "_postman_id": "301e985a-9034-4a77-b1fd-e2a4eca0cccf",
               "name": "Disable Security PIN",
               "request": {
@@ -1925,113 +2032,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Errors\":[],\"FinalString\":\"\",\"Message\":\"\",\"Status\":\"1\",\"Success\":\"\"}}"
-                }
-              ]
-            },
-            {
-              "_postman_id": "ad4b082f-317c-467c-814a-3f6352a22c35",
-              "name": "/Client/Setting | Get Client Account Settings",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Client/Setting",
-                "description": "<h4>Get Client Account Settings</h4>\n<b>Query String Parameters :</b> None <br>\n\n<b>Request Body Parameters:</b> None <br>\n\n<b>Response Body Parameters :</b>\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Type</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Company</td>\n      <td><a href=\"http://www.benchmarkemail.com/models.htm#ClientSettingCompanyData\" >SettingCompanyData</a></td>\n      <td>Array of error</td>\n    </tr>\n    <tr>\n      <td>FooterID</td>\n      <td>string</td>\n      <td>Email Footer ID</td>\n    </tr>\n    <tr>\n      <td>FromEmail</td>\n      <td>string</td>\n      <td>From Email Address</td>\n    </tr>\n    <tr>\n      <td>FromName</td>\n      <td>string</td>\n      <td>From Name</td>\n    </tr>\n    <tr>\n      <td>Language</td>\n      <td>string</td>\n      <td>Language</td>\n    </tr>\n    <tr>\n      <td>PermissionPositionHeader</td>\n      <td>string</td>\n      <td>Permission Position Header</td>\n    </tr>\n    <tr>\n      <td>SenderID</td>\n      <td>string</td>\n      <td>Sender ID</td>\n    </tr>\n    <tr>\n      <td>SignatureEmail</td>\n      <td>string</td>\n      <td>Signature Email Address</td>\n    </tr>\n    <tr>\n      <td>SignatureURL</td>\n      <td>string</td>\n      <td>Signature URL</td>\n    </tr>\n    <tr>\n      <td>TimeZone</td>\n      <td>string</td>\n      <td>Time Zone</td>\n    </tr>\n    <tr>\n      <td>Token</td>\n      <td>string</td>\n      <td>API Token</td>\n    </tr>\n  </tbody>\n</table>"
-              },
-              "response": [
-                {
-                  "id": "bf29e5c8-ac8c-4760-b789-538fa870d68f",
-                  "name": "Get Client Account Settings",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Client/Setting"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Nov 2017 08:35:48 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.0",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked",
-                      "name": "Transfer-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"Response\": {\n        \"Company\": {\n            \"Address\": \"\u8def/\u8857\",\n            \"CategoryID\": \"3\",\n            \"City\": \"\u57ce\u5e02\",\n            \"Country\": \"India\",\n            \"LogoURL\": \"https://images.benchmarkemail.com/client553754/companylogo.jpg\",\n            \"Name\": \"\u7d44\u7e54\u540d\u7a31\",\n            \"Phone\": \"\",\n            \"State\": \"\u5dde/\u7701\",\n            \"Website\": \"www.google.com\",\n            \"Zip\": \"\u90f5\u905e\u5340\u865f\"\n        },\n        \"FooterID\": \"9\",\n        \"FromEmail\": \"test@cybermaxsolutions.com\",\n        \"FromName\": \"\u5bc4\u4ef6\u4eba\u540d\u7a31\",\n        \"Language\": \"Chinese\",\n        \"PermissionPositionHeader\": \"0\",\n        \"SenderID\": \"1\",\n        \"SignatureEmail\": \"test@cybermaxsolutions.com\",\n        \"SignatureName\": \"\u90f5\u905e\u5340\u865f\",\n        \"SignatureURL\": \"https://images.benchmarkemail.com/client553754/sign.gif\",\n        \"TimeZone\": \"IST\",\n        \"Token\": \"{{Token}}\"\n    }\n}"
                 }
               ]
             }
