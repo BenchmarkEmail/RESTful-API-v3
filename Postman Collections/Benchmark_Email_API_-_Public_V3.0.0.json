@@ -5328,7 +5328,7 @@
     },
     {
       "_postman_id": "7d696b91-ff7a-46b1-ab2e-bcf14328314f",
-      "name": "/Contact || Contacts",
+      "name": "/Contact | Contacts",
       "description": "Contains API about Contacts",
       "item": [
         {
@@ -14488,7 +14488,7 @@
     },
     {
       "_postman_id": "73dc35a0-ce70-4e55-9be1-4269aff0a8f6",
-      "name": "Email",
+      "name": "/Emails | Email",
       "description": "Contains API about EMails",
       "item": [
         {
