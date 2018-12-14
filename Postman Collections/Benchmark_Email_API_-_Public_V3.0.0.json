@@ -7320,7 +7320,7 @@
             },
             {
               "_postman_id": "0148fb38-a571-4d17-a1ca-bb63767829a1",
-              "name": "Changing list compilation details",
+              "name": "/{{ListID}}/Compilation | Changing list compilation details",
               "request": {
                 "method": "PATCH",
                 "header": [
