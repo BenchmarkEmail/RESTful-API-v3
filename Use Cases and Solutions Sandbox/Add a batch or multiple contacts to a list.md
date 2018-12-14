@@ -45,7 +45,7 @@
    PATCH /Contact/{ListID}/Mapping
    ```
 
-    `Field` attribute expected in request as `Data.Field.[JSONArray]
+    `Field` attribute expected in request as `Data.Field.[JSONArray]`
     |	Field	|	Value	|
     |--|--|
     |	Email Address	|	email	|
