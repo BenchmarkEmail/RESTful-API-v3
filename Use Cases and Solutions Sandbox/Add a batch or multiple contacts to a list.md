@@ -19,7 +19,7 @@
 
 ## Solution
 
-<sub>The follwoing endpoints and more details can be found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)</sub>
+<sub>The following endpoints and more details can be found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)</sub>
 
 1. Secure each of the 3 requests below by placing your Benchmark Email API Token. see prerequisite #1 above, in the header of your request. (Don't have a token?  Get one free, see pre-requisite #1 above.)
 
@@ -34,7 +34,7 @@ headers = {
 
 This is a 3 step solution which is for uploading the file, mapping the fields and setting the compilation fields
 
-  1. Upload your csv file with the follwoing endpoint. The response will provide you with a new file name in the response body json object. This new name will be used for the subsequent calls 2 and 3, in this process. The new name provided in the response body will be found in the property `Response.Message` property. The value for `Resonse.Message` is a large string of key value pairs, ex <br>
+  1. Upload your csv file with the following endpoint. The response will provide you with a new file name in the response body json object. This new name will be used for the subsequent calls 2 and 3, in this process. The new name provided in the response body will be found in the property `Response.Message` property. The value for `Resonse.Message` is a large string of key value pairs, ex <br>
   `"Message": "contact_master_id=15981783&id=hfkff4sq.uv0.csv&f=csvUploadOneEmail.csv&m=0&of=csvUploadOneEmail.csv&redir="` <br>
   Parse the string to find the the key/value pair `id=NEW_UPLOADED_FILE_NAME.csv`, ex:<br>
   `id=hfkff4sq.uv0.csv`. <br>
