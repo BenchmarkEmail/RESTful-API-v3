@@ -23,36 +23,31 @@
 
 1. Secure each of the 3 requests below by placing your Benchmark Email API Token in the header of your request. (Don't have a token?  Get one free, see pre-requisite #3 above.)
 
-```javascript
-// example of headers from a python3 request
-headers = {
-    'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
-    'Content-Type': "application/json" 
-}
-// application/json is used for all GET requests
-```
+2. This is a 3 step solution which is for uploading the file, mapping the fields and setting the compilation fields.
+   1. Upload your csv file with the following endpoint. The response will provide you with a file name which is a new name and replaces your origial uploaded file name. This new file name, not your original file name, will be used for the subsequent calls 2 and 3, in this process. The new name will be provided in the response body of this call, found in the property `Response.Message`. The value for `Resonse.Message` is a large string of key value pairs combined, ex <br>`"Message": "contact_master_id=15981783&id=hfkff4sq.uv0.csv&f=csvUploadOneEmail.csv&m=0&of=csvUploadOneEmail.csv&redir="` <br>Parse the string to find the the key/value pair `id=NEW_UPLOADED_FILE_NAME.csv`, ex:<br>`id=hfkff4sq.uv0.csv`. <br>
 
-2. This is a 3 step solution which is for uploading the file, mapping the fields and setting the compilation fields
+   ```javascript
+   // example of headers from a python3 request
+   headers = {
+        'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'content-type': 'multipart/form-data'}
+   }
+   
+   // ENDPOINT
+   POST  /Contact/{ListID}/ContactDetails/CSV/Upload
+   // Upload the file
+   //  Use *your* recieved `id` value for the next 2 endpoint requests as the value for their parameter `fileName`. 
+   ```
 
-  2.1. Upload your csv file with the following endpoint. The response will provide you with a new file name which is a new name and replaces your origial uploaded file. This new file name, not your original file name, will be used for the subsequent calls 2 and 3, in this process. The new name will be provided in the response body of this call, found in the property `Response.Message`. The value for `Resonse.Message` is a large string of key value pairs combined, ex <br>
-  `"Message": "contact_master_id=15981783&id=hfkff4sq.uv0.csv&f=csvUploadOneEmail.csv&m=0&of=csvUploadOneEmail.csv&redir="` <br>
-  Parse the string to find the the key/value pair `id=NEW_UPLOADED_FILE_NAME.csv`, ex:<br>
-  `id=hfkff4sq.uv0.csv`. <br>
-  Use *your* recieved `id` value for the next 2 endpoint requests as the value for their parameter `fileName`. 
+   2. While setting the file mapping, find 'id' (above 2.1), to be used as the value for the field "fileName", below.
 
-```javascript
-POST  /Contact/{ListID}/ContactDetails/CSV/Upload
-// Upload the file
-```
+   ```javascript
+   PATCH /Contact/{ListID}/Mapping
+   ```
 
-  2.2 While setting the file mapping, find 'id' (above 2.1), to be used as the value for the field "fileName", below.
+   3. While changing the list compilation, find 'id' (above 2.1), to be used as the value for the field "fileName", below
 
-```javascript
-PATCH /Contact/{ListID}/Mapping
-```
-
-  2.3 While changing the list compilation, find 'id' (above 2.1), to be used as the value for the field "fileName", below
-
-```javascript
-PATCH /Contact/{ListID}/Compilation
-```
+    ```javascript
+    PATCH /Contact/{ListID}/Compilation
+    ```
