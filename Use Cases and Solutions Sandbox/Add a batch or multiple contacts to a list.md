@@ -21,7 +21,7 @@
 
 <sub>The following endpoints and more details can be found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)</sub>
 
-1. Secure each of the 3 requests below by placing your Benchmark Email API Token. see prerequisite #1 above, in the header of your request. (Don't have a token?  Get one free, see pre-requisite #1 above.)
+1. Secure each of the 3 requests below by placing your Benchmark Email API Token in the header of your request. (Don't have a token?  Get one free, see pre-requisite #3 above.)
 
 ```javascript
 // example of headers from a python3 request
