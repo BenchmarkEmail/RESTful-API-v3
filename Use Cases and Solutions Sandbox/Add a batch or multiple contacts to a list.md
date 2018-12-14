@@ -31,20 +31,52 @@
    headers = {
         'AuthToken': "YOUR_BENCHMARK_EMAIL_API_TOKEN_HERE",
         'Content-Type': 'application/x-www-form-urlencoded',
-        'content-type': 'multipart/form-data'}
+        'content-type': 'multipart/form-data'
    }
-   
    // ENDPOINT
    POST  /Contact/{ListID}/ContactDetails/CSV/Upload
    // Upload the file
    //  Use *your* recieved `id` value for the next 2 endpoint requests as the value for their parameter `fileName`. 
    ```
 
-   2. While setting the file mapping, find 'id' (above 2.1), to be used as the value for the field "fileName", below.
+   2. While setting the file mapping, find 'id' (above 2.1), to be used as the value for the field "fileName", in the endpoint request below. For "Field" attribute please find the below value used by the system for the field. (Note : In the example field/value mapping below, it may change if you edited their contact list's field labels. To validate exact fields and their values, use `GET /Contact/{LISTID}`, (image:  https://www.screencast.com/t/40z7copdWruP).
 
    ```javascript
    PATCH /Contact/{ListID}/Mapping
    ```
+
+    `Field` attribute expected in request as `Data.Field.[JSONArray]
+    |	Field	|	Value	|
+    |--|--|
+    |	Email Address	|	email	|
+    |	First Name	|	firstname	|
+    |	Last Name	|	lastname	|
+    |	Middle Name	|	middlename	|
+    |	Email Preference	|	emailtype	|
+    |	Address	|	field1	|
+    |	City	|	field2	|
+    |	State	|	field3	|
+    |	Zip	|	field4	|
+    |	Country	|	field5	|
+    |	Phone	|	field6	|
+    |	Fax	|	field7	|
+    |	Cell phone	|	field8	|
+    |	Company name	|	field9	|
+    |	Job title	|	field10	|
+    |	Business phone	|	field11	|
+    |	Business fax	|	field12	|
+    |	Business address	|	field13	|
+    |	Business city	|	field14	|
+    |	Business state	|	field15	|
+    |	Business zip	|	field16	|
+    |	Business country	|	field17	|
+    |	Notes	|	field18	|
+    |	Date 1	|	field19	|
+    |Date 2|field20|
+    |Extra 3|field21|
+    |Extra 4|field22|
+    |Extra 5|field23|
+    Extra 6|field24|
 
    3. While changing the list compilation, find 'id' (above 2.1), to be used as the value for the field "fileName", below
 
