@@ -6986,6 +6986,121 @@
           "description": "",
           "item": [
             {
+              "_postman_id": "26ba5726-c196-4fdb-a9df-91159872a3ce",
+              "name": "{{ListID}}/ContactDetails/CSV/Upload |Save email address which are not verified and uploaded",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/CSV/Upload",
+                "description": "<h4>Save email address which are not verified and uploaded</h4>\r\n\r\n<h4>URL parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>ListID</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Data</td><td>required</td><td>Stream</td><td>File Data</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Message</td><td>string</td><td>Message containing filename,listID etc</td></tr>\r\n<tr><td>Error</td><td><a href=\"http://www.benchmarkemail.com/models.htm#EmailErrorData\">ErrorData</a></td><td>Array of errors</td></tr>\r\n<tr><td>Count</td><td>string</td><td>Total Found</td></tr>\r\n<tr><td>TotalAdded</td><td>string</td><td>Total contacts added</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "b73a5724-c485-47e7-aaa8-9a23b1101b41",
+                  "name": "Save email address which is orininal(i.e not verified) and uploaded",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded",
+                        "description": "Content Type"
+                      }
+                    ],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "Data",
+                          "type": "file",
+                          "src": {
+                            "0": {}
+                          }
+                        }
+                      ]
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/15283571/ContactDetails/CSV/Upload"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "name": "Access-Control-Allow-Origin",
+                      "description": ""
+                    },
+                    {
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "name": "Cache-Control",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8",
+                      "name": "Content-Type",
+                      "description": ""
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Wed, 01 Nov 2017 11:54:34 GMT",
+                      "name": "Date",
+                      "description": ""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.0",
+                      "name": "Server",
+                      "description": ""
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked",
+                      "name": "Transfer-Encoding",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "name": "X-AspNet-Version",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "name": "X-Powered-By",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Count\":\"2\",\"Errors\":[],\"Message\":\"contact_master_id=15283571&id=44n3j5zd.smi.csv&f=text.csv&m=0&of=text.csv&redir=\",\"Status\":\"1\",\"TotalAdded\":\"0\"}}"
+                }
+              ]
+            },
+            {
               "_postman_id": "df4fa322-482e-45a4-956f-476d3b4682ae",
               "name": "Get list mapping",
               "request": {
@@ -7636,121 +7751,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Data\":{\"ActiveContactCount\":\"0\",\"CreatedDateTime\":\"Oct 20 2017, 03:29 PM\",\"Description\":\"Rest API Creation 1\",\"Field10Name\":\"Job Title\",\"Field10Type\":\"1\",\"Field11Name\":\"Business Phone\",\"Field11Type\":\"1\",\"Field12Name\":\"Business Fax\",\"Field12Type\":\"1\",\"Field13Name\":\"Business Address\",\"Field13Type\":\"1\",\"Field14Name\":\"Business City\",\"Field14Type\":\"1\",\"Field15Name\":\"Business State\",\"Field15Type\":\"1\",\"Field16Name\":\"Business Zip\",\"Field16Type\":\"1\",\"Field17Name\":\"Business Country\",\"Field17Type\":\"1\",\"Field18Name\":\"Notes\",\"Field18Type\":\"1\",\"Field19Name\":\"Date 1\",\"Field19Type\":\"4\",\"Field1Name\":\"Address\",\"Field1Type\":\"1\",\"Field20Name\":\"Date 2\",\"Field20Type\":\"4\",\"Field21Name\":\"Extra 3\",\"Field21Type\":\"1\",\"Field22Name\":\"Extra 4\",\"Field22Type\":\"1\",\"Field23Name\":\"Extra 5\",\"Field23Type\":\"1\",\"Field24Name\":\"Extra 6\",\"Field24Type\":\"1\",\"Field2Name\":\"City\",\"Field2Type\":\"1\",\"Field3Name\":\"State\",\"Field3Type\":\"1\",\"Field4Name\":\"Zip\",\"Field4Type\":\"1\",\"Field5Name\":\"Country\",\"Field5Type\":\"1\",\"Field6Name\":\"Phone\",\"Field6Type\":\"1\",\"Field7Name\":\"Fax\",\"Field7Type\":\"1\",\"Field8Name\":\"Cell Phone\",\"Field8Type\":\"1\",\"Field9Name\":\"Company Name\",\"Field9Type\":\"1\",\"FirstnameLabel\":\"First Name\",\"ID\":\"15266225\",\"IsMasterUnsubscribe\":\"0\",\"LastnameLabel\":\"Last Name\",\"MiddlenameLabel\":\"Middle Name\",\"Name\":\"Rest API Creation 1\"},\"Errors\":[],\"Status\":\"1\"}}"
-                }
-              ]
-            },
-            {
-              "_postman_id": "26ba5726-c196-4fdb-a9df-91159872a3ce",
-              "name": "{{ListID}}/ContactDetails/CSV/Upload |Save email address which are not verified and uploaded",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/x-www-form-urlencoded",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/{{ListID}}/ContactDetails/CSV/Upload",
-                "description": "<h4>Save email address which are not verified and uploaded</h4>\r\n\r\n<h4>URL parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>ListID</td><td>required</td><td>string</td><td>ID of the list</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Body Parameters (To be passed as a JSON string)</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Required</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Data</td><td>required</td><td>Stream</td><td>File Data</td></tr>\r\n</tbody>\r\n</table>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>Message</td><td>string</td><td>Message containing filename,listID etc</td></tr>\r\n<tr><td>Error</td><td><a href=\"http://www.benchmarkemail.com/models.htm#EmailErrorData\">ErrorData</a></td><td>Array of errors</td></tr>\r\n<tr><td>Count</td><td>string</td><td>Total Found</td></tr>\r\n<tr><td>TotalAdded</td><td>string</td><td>Total contacts added</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "b73a5724-c485-47e7-aaa8-9a23b1101b41",
-                  "name": "Save email address which is orininal(i.e not verified) and uploaded",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/x-www-form-urlencoded",
-                        "description": "Content Type"
-                      }
-                    ],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": [
-                        {
-                          "key": "Data",
-                          "type": "file",
-                          "src": {
-                            "0": {}
-                          }
-                        }
-                      ]
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/15283571/ContactDetails/CSV/Upload"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 01 Nov 2017 11:54:34 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.0",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked",
-                      "name": "Transfer-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Count\":\"2\",\"Errors\":[],\"Message\":\"contact_master_id=15283571&id=44n3j5zd.smi.csv&f=text.csv&m=0&of=text.csv&redir=\",\"Status\":\"1\",\"TotalAdded\":\"0\"}}"
                 }
               ]
             },
