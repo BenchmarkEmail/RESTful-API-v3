@@ -20,7 +20,7 @@ Want to delete an image
 
 <sub>The following endpoints and more details can be found on [web](https://developer.benchmarkemail.com/) or [github](https://github.com/BenchmarkEmail/RESTful-API-v3/tree/master/Postman%20Collections)</sub>
 
-1. Secure your request by placing your Benchmark Email API Token in the header of your request. (Don't have a token?  Get one free, see pre-requisite #1 above.)
+1. _Set Request Headers_. Secure your request by placing your Benchmark Email API Token in the header of your request. (Don't have a token?  Get one free, [link](https://ui.benchmarkemail.com/integrate?from=login#API))
 
 ```javascript
 // example of headers from a python3 request
