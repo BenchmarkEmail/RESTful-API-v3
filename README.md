@@ -1,4 +1,4 @@
-# RESTful-API-v3
+# Benchmark Email RESTful API v3.0
 
 ## Use Cases with Solutions
 
