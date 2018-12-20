@@ -1,6 +1,6 @@
 # RESTful-API-v3
 
-## Problem Statements with Solutions
+## Use Cases with Solutions
 
 ### Email Campaigns
 

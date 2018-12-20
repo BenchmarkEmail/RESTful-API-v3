@@ -41,7 +41,7 @@ headers = {
      // list id found at Response.Data[0..n].ID
 ```
 
-3. Use the ListId from previous step and make this next request to Add your new contact. [link](https://developer.benchmarkemail.com/#375fa862-2ac6-9d5d-3669-6e9a23524241). For a list of all data fields available to add contact information, see [link](https://www.benchmarkemail.com/models.htm#ContactDetailRecord)
+3. Use the ListId from previous step and make this next request to add your new contact. [link](https://developer.benchmarkemail.com/#375fa862-2ac6-9d5d-3669-6e9a23524241). For a list of all data fields available to add contact information, see [link](https://www.benchmarkemail.com/models.htm#ContactDetailRecord)
 
 ```js
     POST /Contact/{{ListID}}/ContactDetails
