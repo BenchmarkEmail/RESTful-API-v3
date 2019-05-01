@@ -1687,9 +1687,11 @@
                 "method": "POST",
                 "header": [
                   {
-                    "description": "Content Type",
                     "key": "Content-Type",
-                    "value": "application/json"
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "description": "Content Type",
+                    "type": "text"
                   },
                   {
                     "key": "AuthToken",
@@ -1699,10 +1701,26 @@
                   }
                 ],
                 "body": {
-                  "mode": "raw",
-                  "raw": ""
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "token",
+                      "value": "{{Authentication Token}}",
+                      "type": "text"
+                    },
+                    {
+                      "key": "remember-login",
+                      "value": "1",
+                      "type": "text"
+                    },
+                    {
+                      "key": "redir",
+                      "value": "/Contacts",
+                      "type": "text"
+                    }
+                  ]
                 },
-                "url": "https://restapi.benchmarkemail.com/Client/AuthenticateUseTempToken",
+                "url": "https://ui.benchmarkemail.com/xdc/json/login_redirect_using_token",
                 "description": "A means to acquire a temporary token to an account"
               },
               "response": [
