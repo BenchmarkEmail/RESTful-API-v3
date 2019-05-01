@@ -1545,14 +1545,20 @@
                 "method": "POST",
                 "header": [
                   {
+                    "description": "Content Type",
                     "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "type": "text"
                   }
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"Username\":\"{{Username}}\", \"Password\":\"{{Password}}\"}"
+                  "raw": ""
                 },
                 "url": "https://restapi.benchmarkemail.com/Client/AuthenticateUseTempToken",
                 "description": "A means to acquire a temporary token to an account"
