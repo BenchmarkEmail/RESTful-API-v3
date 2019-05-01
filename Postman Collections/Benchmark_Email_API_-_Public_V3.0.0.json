@@ -1647,7 +1647,7 @@
               ]
             },
             {
-              "name": "/Client/AuthenticateUseTempToken Copy",
+              "name": "xdc/json/login_redirect_using_token",
               "event": [
                 {
                   "listen": "test",
