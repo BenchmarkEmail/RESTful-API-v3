@@ -1647,6 +1647,148 @@
               ]
             },
             {
+              "name": "/Client/AuthenticateUseTempToken Copy",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "b9977fb2-91ea-4065-bf66-867918648d28",
+                    "exec": [
+                      "pm.test(\"Successful POST request status OK\", function () {\r",
+                      "    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+                      "});\r",
+                      "\r",
+                      "var jsonData = pm.response.json();\r",
+                      "pm.test(\"Successful response body status OK\", function () {\r",
+                      "    pm.expect(jsonData.Response.Status).to.equal(\"1\");\r",
+                      "});\r",
+                      "\r",
+                      "pm.environment.set(\"Authentication Token\", jsonData.Response.Token);"
+                    ],
+                    "type": "text/javascript"
+                  }
+                },
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "36a4ce7f-fb0b-4e0b-8387-7702b7a45b31",
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "8e9e5b3d-e2b6-4cc4-8f9b-8fc4f2e3580f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "Content Type",
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://restapi.benchmarkemail.com/Client/AuthenticateUseTempToken",
+                "description": "A means to acquire a temporary token to an account"
+              },
+              "response": [
+                {
+                  "id": "1e291f90-76ca-435d-b065-0cd17b1fe054",
+                  "name": "Change Security PIN ",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\"ResetPIN\": \"{{New PIN}}\", \"ResetConfirmPIN\": \"{{Confirm New PIN}}\", \"ResetOldPIN\": \"{{Current PIN}}\"}"
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Client/PIN"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "name": "Access-Control-Allow-Origin",
+                      "description": ""
+                    },
+                    {
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "name": "Cache-Control",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8",
+                      "name": "Content-Type",
+                      "description": ""
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 02 Nov 2017 10:06:11 GMT",
+                      "name": "Date",
+                      "description": ""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.0",
+                      "name": "Server",
+                      "description": ""
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked",
+                      "name": "Transfer-Encoding",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "name": "X-AspNet-Version",
+                      "description": ""
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "name": "X-Powered-By",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"Errors\":[],\"Status\":\"1\",\"retVal\":\"1\"}}"
+                }
+              ]
+            },
+            {
               "name": "/Client/Authenticate by PermToken",
               "event": [
                 {
@@ -2337,148 +2479,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"Errors\":[],\"FinalString\":\"\",\"Message\":\"\",\"Status\":\"1\",\"Success\":\"\"}}"
-                }
-              ]
-            },
-            {
-              "name": "/Client/AuthenticateUseTempToken Copy",
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "b9977fb2-91ea-4065-bf66-867918648d28",
-                    "exec": [
-                      "pm.test(\"Successful POST request status OK\", function () {\r",
-                      "    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
-                      "});\r",
-                      "\r",
-                      "var jsonData = pm.response.json();\r",
-                      "pm.test(\"Successful response body status OK\", function () {\r",
-                      "    pm.expect(jsonData.Response.Status).to.equal(\"1\");\r",
-                      "});\r",
-                      "\r",
-                      "pm.environment.set(\"Authentication Token\", jsonData.Response.Token);"
-                    ],
-                    "type": "text/javascript"
-                  }
-                },
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "36a4ce7f-fb0b-4e0b-8387-7702b7a45b31",
-                    "exec": [
-                      ""
-                    ],
-                    "type": "text/javascript"
-                  }
-                }
-              ],
-              "_postman_id": "8e9e5b3d-e2b6-4cc4-8f9b-8fc4f2e3580f",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "description": "Content Type",
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://restapi.benchmarkemail.com/Client/AuthenticateUseTempToken",
-                "description": "A means to acquire a temporary token to an account"
-              },
-              "response": [
-                {
-                  "id": "1e291f90-76ca-435d-b065-0cd17b1fe054",
-                  "name": "Change Security PIN ",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\"ResetPIN\": \"{{New PIN}}\", \"ResetConfirmPIN\": \"{{Confirm New PIN}}\", \"ResetOldPIN\": \"{{Current PIN}}\"}"
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Client/PIN"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Nov 2017 10:06:11 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.0",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked",
-                      "name": "Transfer-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"Errors\":[],\"Status\":\"1\",\"retVal\":\"1\"}}"
                 }
               ]
             }
