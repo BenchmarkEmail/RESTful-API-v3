@@ -17565,7 +17565,7 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "/Email Email Rss Creation",
+          "name": "/Email | Email Rss Creation",
           "item": [
             {
               "name": "Get Details of Email",
@@ -18113,7 +18113,7 @@
               ]
             },
             {
-              "name": "/{{ID}}/Schedule Send Email",
+              "name": "/{{ID}}/Schedule | Send Email",
               "_postman_id": "e57e390b-680d-4271-b100-98af0612ded3",
               "request": {
                 "method": "POST",
@@ -18657,6 +18657,28 @@
             }
           ],
           "_postman_id": "2d04aa2c-612b-4bf0-9176-2aab3cbe453f",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "de23f13d-3044-4b48-8f6e-10f37453dd7c",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "551436e4-c11b-41c0-8faa-cf243b41baf4",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
