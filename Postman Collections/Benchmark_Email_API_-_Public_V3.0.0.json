@@ -18113,7 +18113,7 @@
               ]
             },
             {
-              "name": "Schedule the email",
+              "name": "/{{ID}}/Schedule Send Email",
               "_postman_id": "e57e390b-680d-4271-b100-98af0612ded3",
               "request": {
                 "method": "POST",
