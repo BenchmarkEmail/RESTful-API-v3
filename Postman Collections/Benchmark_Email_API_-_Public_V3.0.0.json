@@ -9164,115 +9164,6 @@
               ]
             },
             {
-              "name": "/ContactImportStatus | Get Contact Import Status",
-              "_postman_id": "4dd408bc-da7b-4bb6-a654-a8cbd3428a94",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "AuthToken",
-                    "value": "{{Authentication Token}}",
-                    "description": "Authentication Token"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "description": "Content Type"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://clientapi.benchmarkemail.com/Contact/ContactImportStatus",
-                "description": "<h4>Get Contact Import Status</h4>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>ImportType</td><td>string</td><td>Import Type</td></tr>\r\n<tr><td>ContactFound</td><td>string</td><td>Contact Found Count</td></tr>\r\n<tr><td>ContactIncrease</td><td>string</td><td></td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>ListIDs</td><td>string</td><td>List ID</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactImportStatusRecord\">ContactImportStatusRecord</a></td><td>Array of Data</td></tr>\r\n</tbody>\r\n</table>"
-              },
-              "response": [
-                {
-                  "id": "df4f4cd2-9106-4fdb-82ef-004a0370ecc7",
-                  "name": "Get Contact Import Status",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "AuthToken",
-                        "value": "{{Authentication Token}}",
-                        "description": "Authentication Token",
-                        "warning": ""
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "description": "Content Type",
-                        "warning": ""
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": ""
-                    },
-                    "url": "https://clientapi.benchmarkemail.com/Contact/ContactImportStatus"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "access-control-allow-origin",
-                      "key": "access-control-allow-origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "cache-control",
-                      "key": "cache-control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "content-type",
-                      "key": "content-type",
-                      "value": "application/json; charset=utf-8",
-                      "description": ""
-                    },
-                    {
-                      "name": "date",
-                      "key": "date",
-                      "value": "Mon, 23 Oct 2017 04:59:57 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "server",
-                      "key": "server",
-                      "value": "Microsoft-IIS/8.0",
-                      "description": ""
-                    },
-                    {
-                      "name": "transfer-encoding",
-                      "key": "transfer-encoding",
-                      "value": "chunked",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-aspnet-version",
-                      "key": "x-aspnet-version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "x-powered-by",
-                      "key": "x-powered-by",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\"Response\":{\"ContactFound\":\"0\",\"ContactIncrease\":\"0\",\"Count\":0,\"Data\":[],\"ImportType\":\"0\",\"ListIDs\":\"\",\"Status\":\"-1\"}}"
-                }
-              ]
-            },
-            {
               "name": "/ExportToList? | Engagement Reporting, Get Export List",
               "_postman_id": "7c336847-d1bd-4f2d-a454-0c62c81d0017",
               "request": {
@@ -9430,6 +9321,115 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\"Response\":{\"ListName\":\"Unopened Report : Oct 06 2017 Email 1\",\"ReportTypeText\":\"UNOPENS\",\"Status\":\"1\"}}"
+                }
+              ]
+            },
+            {
+              "name": "/ContactImportStatus | Get Contact Import Status",
+              "_postman_id": "4dd408bc-da7b-4bb6-a654-a8cbd3428a94",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "AuthToken",
+                    "value": "{{Authentication Token}}",
+                    "description": "Authentication Token"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "description": "Content Type"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://clientapi.benchmarkemail.com/Contact/ContactImportStatus",
+                "description": "<h4>Get Contact Import Status</h4>\r\n\r\n<h4>Response body parameters</h4>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Key</th><th>Type</th><th>Description</th></tr>\r\n</thead>\r\n<tbody>\r\n<tr><td>Status</td><td>string</td><td>1 if successful, -1 if error</td></tr>\r\n<tr><td>ImportType</td><td>string</td><td>Import Type</td></tr>\r\n<tr><td>ContactFound</td><td>string</td><td>Contact Found Count</td></tr>\r\n<tr><td>ContactIncrease</td><td>string</td><td></td></tr>\r\n<tr><td>Count</td><td>int</td><td>Total count</td></tr>\r\n<tr><td>ListIDs</td><td>string</td><td>List ID</td></tr>\r\n<tr><td>Data</td><td><a href=\"http://www.benchmarkemail.com/models.htm#ContactImportStatusRecord\">ContactImportStatusRecord</a></td><td>Array of Data</td></tr>\r\n</tbody>\r\n</table>"
+              },
+              "response": [
+                {
+                  "id": "df4f4cd2-9106-4fdb-82ef-004a0370ecc7",
+                  "name": "Get Contact Import Status",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "AuthToken",
+                        "value": "{{Authentication Token}}",
+                        "description": "Authentication Token",
+                        "warning": ""
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "description": "Content Type",
+                        "warning": ""
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": "https://clientapi.benchmarkemail.com/Contact/ContactImportStatus"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "access-control-allow-origin",
+                      "key": "access-control-allow-origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "cache-control",
+                      "key": "cache-control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "content-type",
+                      "key": "content-type",
+                      "value": "application/json; charset=utf-8",
+                      "description": ""
+                    },
+                    {
+                      "name": "date",
+                      "key": "date",
+                      "value": "Mon, 23 Oct 2017 04:59:57 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "server",
+                      "key": "server",
+                      "value": "Microsoft-IIS/8.0",
+                      "description": ""
+                    },
+                    {
+                      "name": "transfer-encoding",
+                      "key": "transfer-encoding",
+                      "value": "chunked",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-aspnet-version",
+                      "key": "x-aspnet-version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "x-powered-by",
+                      "key": "x-powered-by",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\"Response\":{\"ContactFound\":\"0\",\"ContactIncrease\":\"0\",\"Count\":0,\"Data\":[],\"ImportType\":\"0\",\"ListIDs\":\"\",\"Status\":\"-1\"}}"
                 }
               ]
             },
