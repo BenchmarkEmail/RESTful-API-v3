@@ -7458,6 +7458,19 @@
                   "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
                 }
               ]
+            },
+            {
+              "name": "/Contact/{{contactID}}/ContactDetails",
+              "_postman_id": "6957180c-6b0c-46be-a6d2-e18d1ee2a354",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "3cd22e6f-e766-4d62-a05b-9c5c555d29c2",
