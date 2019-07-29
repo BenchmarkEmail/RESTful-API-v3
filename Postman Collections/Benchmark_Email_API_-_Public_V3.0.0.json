@@ -7466,9 +7466,9 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "PATCH",
                 "header": [],
-                "url": ""
+                "url": "https://clientapi.benchmarkemail.com/Contact/{{contactID}}/ContactDetails"
               },
               "response": []
             }
