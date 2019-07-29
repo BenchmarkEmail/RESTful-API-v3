@@ -7351,7 +7351,7 @@
               ]
             },
             {
-              "name": "/{{ListID}}/ContactDetails/{{ContactID}} | Update a contact field names valuesand rating , Contact Details Copy",
+              "name": "/{{ListID}}/ContactDetails/{{ContactID}} | Update a contact field names values & rating , Contact Details",
               "_postman_id": "26316ef4-12e4-4839-9f52-251b1f698e55",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
