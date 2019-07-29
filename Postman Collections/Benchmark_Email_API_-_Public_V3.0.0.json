@@ -6507,6 +6507,19 @@
                   "body": "{\"Response\":{\"Error\":[],\"Status\":\"1\"}}"
                 }
               ]
+            },
+            {
+              "name": "/Detail/List",
+              "_postman_id": "7f034f7b-8532-4199-9392-a8b90943e10a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "b5e8ce36-6795-4248-a7dd-c9c7d8b3bdb2",
