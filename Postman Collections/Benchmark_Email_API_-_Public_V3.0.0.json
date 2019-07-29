@@ -7357,7 +7357,7 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "PATCH",
                 "header": [
                   {
                     "description": "Authentication Token",
